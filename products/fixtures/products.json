@@ -1,0 +1,20 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "AAX-HD-IP11-LCD",
+            "name": "AAX HD Incell iPhone 11 LCD Module Display and Touch Screen Digitizer Assembly",
+            "description": "High-quality replacement LCD module with touch screen digitizer assembly for iPhone 11. Incell technology for better display quality.",
+            "price": 6.99,
+            "category": "iPhone LCDs",
+            "rating": 4.9,
+            "image_url": 
+            "image": "31A-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp","31B-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp","31C-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp"
+            "brand": "For apple"
+            "stock": 100,
+            "shipping": "Free shipping",
+            "estimated_delivery": "3 day",
+            "vat_status": "Ex VAT"
+        }
+    }
