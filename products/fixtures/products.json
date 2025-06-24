@@ -17,5 +17,554 @@
             "estimated_delivery": "3 day",
             "vat_status": "Ex VAT"
         }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "IP8-SE-LCD-ASM",
+            "name": "Replacement iPhone 8 / SE 2020 / SE 2022 (2nd Gen / 3rd Gen) LCD Module Display and Touch Screen Digitizer Assembly",
+            "description": "Apple-compatible LCD display assembly with touch screen digitizer for iPhone 8, SE 2020, and SE 2022 (2nd & 3rd Gen) models. Includes full display module with touch functionality.",
+            "price": 6.99,
+            "category": "APPLE LCDs > iPhone LCDs",
+            "rating": 4.2,
+            "image_url": "",
+            "image": "iphone8-se-lcd-display.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "IP14-FHD-INCELL",
+            "name": "JK FHD Incell iPhone 14 LCD Module Display and Touch Screen Digitizer Assembly",
+            "description": "High-quality FHD Incell LCD display assembly with integrated touch screen digitizer for iPhone 14. Compatible replacement part featuring full display module with touch functionality.",
+            "price": 15.99,
+            "category": "APPLE LCDs > iPhone LCDs",
+            "rating": 4.3,
+            "image_url": "",
+            "image": "iphone14-fhd-incell-lcd.jpg"
+        }
+    },
+     {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "IP13PM-SOFT-OLED",
+            "name": "Soft OLED iPhone 13 Pro Max Display and Touch Screen Digitizer Assembly",
+            "description": "Premium Soft OLED display assembly with integrated touch screen digitizer for iPhone 13 Pro Max. High-quality replacement featuring vibrant colors and responsive touch functionality.",
+            "price": 54.99,
+            "category": "APPLE LCDs > iPhone LCDs",
+            "rating": 4.5,
+            "image_url": "/media/products/iphone13pm-soft-oled.jpg",
+            "image": "iphone13pm-soft-oled.jpg"
+        }
+    },
+    
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "IW5-40MM-LTE-LCD",
+            "name": "iWatch Series 5 Replacement LCD Screen 40MM – GPS LTE – A2156",
+            "description": "Genuine-compatible LCD replacement screen for Apple Watch Series 5 40mm (Model A2156) with GPS + LTE functionality. Includes full display assembly for precise touch response.",
+            "price": 62.99,
+            "category": "APPLE LCDs > iWatch LCDs > Series 5",
+            "rating": 4.4,
+            "image_url": "/media/products/iwatch5-40mm-lcd.jpg",
+            "image": "iwatch5-40mm-lcd.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "IW1-38MM-LCD",
+            "name": "iWatch Series 1 Replacement LCD Screen 38MM – A1802",
+            "description": "Compatible LCD replacement screen for Apple Watch Series 1 38mm (Model A1802). Includes display assembly with responsive touch functionality for watch repairs.",
+            "price": 29.99,
+            "category": "APPLE LCDs > iWatch LCDs > Series 1",
+            "rating": 4.0,
+            "image_url": "/media/products/iwatch1-38mm-lcd.jpg",
+            "image": "iwatch1-38mm-lcd.jpg"
+        }
+    },
+      {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "SMA16-4G-LCD-FRAME",
+            "name": "Genuine LCD Screen For Samsung Galaxy A16 4G (A165) With Frame and Touchpad – Black (GH82-36253A)",
+            "description": "Original-quality LCD replacement for Samsung Galaxy A16 4G (Model A165), including pre-installed frame and touchpad. Black color variant with part number GH82-36253A.",
+            "price": 33.49,
+            "category": "Samsung LCDs > Samsung Galaxy A Series LCDs > A16 4G / 5G",
+            "rating": 4.6,
+            "image_url": "/media/products/samsung-a16-lcd-frame.jpg",
+            "image": "samsung-a16-lcd-frame.jpg",
+            "stock_status": "In Stock",
+            "warranty": "12 months"
+        }
+    },
+     {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "SMA600F-LCD-FRAME",
+            "name": "Genuine LCD Screen For Samsung Galaxy A6 (2018) (SM-A600F) With Frame and Touchpad – Black (GH97-21897A)",
+            "description": "OEM-compatible LCD replacement for Samsung Galaxy A6 2018 (Model SM-A600F), including pre-assembled frame and touchpad. Black color variant with official part number GH97-21897A.",
+            "price": 32.99,
+            "category": "Samsung LCDs > Samsung Galaxy A Series LCDs",
+            "rating": 4.4,
+            "image_url": "/media/products/samsung-a6-2018-lcd.jpg",
+            "image": "samsung-a6-2018-lcd.jpg",
+            "compatibility": "SM-A600F (2018 International Model)",
+            "warranty": "12 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Screen", "Frame", "Touchpad"]
+        }
+    },
+    
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "SMS23FE-OLED-FRAME",
+            "name": "Replacement OLED LCD Screen For Samsung Galaxy S23 FE (S71IB) – With Frame",
+            "description": "Premium OLED display replacement for Samsung Galaxy S23 FE (Model S71IB), including pre-installed frame. Features vibrant colors and energy efficiency compared to traditional LCDs.",
+            "price": 29.99,
+            "category": "Samsung LCDs > Samsung Galaxy S Series LCDs > S21 Series",
+            "rating": 4.7,
+            "image_url": "/media/products/samsung-s23fe-oled.jpg",
+            "image": "samsung-s23fe-oled.jpg",
+            "display_type": "OLED",
+            "compatibility": "Galaxy S23 FE (S71IB model only)",
+            "warranty": "24 months",
+            "stock_status": "In Stock",
+            "includes": ["OLED Screen", "Frame"],
+            "release_year": 2023
+        }
+    },
+    
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "SMA115-LCD-FRAME",
+            "name": "Genuine LCD Screen for Samsung Galaxy A11 (A115) With Frame and Touchpad – Black (GH81-18760A)",
+            "description": "OEM-quality LCD replacement for Samsung Galaxy A11 (Model A115), including pre-assembled frame and touchpad. Black color variant with official part number GH81-18760A. Budget-friendly solution for A11 repairs.",
+            "price": 29.99,
+            "category": "Samsung LCDs > Samsung Galaxy A Series LCDs > A11, A21 to A71 5G",
+            "rating": 4.1,
+            "image_url": "/media/products/samsung-a11-lcd-frame.jpg",
+            "image": "samsung-a11-lcd-frame.jpg",
+            "display_type": "LCD",
+            "compatibility": "SM-A115 (Global Model)",
+            "warranty": "12 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Screen", "Frame", "Touchpad"],
+            "release_year": 2020,
+            "device_tier": "Budget"
+        }
+    },
+    
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "MOTE20-LCD-TOUCH",
+            "name": "Replacement LCD Display Touch Screen For Motorola Moto E20 – XT2155 – No Frame",
+            "description": "Basic LCD touch screen replacement for Motorola Moto E20 (Model XT2155). Screen-only assembly (frame not included) for cost-effective repairs on budget devices.",
+            "price": 9.99,
+            "category": "Other LCDs > Motorola LCDs",
+            "rating": 3.9,
+            "image_url": "/media/products/motorola-e20-lcd.jpg",
+            "image": "motorola-e20-lcd.jpg",
+            "display_type": "LCD",
+            "compatibility": "Moto E20 (XT2155 only)",
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Screen", "Touch Layer"],
+            "excludes": ["Frame"],
+            "release_year": 2021,
+            "device_tier": "Entry-Level",
+            "repair_difficulty": "Intermediate (Frame not included)",
+            "tool_requirements": ["Suction Cup", "Pry Tools", "Adhesive"]
+        }
+    },
+    
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "MOTG05-LCD-BASIC",
+            "name": "Replacement LCD Display Touch Screen For Motorola Moto G05 – No Frame – Black",
+            "description": "Cost-effective LCD touch screen replacement for Motorola Moto G05. Screen-only assembly (frame not included) with basic touch functionality. Ideal for budget-conscious repairs.",
+            "price": 12.99,
+            "category": "Other LCDs > Motorola LCDs",
+            "rating": 3.8,
+            "image_url": "/media/products/motorola-g05-lcd.jpg",
+            "image": "motorola-g05-lcd.jpg",
+            "display_type": "LCD",
+            "compatibility": "Moto G05 (All Variants)",
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Screen", "Touch Layer"],
+            "excludes": ["Frame", "Adhesive"],
+            "release_year": 2023,
+            "device_tier": "Entry-Level",
+            "repair_difficulty": "Intermediate",
+            "tool_requirements": ["Suction Cup", "Pry Tools", "Adhesive"],
+            "install_notes": "Requires frame transfer from original device"
+        }
+    },
+    
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "GPIX3A-LCD-ASM",
+            "name": "OEM LCD Screen Display Touch and Digitizer Assembly For Google Pixel 3A (G020G) – No Frame",
+            "description": "Original-equivalent LCD display with integrated touch digitizer for Google Pixel 3A (Model G020G). Screen-only assembly (frame not included) designed for precise color accuracy and touch response.",
+            "price": 39.99,
+            "category": "Other LCDs > Google Pixel LCDs",
+            "rating": 4.2,
+            "image_url": "/media/products/pixel3a-lcd-assembly.jpg",
+            "image": "pixel3a-lcd-assembly.jpg",
+            "display_type": "LCD",
+            "compatibility": "Pixel 3A (G020G only)",
+            "warranty": "12 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Panel", "Digitizer", "Touch Assembly"],
+            "excludes": ["Frame", "Adhesive"],
+            "release_year": 2019,
+            "device_tier": "Mid-Range",
+            "repair_difficulty": "Advanced",
+            "tool_requirements": ["Heat Gun", "Pry Tools", "Adhesive Strips"],
+            "install_notes": "Requires careful separation of original frame. Not recommended for first-time repairers.",
+            "color_accuracy": "98% sRGB"
+        }
+    },
+    
+    
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "GPIX4A-OLED-FRAME",
+            "name": "Replacement OLED LCD Screen Display Touch and Digitizer Assembly For Google Pixel 4A 4G – With Frame",
+            "description": "Premium OLED display assembly with pre-installed frame for Google Pixel 4A 4G. Features integrated touch digitizer, vibrant colors (100% DCI-P3), and factory-calibrated accuracy. Complete plug-and-play solution.",
+            "price": 74.99,
+            "category": "Other LCDs > Google Pixel LCDs",
+            "rating": 4.8,
+            "image_url": "/media/products/pixel4a-oled-frame.jpg",
+            "image": "pixel4a-oled-frame.jpg",
+            "display_type": "OLED",
+            "compatibility": "Pixel 4A 4G (All Regions)",
+            "warranty": "24 months",
+            "stock_status": "In Stock",
+            "includes": ["OLED Panel", "Frame", "Digitizer", "Adhesive"],
+            "release_year": 2020,
+            "device_tier": "Mid-Range+",
+            "repair_difficulty": "Beginner-Friendly",
+            "tool_requirements": ["None (Pre-Assembled)"],
+            "color_accuracy": "100% DCI-P3",
+            "special_features": [
+                "Factory calibration",
+                "HDR support",
+                "Always-On Display ready"
+            ]
+        }
+    },
+    
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "OP3T-LCD-WHITE",
+            "name": "Replacement LCD Display Touch Screen For One Plus 3T (A3003) – With Frame – White",
+            "description": "Complete LCD touch screen assembly with white frame for OnePlus 3T (Model A3003). Includes pre-installed frame and adhesive for simplified installation. Maintains original display clarity.",
+            "price": 12.99,
+            "category": "OnePlus LCDs > OnePlus 3 Series",
+            "rating": 4.0,
+            "image_url": "/media/products/oneplus3t-lcd-white.jpg",
+            "image": "oneplus3t-lcd-white.jpg",
+            "display_type": "LCD",
+            "compatibility": "OnePlus 3T (A3003 only)",
+            "warranty": "12 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Panel", "Touch Screen", "White Frame", "Adhesive"],
+            "color_options": ["White"],
+            "release_year": 2016,
+            "device_tier": "Flagship (Previous Gen)",
+            "repair_difficulty": "Beginner",
+            "tool_requirements": ["None"],
+            "special_features": [
+                "Optic AMOLED-equivalent calibration",
+                "Dash Charge compatible"
+            ]
+        }
+    },
+    
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "XM12C-LCD-BASIC",
+            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Redmi 12C – No Frame",
+            "description": "Budget LCD display with integrated touch digitizer for Xiaomi Redmi 12C. Screen-only assembly requires frame transfer. Designed for cost-effective repairs on Xiaomi's entry-level devices.",
+            "price": 9.99,
+            "category": "Other LCDs > All Xiaomi LCD",
+            "rating": 3.7,
+            "image_url": "/media/products/xiaomi-12c-lcd.jpg",
+            "image": "xiaomi-12c-lcd.jpg",
+            "display_type": "LCD",
+            "compatibility": "Redmi 12C (2022 Model Only)",
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "includes": ["LCD Panel", "Digitizer"],
+            "excludes": ["Frame", "Adhesive"],
+            "release_year": 2022,
+            "device_tier": "Entry-Level",
+            "repair_difficulty": "Intermediate",
+            "tool_requirements": ["Suction Cup", "Pry Tools"],
+            "display_features": [
+                "HD+ Resolution",
+                "Sunlight Readability Enhanced"
+            ],
+            "market": "Emerging Markets Focus"
+        }
+    },
+    
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "XMN10-LCD-BLACK",
+            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Mi Note 10 Black – No Frame",
+            "description": "High-quality LCD replacement for Xiaomi Mi Note 10 (2019 flagship). Features AMOLED-like color calibration and 1080p resolution. Screen-only assembly requires professional installation.",
+            "price": 23.99,
+            "category": "Other LCDs > All Xiaomi LCD",
+            "rating": 4.1,
+            "image_url": "/media/products/xiaomi-minote10-lcd.jpg",
+            "image": "xiaomi-minote10-lcd.jpg",
+            "display_type": "LCD (AMOLED-Calibrated)",
+            "compatibility": "Mi Note 10 (Global Version)",
+            "warranty": "12 months",
+            "stock_status": "Low Stock",
+            "includes": ["LCD Panel", "Digitizer", "Flex Cable"],
+            "excludes": ["Frame", "Adhesive"],
+            "release_year": 2019,
+            "device_tier": "Former Flagship",
+            "repair_difficulty": "Advanced",
+            "tool_requirements": ["Heat Gun", "UV Glue", "Precision Tools"],
+            "resolution": "1080x2340",
+            "special_features": [
+                "DCI-P3 Color Support",
+                "HDR10 Compatibility",
+                "In-Display Fingerprint Ready"
+            ],
+            "market": "Enthusiast/Refurbisher"
+        }
+    },
+    
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "LID9168C1-4",
+            "name": "OEM Charging Flex For Samsung Galaxy A03 Core",
+            "description": "Original-equivalent charging port flex cable for Samsung Galaxy A03 Core. Includes USB-C port and board connector for charging/data transfer repairs. Precision-engineered for exact fit.",
+            "price": 3.49,
+            "category": "Parts > Charging ports & Flex > Samsung Galaxy Charging Flex",
+            "rating": 4.0,
+            "image_url": "/media/products/samsung-a03core-flex.jpg",
+            "image": "samsung-a03core-flex.jpg",
+            "part_type": "Charging Flex Cable",
+            "compatibility": "Galaxy A03 Core (All Variants)",
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "connector_type": "USB-C",
+            "functions": ["Charging", "Data Transfer"],
+            "release_year": 2021,
+            "device_tier": "Budget",
+            "repair_difficulty": "Beginner",
+            "tool_requirements": ["Phillips #00 Screwdriver", "Spudger"],
+            "installation_time": "15-20 minutes",
+            "oem_equivalent": true
+        }
+    },
+    
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "SMA04-CHG-FLEX",
+            "name": "OEM Charging Flex For Samsung Galaxy A04",
+            "description": "Genuine-equivalent charging port flex cable for Samsung Galaxy A04. Features reinforced USB-C connector and gold-plated contacts for reliable charging and data transfer. Compatible with all A04 variants.",
+            "price": 3.49,
+            "category": "Parts > Charging ports & Flex > Samsung Galaxy Charging Flex",
+            "rating": 4.2,
+            "image_url": "/media/products/samsung-a04-charging-flex.jpg",
+            "image": "samsung-a04-charging-flex.jpg",
+            "part_type": "Charging Flex Cable",
+            "compatibility": "Galaxy A04 (All Models)",
+            "warranty": "6 months",
+            "stock_status": "In Stock (High Volume)",
+            "connector_type": "USB-C",
+            "functions": ["Charging", "Data Transfer", "Audio Accessories"],
+            "release_year": 2022,
+            "device_tier": "Budget",
+            "repair_difficulty": "Beginner",
+            "tool_requirements": ["Phillips #00 Screwdriver", "Plastic Pry Tool"],
+            "installation_time": "10-15 minutes",
+            "oem_equivalent": true,
+            "durability_features": [
+                "Reinforced Strain Relief",
+                "Gold-Plated Contacts"
+            ],
+            "popularity_rank": "Top 10 Repair Part"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "IP13P-CAM-LENS",
+            "name": "Replacement Back Camera Lens For iPhone 13 Pro / 13 Pro Max",
+            "description": "Precision-cut camera lens replacement for iPhone 13 Pro and Pro Max. Made with sapphire-coated glass for scratch resistance and optimal light transmission. Includes adhesive for easy installation.",
+            "price": 0.79,
+            "category": "Parts > iPhone Components > Camera Parts",
+            "rating": 4.5,
+            "image_url": "/media/products/iphone13pro-camera-lens.jpg",
+            "image": "iphone13pro-camera-lens.jpg",
+            "part_type": "Camera Lens",
+            "compatibility": "iPhone 13 Pro & 13 Pro Max",
+            "warranty": "6 months",
+            "stock_status": "In Stock (Bulk Available)",
+            "material": "Sapphire-Coated Glass",
+            "functions": ["Protects Camera Sensors", "Maintains Image Quality"],
+            "release_year": 2021,
+            "device_tier": "Premium",
+            "repair_difficulty": "Beginner",
+            "tool_requirements": ["Hair Dryer", "Tweezers"],
+            "installation_time": "5-10 minutes",
+            "oem_equivalent": true,
+            "optical_properties": [
+                "99% Light Transmission",
+                "Anti-Reflective Coating"
+            ],
+            "package_contents": [
+                "Lens Cover",
+                "Pre-Cut Adhesive",
+                "Cleaning Cloth"
+            ]
+        }
+
+    },
+    
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "IP12MINI-FLASH",
+            "name": "Replacement Flash Light For iPhone 12 Mini",
+            "description": "Genuine-compatible flash module for iPhone 12 Mini with True Tone technology. Includes flex cable and adhesive for seamless installation. Maintains original brightness and color temperature for accurate flash photography.",
+            "price": 3.75,
+            "category": "Parts > Back Camera > iPhone Back Camera",
+            "rating": 4.3,
+            "image_url": "/media/products/iphone12mini-flash.jpg",
+            "image": "iphone12mini-flash.jpg",
+            "part_type": "Flash Module",
+            "compatibility": "iPhone 12 Mini (A2176, A2398, A2399, A2400)",
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "technology": "True Tone",
+            "functions": [
+                "Camera Flash",
+                "Flashlight Function",
+                "Emergency Signaling"
+            ],
+            "release_year": 2020,
+            "device_tier": "Compact Premium",
+            "repair_difficulty": "Intermediate",
+            "tool_requirements": [
+                "Pentalobe Screwdriver",
+                "Plastic Spudger",
+                "Tweezers"
+            ],
+            "installation_time": "15-20 minutes",
+            "oem_equivalent": true,
+            "brightness": "50 Lumens",
+            "color_temp": "6000K (Daylight Balanced)",
+            "safety_features": [
+                "Overheat Protection",
+                "Auto Power Cutoff"
+            ]
+        }
+    },
+    
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "IPHOMEBTN-FLEX-MULTI",
+            "name": "Replacement Home Button Flex For iPhone 7 / 8 / SE 2nd Gen 2020 / SE 3rd Gen 2022",
+            "description": "Multi-compatible home button flex cable assembly for iPhone 7, 8, and SE (2nd/3rd Gen) models. Includes Touch ID sensor and haptic feedback connectors. Note: Touch ID functionality requires original button pairing.",
+            "price": 5.00,
+            "category": "Parts > Home Button > iPhone Home Button",
+            "rating": 4.0,
+            "image_url": "/media/products/iphone-homebutton-flex.jpg",
+            "image": "iphone-homebutton-flex.jpg",
+            "part_type": "Flex Cable Assembly",
+            "compatibility": [
+                "iPhone 7",
+                "iPhone 8",
+                "iPhone SE (2020)",
+                "iPhone SE (2022)"
+            ],
+            "warranty": "6 months",
+            "stock_status": "In Stock",
+            "connectors": [
+                "Touch ID Sensor",
+                "Taptic Engine",
+                "Backlight"
+            ],
+            "release_years": [2016, 2017, 2020, 2022],
+            "device_tier": "Legacy Support",
+            "repair_difficulty": "Advanced",
+            "tool_requirements": [
+                "Pentalobe Screwdriver",
+                "Y000 Tri-point Screwdriver",
+                "ESD-safe Tweezers"
+            ],
+            "installation_time": "30-45 minutes",
+            "oem_equivalent": true,
+            "biometric_note": "Touch ID requires original home button",
+            "color_options": [
+                "Black",
+                "White",
+                "Product Red"
+            ],
+            "haptic_support": true
+        }
     }
+
+
 ]
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
