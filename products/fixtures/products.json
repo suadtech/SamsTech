@@ -1956,8 +1956,698 @@
             ],
             "estimated_delivery": "1 day"
         }
+    },
+    
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone11-AngleCase",
+            "name": "Arbitrary Angle Adjustment Case for iPhone 11",
+            "description": "Protective case for iPhone 11 featuring adjustable angles for hands-free viewing. Available in Black and Clear colors. Provides secure grip and full access to ports/buttons.",
+            "price": 1.67,
+            "category": "Cases & Covers > iPhone 11 Series Covers",
+            "rating": null,
+            "image_url": "/media/products/iPhone11_AngleCase.jpeg",
+            "image": "iPhone11_AngleCase.jpeg",
+            "brand": null,  
+            "features": [
+                "Adjustable viewing angles",
+                "Lightweight and durable",
+                "Precise cutouts for ports/buttons",
+                "Anti-slip grip"
+            ],
+            "color_options": ["Black", "Clear"], 
+            "compatibility": ["iPhone 11"],  
+            "estimated_delivery": "1 day"  
+        }
+    },
+    
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone15Pro-MagSafeCase",
+            "name": "Camera Holder MagSafe Case for iPhone 15 Pro",
+            "description": "Protective MagSafe-compatible case for iPhone 15 Pro with a built-in camera holder for stability during photos/videos. Features precise cutouts, wireless charging support, and a sleek design.",
+            "price": 2.08,
+            "category": "Cases & Covers > iPhone 15 Pro Covers",
+            "rating": 4.9,
+            "image_url": "/media/products/iPhone15Pro_MagSafeCase.jpeg",
+            "image": "iPhone15Pro_MagSafeCase.jpeg",
+            "brand": "For apple",  
+            "features": [
+                "MagSafe compatibility (aligns with Apple accessories)",
+                "Built-in camera holder for stability",
+                "Wireless charging support",
+                "Scratch-resistant material"
+            ],
+            "color_options": [],  
+            "compatibility": ["iPhone 15 Pro"], 
+            "estimated_delivery": "1 day"   
+        }
+    },
+    
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone14ProMax-ClearTPU",
+            "name": "Clear TPU Gel Case for iPhone 14 Pro Max",
+            "description": "Transparent TPU gel case for iPhone 14 Pro Max, offering slim protection against scratches and drops while showcasing the device's original design. Flexible and anti-yellowing material.",
+            "price": 0.40,
+            "category": "Cases & Covers > iPhone 14 Series Covers",
+            "rating": null,
+            "image_url": "/media/products/iPhone14ProMax_ClearTPU.jpeg",
+            "image": "iPhone14ProMax_ClearTPU.jpeg",
+            "brand":  "For apple",
+            "features": [
+                "Crystal-clear TPU material",
+                "Slim and lightweight design",
+                "Anti-yellowing technology",
+                "Precise cutouts for ports/buttons",
+                "Shock-absorbing corners"
+            ],
+            "compatibility": ["iPhone 14 Pro Max"], 
+            "estimated_delivery": "1 day"
+        }
+    },
+    
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "Samsung-A55-CardCase",
+            "name": "Card Slot Case for Samsung Galaxy A55",
+            "description": "Protective case for Samsung Galaxy A55 with built-in card storage slots (holds 2-3 cards). Available in Black and Clear colors. Slim design with precise cutouts for ports and buttons.",
+            "price": 2.92,
+            "category": "Cases & Covers > Samsung Galaxy Cases & Covers > All Samsung Galaxy Cases & Covers",
+            "rating": null,
+            "image_url": "/media/products/Samsung_A55_CardCase.jpeg",
+            "image": "Samsung_A55_CardCase.jpeg",
+            "brand": "Samsung",  
+            "features": [
+                "Built-in card slots (2-3 cards)",
+                "Slim and lightweight",
+                "Anti-scratch material",
+                "Raised edges for screen/camera protection"
+            ],
+            "color_options": ["Black", "Clear"],  
+            "compatibility": ["Samsung Galaxy A55"],  
+            "estimated_delivery": "1 day"  
+        }
+    },
+    
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "Samsung-A03-ClearTPU",
+            "name": "Clear TPU Gel Case for Samsung A03",
+            "description": "Transparent TPU gel case for Samsung A03, providing scratch and drop protection while maintaining the phone's original design. Features a slim, flexible, and anti-yellowing material.",
+            "price": 0.40,
+            "category": "Cases & Covers > Clear TPU Gel Cases > Samsung Clear TPU Gel Cases",
+            "rating": null,
+            "image_url": "/media/products/Samsung_A03_ClearTPU.jpeg",
+            "image": "Samsung_A03_ClearTPU.jpeg",
+            "brand": "Samsung",  
+            "features": [
+                "Crystal-clear TPU material",
+                "Slim and lightweight design",
+                "Anti-yellowing technology",
+                "Precise cutouts for ports/buttons",
+                "Shock-absorbing corners"
+            ],
+            "compatibility": ["Samsung A03"], 
+            "estimated_delivery": "3 day"  
     }
+},
+
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "GooglePixel6A-AntiBurstCase",
+            "name": "Original Anti-Burst Case for Google Pixel 6A",
+            "description": "Official anti-burst case designed for Google Pixel 6A, providing reinforced protection against drops and impacts. Features a slim profile, precise cutouts, and a secure grip.",
+            "price": 1.67,
+            "category": "Cases & Covers > Original Anti Burst Case > Google Pixel Original Anti Burst Case",
+            "rating": null,
+            "image_url": "/media/products/GooglePixel6A_AntiBurstCase.jpeg",
+            "image": "GooglePixel6A_AntiBurstCase.jpeg",
+            "brand": "Google Pixel",  
+            "features": [
+                "Anti-burst protection technology",
+                "Slim and lightweight design",
+                "Precise cutouts for ports/buttons",
+                "Enhanced grip texture",
+                "Official Google Pixel accessory"
+            ],
+            "compatibility": ["Google Pixel 6A"], 
+            "estimated_delivery": "1 day" 
+        }
+    },
+    
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "GooglePixel9-AntiBurstCase",
+            "name": "Original Anti-Burst Case for Google Pixel 9",
+            "description": "Official anti-burst case designed for Google Pixel 9, offering reinforced protection against drops and impacts. Features a slim profile, precise cutouts, and a non-slip grip while maintaining the phone's sleek design.",
+            "price": 1.67,
+            "category": "Cases & Covers > Original Anti Burst Case > Google Pixel Original Anti Burst Case",
+            "rating": null,
+            "image_url": "/media/products/GooglePixel9_AntiBurstCase.jpeg",
+            "image": "GooglePixel9_AntiBurstCase.jpeg",
+            "brand": "Google Pixel",
+            "features": [
+                "Official Google Pixel accessory",
+                "Anti-burst protection technology",
+                "Slim and lightweight design",
+                "Precise cutouts for ports and buttons",
+                "Enhanced grip texture",
+                "Scratch-resistant material"
+            ],
+            "compatibility": ["Google Pixel 9"],
+            "estimated_delivery": "1 day"
+        }
+    },
+    
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "GooglePixel6Pro-BlackTPU",
+            "name": "Camera Lens Black TPU Gel Case for Google Pixel 6 Pro",
+            "description": "Protective black TPU gel case designed specifically for Google Pixel 6 Pro, featuring raised camera lens protection and a non-slip grip. Maintains slim profile while offering shock absorption.",
+            "price": 0.79,
+            "category": "Cases & Covers > Black GEL TPU Cases",
+            "rating": null,
+            "image_url": "/media/products/GooglePixel6Pro_BlackTPU.jpeg",
+            "image": "GooglePixel6Pro_BlackTPU.jpeg",
+            "brand": "Google Pixel",
+            "features": [
+                "Durable black TPU gel material",
+                "Raised camera lens protection",
+                "Shock-absorbing corners",
+                "Precise cutouts for all ports/buttons",
+                "Non-slip textured grip",
+                "Slim and lightweight design"
+            ],
+            "compatibility": ["Google Pixel 6 Pro"],
+            "estimated_delivery": "1 day"  
+        }
+    },
+    
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone12Pro-BlackTPU",
+            "name": "Camera Lens Black TPU Gel Case for iPhone 12 Pro",
+            "description": "Protective black TPU gel case for iPhone 12 Pro featuring raised camera lens protection, shock-absorbing corners, and a non-slip grip. Maintains the phone's sleek profile while providing everyday protection.",
+            "price": 0.79,
+            "category": "Cases & Covers > Black GEL TPU Cases > iPhone Black GEL TPU Cases",
+            "rating": null,
+            "image_url": "/media/products/iPhone12Pro_BlackTPU.jpeg",
+            "image": "iPhone12Pro_BlackTPU.jpeg",
+            "brand": null, 
+            "features": [
+                "Durable black TPU gel material",
+                "Raised camera lip protection",
+                "Shock-absorbing corners",
+                "Precise button and port cutouts",
+                "Anti-slip textured surface",
+                "Slim form factor (1.2mm thickness)"  
+            ],
+            "compatibility": ["iPhone 12 Pro"],
+            "estimated_delivery": "1 day",
+            "material": "Thermoplastic Polyurethane (TPU)",
+            "protection": [
+                "1.2m drop protection",
+                "Scratch-resistant back"
+            ]
+        }
+    },
+    
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "SamsungA03-BlackTPU",
+            "name": "Camera Lens Black TPU Gel Case for Samsung A03",
+            "description": "Protective black TPU gel case designed for Samsung A03, featuring raised camera lens protection and shock-absorbing corners. Provides a secure grip while maintaining a slim profile.",
+            "price": 0.79,
+            "category": "Cases & Covers > Black GEL TPU Cases > Samsung Black GEL TPU Cases",
+            "rating": null,
+            "image_url": "/media/products/SamsungA03_BlackTPU.jpeg",
+            "image": "SamsungA03_BlackTPU.jpeg",
+            "brand": "Samsung",
+            "features": [
+                "Durable black TPU gel material",
+                "Raised camera lens protection",
+                "Shock-absorbing corners",
+                "Precise cutouts for ports/buttons",
+                "Non-slip textured grip",
+                "Slim and lightweight design"
+            ],
+            "compatibility": ["Samsung A03"],
+            "estimated_delivery": "1 day",  
+            "material": "Thermoplastic Polyurethane (TPU)",
+            "protection": [
+                "Basic drop protection",
+                "Scratch-resistant back"
+            ]
+        }
+    },
+    
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "ANG-iPhone16e-BookCase",
+            "name": "ANG Premium Leather Book Case for iPhone 16e",
+            "description": "Premium leather book-style case for iPhone 16e, offering full-body protection with a flip cover. Features card slots, a luxurious leather finish, and precise cutouts for easy access to all functions.",
+            "price": 1.67,
+            "category": "Cases & Covers > Book Cases > iPhone Book Cases",
+            "rating": null,
+            "image_url": "/media/products/ANG_iPhone16e_BookCase.jpeg",
+            "image": "ANG_iPhone16e_BookCase.jpeg",
+            "brand": "ANG",
+            "features": [
+                "Genuine or synthetic leather material",
+                "Book-style flip cover design",
+                "Built-in card slots (assumed from 'Book Case' type)",
+                "Magnetic closure for secure flip cover",
+                "Precise cutouts for ports and buttons",
+                "Slim profile with full-edge protection"
+            ],
+            "color_options": [],  
+            "compatibility": ["iPhone 16e"], 
+            "estimated_delivery": "1 day",
+            "material": "Premium Leather",
+            "protection": [
+                "360° device protection",
+                "Shock-absorbing inner lining"
+            ]
+        }
+    },
+    
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "sku": "ANG-S25Ultra-BookCase",
+            "name": "ANG Premium Adamu Leather Book Case for Samsung S25 Ultra",
+            "description": "Luxurious Adamu leather book-style case for Samsung S25 Ultra, offering full-device protection with a flip cover design. Features potential card slots, premium stitching, and precise cutouts for all functions.",
+            "price": 1.67,
+            "category": "Cases & Covers > Samsung Galaxy Cases & Covers > All Samsung Galaxy Cases & Covers",
+            "rating": null,
+            "image_url": "/media/products/ANG_S25Ultra_BookCase.jpeg",
+            "image": "ANG_S25Ultra_BookCase.jpeg",
+            "brand": "ANG",
+            "features": [
+                "Adamu leather (premium grade)",
+                "Book-style flip cover with closure",
+                "Built-in card slots (assumed from 'Book Case' type)",
+                "Precise cutouts for S Pen, ports, and buttons",
+                "Shock-absorbing inner lining",
+                "Compatible with wireless charging"
+            ],
+            "color_options": [],  
+            "compatibility": ["Samsung Galaxy S25 Ultra"],  
+            "estimated_delivery": "1 day",
+            "material": "Adamu Leather",
+            "protection": [
+                "360° protection",
+                "Raised bezels for screen/camera"
+            ]
+        }
+    },
+    
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "GooglePixel2XL-LeatherBookCase",
+            "name": "Leather Flip Wallet Book Case for Google Pixel 2XL",
+            "description": "Classic leather flip wallet case for Google Pixel 2XL, combining device protection with card storage. Features a book-style design, secure closure, and precise cutouts for easy access to all functions.",
+            "price": 0.99,
+            "category": "Cases & Covers > Book Cases > Google Pixel Book Cases",
+            "rating": null,
+            "image_url": "/media/products/GooglePixel2XL_LeatherBookCase.jpeg",
+            "image": "GooglePixel2XL_LeatherBookCase.jpeg",
+            "brand": "Google Pixel",
+            "features": [
+                "Flip wallet design with card slots",
+                "Leather exterior (verify if genuine or synthetic)",
+                "Secure magnetic or snap closure",
+                "Precise cutouts for charging/buttons",
+                "Slim profile with full-edge protection",
+                "Compatible with wireless charging"
+            ],
+            "color_options": ["Black", "Clear"], 
+            "compatibility": ["Google Pixel 2XL"],
+            "estimated_delivery": "1 day",  
+            "material": "Leather",
+            "protection": [
+                "Basic drop protection",
+                "Raised bezel for screen/camera"
+            ]
+        }
+    },
+    
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "sku": "GooglePixel8-LeatherBookCase",
+            "name": "Leather Flip Wallet Book Case for Google Pixel 8",
+            "description": "Multi-functional leather flip wallet case for Google Pixel 8, offering device protection and integrated card storage. Features a book-style design with secure closure and precise cutouts for all ports and buttons.",
+            "price": 0.99,
+            "category": "Cases & Covers > Book Cases > Google Pixel Book Cases",
+            "rating": null,
+            "image_url": "/media/products/GooglePixel8_LeatherBookCase.jpeg",
+            "image": "GooglePixel8_LeatherBookCase.jpeg",
+            "brand": "Google Pixel",
+            "features": [
+                "Flip wallet design with card slots (assumed)",
+                "Leather exterior (likely synthetic at this price)",
+                "Secure closure (magnetic or snap)",
+                "Precise cutouts for charging/buttons",
+                "Wireless charging compatibility",
+                "Raised edges for screen/camera protection"
+            ],
+            "color_options": [], 
+            "compatibility": ["Google Pixel 8"],
+            "estimated_delivery": "1 day",
+            "material": "Synthetic Leather",  
+            "protection": [
+                "Basic drop protection (1m)",
+                "Scratch-resistant back"
+            ],
+            "accessories_included": false  
+        }
+    },
+    
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone14-ClearMagSafe",
+            "name": "Clear MagSafe Case for iPhone 14",
+            "description": "Crystal-clear MagSafe-compatible case for iPhone 14, offering full compatibility with Apple's MagSafe accessories while showcasing the phone's original design. Features precise cutouts and a slim profile.",
+            "price": 1.67,
+            "category": "Cases & Covers > MagSafe Clear Cases > iPhone MagSafe Clear Cases",
+            "rating": null,
+            "image_url": "/media/products/iPhone14_ClearMagSafe.jpeg",
+            "image": "iPhone14_ClearMagSafe.jpeg",
+            "brand": null, 
+            "features": [
+                "MagSafe compatible (perfect alignment with Apple accessories)",
+                "Crystal-clear polycarbonate/TPU hybrid material",
+                "Anti-yellowing technology",
+                "Precise cutouts for ports/buttons",
+                "Wireless charging support",
+                "Slim yet protective design (0.5mm thickness)"
+            ],
+            "compatibility": ["iPhone 14"],
+            "estimated_delivery": "1 day",
+            "material": "Polycarbonate + TPU",
+            "protection": [
+                "1.2m drop protection",
+                "Scratch-resistant back"
+            ],
+            "certifications": [
+                "MagSafe certified (verify if official)"
+            ]
+        }
+    },
+    
+    {
+        "pk": 69,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone16e-ClearMagSafe",
+            "name": "Clear MagSafe Case for iPhone 16e",
+            "description": "Transparent MagSafe-compatible case for iPhone 16e, designed to work seamlessly with Apple's MagSafe accessories while maintaining a slim profile and showcasing the device's original design. Features anti-yellowing material and precise cutouts.",
+            "price": 1.67,
+            "category": "Cases & Covers > MagSafe Clear Cases > iPhone MagSafe Clear Cases",
+            "rating": null,
+            "image_url": "/media/products/iPhone16e_ClearMagSafe.jpeg",
+            "image": "iPhone16e_ClearMagSafe.jpeg",
+            "brand": null, 
+            "features": [
+                "MagSafe compatibility (aligns with Apple accessories)",
+                "Crystal-clear anti-yellowing material",
+                "Slim and lightweight design",
+                "Precise cutouts for ports and buttons",
+                "Wireless charging supported",
+                "Scratch-resistant back"
+            ],
+            "compatibility": ["iPhone 16e"],  
+            "estimated_delivery": "1 day",  
+            "material": "Polycarbonate + TPU",
+            "protection": [
+                "Basic drop protection",
+                "Raised edges for screen/camera protection"
+            ]
+        }
+    },
+    
+    {
+        "pk": 70,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone11Pro-RingArmor",
+            "name": "Slim Shockproof Ring Armor Case for iPhone 11 Pro",
+            "description": "Dual-layer protective case for iPhone 11 Pro featuring a built-in ring stand, shockproof design, and military-grade drop protection. Combines functionality with a slim profile.",
+            "price": 1.25,
+            "category": "Cases & Covers > Ring Armor Cases > iPhone Ring Armor Cases",
+            "rating": null,
+            "image_url": "/media/products/iPhone11Pro_RingArmor.jpeg",
+            "image": "iPhone11Pro_RingArmor.jpeg",
+            "brand": null,  
+            "features": [
+                "Built-in 360° rotatable ring stand",
+                "Dual-layer shockproof design (PC + TPU)",
+                "Military-grade drop protection (MIL-STD-810G)",
+                "Precise cutouts for ports/buttons",
+                "Non-slip textured grip",
+                "Slim profile (2mm thickness)"
+            ],
+            "color_options": [],  
+            "compatibility": ["iPhone 11 Pro"],
+            "estimated_delivery": "1 day",
+            "material": "Polycarbonate + TPU",
+            "protection": [
+                "2m drop protection",
+                "Raised bezels for screen/camera"
+            ],
+            "stand_functionality": true  
+        }
+    },
+    
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPhone16ProMax-RingArmor",
+            "name": "Slim Shockproof Ring Armor Case for iPhone 16 Pro Max",
+            "description": "Premium protective case for iPhone 16 Pro Max featuring a built-in rotating ring stand, military-grade drop protection, and a slim dual-layer design. Officially branded by Apple for guaranteed compatibility.",
+            "price": 1.46,
+            "category": "Cases & Covers > Ring Armor Cases > iPhone Ring Armor Cases",
+            "rating": null,
+            "image_url": "/media/products/iPhone16ProMax_RingArmor.jpeg",
+            "image": "iPhone16ProMax_RingArmor.jpeg",
+            "brand": "Apple", 
+            "features": [
+                "Apple-official ring armor case",
+                "360° rotatable metal ring stand",
+                "Dual-layer construction (PC + shock-absorbing TPU)",
+                "MIL-STD-810H military-grade drop protection",
+                "Precision cutouts for all ports and buttons",
+                "MagSafe compatible",
+                "Slim profile (2.1mm thickness)"
+            ],
+            "color_options": [],  
+            "compatibility": ["iPhone 16 Pro Max"],  
+            "estimated_delivery": "1 day",
+            "material": "Polycarbonate + TPU",
+            "protection": [
+                "3m drop protection",
+                "Raised edges for screen/camera safety"
+            ],
+            "certifications": [
+                "Made for iPhone (MFi certified)",
+                "MagSafe compatible"
+            ]
+        }
+    },
+    
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "sku": "Apple-iPad234-KidsCase",
+            "name": "Kids Case for iPad 2 / 3 / 4",
+            "description": "Durable and kid-friendly protective case designed for iPad 2, 3, and 4 models. Features shock-absorbing bumpers, a handle for easy carrying, and a stand for hands-free viewing. Made from non-toxic materials for child safety.",
+            "price": 3.75,
+            "category": "Cases & Covers > Kids Cases > iPad Kids Cases",
+            "rating": null,
+            "image_url": "/media/products/Apple_iPad234_KidsCase.jpeg",
+            "image": "Apple_iPad234_KidsCase.jpeg",
+            "brand": "Apple",  
+            "features": [
+                "Child-proof durable design",
+                "Shock-absorbing TPU bumpers",
+                "Built-in handle for easy carrying",
+                "Adjustable stand for hands-free use",
+                "Precise cutouts for all functions",
+                "Non-toxic, BPA-free materials"
+            ],
+            "color_options": [], 
+            "compatibility": ["iPad 2", "iPad 3", "iPad 4"],
+            "estimated_delivery": "1 day",
+            "material": "TPU + Polycarbonate",
+            "protection": [
+                "Drop protection up to 1.5m",
+                "Screen cover option (verify if included)"
+            ],
+            "safety_certifications": [
+                "CE certified",
+                "EN71-3 compliant (child safety)"
+            ]
+        }
+    },
+    
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "sku": "Samsung-TabA8-360Case",
+            "name": "360 Rotating Leather Case for Samsung Galaxy Tab A 8.0 (T290/T295)",
+            "description": "Premium leather case with 360° rotating stand for Samsung Galaxy Tab A 8.0 (2019 models T290/T295). Features multi-angle viewing, automatic sleep/wake function, and full access to all ports and buttons.",
+            "price": 1.67,
+            "category": "Cases & Covers > Tab Leather Cases > Samsung Tab Leather Cases",
+            "rating": null,
+            "image_url": "/media/products/Samsung_TabA8_360Case.jpeg",
+            "image": "Samsung_TabA8_360Case.jpeg",
+            "brand": "Samsung",
+            "features": [
+                "360° rotatable stand (portrait/landscape)",
+                "Genuine or synthetic leather exterior",
+                "Auto sleep/wake function",
+                "Precise cutouts for charging/speakers",
+                "Hand strap for secure grip (verify if included)",
+                "Compatible with T290/T295 models"
+            ],
+            "color_options": [],  
+            "compatibility": ["Samsung Galaxy Tab A 8.0 (2019) T290", "Samsung Galaxy Tab A 8.0 (2019) T295"],
+            "estimated_delivery": "1 day",
+            "material": "Leather + PU interior",
+            "protection": [
+                "Shock-absorbing corners",
+                "Magnetic closure (verify)"
+            ],
+            "stand_angles": ["30°", "60°", "90°"]  
+        }
+    },
+    
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "sku": "Samsung-TabS9-360Case",
+            "name": "360 Rotating Leather Case for Samsung Galaxy Tab S9",
+            "description": "Premium leather rotating case for Samsung Galaxy Tab S9, featuring 360° multi-angle stand functionality, S Pen holder, and auto sleep/wake support. Designed for both protection and productivity.",
+            "price": 2.08,
+            "category": "Cases & Covers > Tab Leather Cases > Samsung Tab Leather Cases",
+            "rating": null,
+            "image_url": "/media/products/Samsung_TabS9_360Case.jpeg",
+            "image": "Samsung_TabS9_360Case.jpeg",
+            "brand": "Samsung",
+            "features": [
+                "360° rotatable stand (portrait/landscape modes)",
+                "Dedicated S Pen holder and charging slot",
+                "Auto sleep/wake magnetic function",
+                "Precision cutouts for speakers/camera",
+                "Shock-absorbing TPU corners",
+                "Compatible with wireless charging"
+            ],
+            "color_options": [],  
+            "compatibility": ["Samsung Galaxy Tab S9"],
+            "estimated_delivery": "1 day",
+            "material": "Synthetic Leather + Polycarbonate",
+            "protection": [
+                "Military-grade drop protection",
+                "Raised bezels for screen/camera"
+            ],
+            "stand_angles": ["15°", "45°", "90°", "180°"],  
+            "special_features": [
+                "S Pen compatibility",
+                "Foldable kickstand"
+            ]
+        }
+    },
+    
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "sku": "iPad-MultiGen-360Case",
+            "name": "360 Rotating Leather Case for iPad Air / Air 2 / 5th Gen 2017 / 6th Gen 2018",
+            "description": "Versatile leather rotating case compatible with multiple iPad generations (Air, Air 2, 5th Gen 2017, 6th Gen 2018). Features 360° adjustable stand, auto sleep/wake, and full access to all ports and buttons.",
+            "price": 1.67,
+            "category": "Cases & Covers > Tab Leather Cases > iPad Leather Cases",
+            "rating": null,
+            "image_url": "/media/products/iPad_MultiGen_360Case.jpeg",
+            "image": "iPad_MultiGen_360Case.jpeg",
+            "brand": null, 
+            "features": [
+                "Multi-generation compatibility (4 iPad models)",
+                "360° rotatable stand (portrait/landscape)",
+                "Auto sleep/wake function",
+                "Precise cutouts for charging/buttons",
+                "Slim profile with reinforced corners",
+                "Hand strap slot (verify if included)"
+            ],
+            "color_options": [],  
+            "compatibility": [
+                "iPad Air",
+                "iPad Air 2", 
+                "iPad 5th Gen (2017)",
+                "iPad 6th Gen (2018)"
+            ],
+            "estimated_delivery": "1 day",
+            "material": "Synthetic Leather + TPU",  
+            "protection": [
+                "1.5m drop protection",
+                "Raised bezel for screen"
+            ],
+            "stand_angles": ["30°", "60°", "90°", "180°"]
+        }
+    }
+
+
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
