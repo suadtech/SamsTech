@@ -1536,11 +1536,439 @@
             "commercial_discount": "10% Off 5+ Units"
         }
     }
-}
+},
+{
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+        "sku": "HOCO-BO110-GM",
+        "name": "BOROFONE BO110 Fight Wired Gaming Headphone With Mic",
+        "description": "Professional wired gaming headset with 50mm drivers, omnidirectional microphone, and multi-platform compatibility. Features RGB lighting, memory foam ear cushions, and in-line controls for immersive gameplay.",
+        "price": 9.49,
+        "category": "HOCO > HOCO Headphones & Earbuds",
+        "rating": 4.3,
+        "image_url": "/media/products/borofone-bo110.jpg",
+        "image": "borofone-bo110.jpg",
+        "brand": "BOROFONE (HOCO)",
+        "specifications": {
+            "drivers": {
+                "size": "50mm",
+                "type": "Neodymium",
+                "frequency_response": "20Hz-20kHz",
+                "impedance": "32Ω"
+            },
+            "microphone": {
+                "type": "Omnidirectional",
+                "sensitivity": "-38dB ±3dB",
+                "features": ["Noise Cancellation", "Flexible Boom"]
+            },
+            "connectivity": {
+                "interface": "3.5mm Jack",
+                "cable_length": "2.2m",
+                "splitter": "Y-Cable Included"
+            },
+            "lighting": {
+                "rgb_effects": "7 Colors",
+                "control": "In-Line Switch"
+            }
+        },
+        "comfort_features": [
+            "Memory Protein Ear Cushions",
+            "Adjustable Headband",
+            "Lightweight (280g)",
+            "Over-Ear Design"
+        ],
+        "platform_compatibility": {
+            "pc": "Front Panel Audio",
+            "consoles": ["PS4", "PS5", "Xbox One", "Nintendo Switch"],
+            "mobile": "3.5mm Devices"
+        },
+        "color_options": [
+            "Black-RGB",
+            "White-RGB",
+            "Blue-RGB"
+        ],
+        "package_includes": [
+            "BO110 Headset",
+            "Detachable Mic",
+            "User Manual",
+            "HOCO Sticker"
+        ],
+        "warranty": "12 Months",
+        "promotions": {
+            "bundle": "Pair with HOCO Mousepad for 10% Off"
+        },
+        "gaming_features": {
+            "surround_sound": "Virtual 7.1",
+            "mic_monitoring": true,
+            "in_line_controls": ["Volume", "Mic Mute", "RGB Toggle"]
+        }
+    }
+},
+{
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+        "sku": "BFK15-DUAL-WIRELESS",
+        "name": "BOROFONE BFK15 Dual Mic Lavalier Wireless Digital Microphone (Lightning/USB-C)",
+        "description": "Professional dual-capsule wireless lavalier mic system with Lightning and USB-C connectivity. Features 48KHz CD-quality audio, 15m wireless range, and dual-mic simultaneous recording for interviews/podcasts. Includes magnetic clips and windshields.",
+        "price": 12.50,
+        "category": "BOROFONE > Audio Equipment > Wireless Microphones",
+        "rating": 4.7,
+        "image_url": "/media/products/borofone-bfk15.jpg",
+        "image": "borofone-bfk15.jpg",
+        "brand": "BOROFONE",
+        "specifications": {
+            "audio_quality": {
+                "sample_rate": "48KHz",
+                "bit_depth": "24-bit",
+                "frequency_response": "50Hz-18KHz",
+                "snr": "≥70dB"
+            },
+            "wireless": {
+                "technology": "2.4GHz Digital",
+                "range": "15m (Line-of-Sight)",
+                "latency": "<20ms",
+                "channels": "Dual Independent"
+            },
+            "recording_modes": [
+                "Single-Mic",
+                "Dual-Mic Mix",
+                "Safety Track (-6dB)"
+            ],
+            "connectors": {
+                "transmitter": ["Lightning", "USB-C"],
+                "receiver": ["3.5mm TRS", "USB-C Digital"]
+            }
+        },
+        "included_accessories": [
+            "2x Lavalier Mics",
+            "Magnetic Clips",
+            "Foam Windshields",
+            "USB-C/Lightning Adapters",
+            "Portable Charging Case"
+        ],
+        "battery": {
+            "life": "8 Hours Continuous",
+            "charging": "USB-C (1.5H Full Charge)",
+            "case_charges": "3 Additional Cycles"
+        },
+        "compatibility": {
+            "phones": [
+                "iPhone 7+ (Lightning)",
+                "Android USB-C Phones",
+                "iPad Pro"
+            ],
+            "cameras": [
+                "DSLR/Mirrorless (3.5mm)",
+                "Action Cams",
+                "Camcorders"
+            ],
+            "software": [
+                "Native Camera Apps",
+                "Zoom/Skype",
+                "Premiere Pro/Final Cut"
+            ]
+        },
+        "use_cases": [
+            "Vlogging",
+            "Podcast Interviews",
+            "TikTok/Reels Creation",
+            "Lecture Recording"
+        ],
+        "warranty": "18 Months",
+        "promotions": {
+            "content_creator_bundle": "Tripod + LED Ring Light (15% Off)"
+        }
+    }
+ },
+
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "GY8812",
+            "name": "GY 8812 Dual 8 inch Big Powerful Bluetooth Speaker",
+            "description": "Portable speaker with dual 8-inch drivers, Bluetooth connectivity, and powerful sound output. Ideal for outdoor and large indoor spaces.",
+            "price": 50.00,
+            "category": "Audio",
+            "rating": null,  
+            "image_url": "/media/products/GY8812.jpg",
+            "image": "GY8812.jpg" 
+        }
+    },
+    
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "JBL-TuneBuds",
+            "name": "JBL Tune Buds – True Wireless Noise Cancelling Earbuds",
+            "description": "True wireless earbuds with active noise cancellation (ANC), high-quality JBL sound, and portable design. Ideal for music and calls on the go.",
+            "price": 32.99,
+            "category": "Audio",
+            "rating": null,  
+            "image_url": "/media/products/JBL_TuneBuds.jpg",  
+            "image": "JBL_TuneBuds.jpg" 
+        }
+    },
+    
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "JVC-HA-EC25T",
+            "name": "JVC HA-EC25T Fitness Series Sports True Wireless Earbuds",
+            "description": "Sports-focused true wireless earbuds by JVC, designed for fitness enthusiasts with secure fit and sweat resistance. Part of the JVC Fitness Series.",
+            "price": 18.00,
+            "category": "Audio",
+            "rating": null,  
+            "image_url": "/media/products/JVC_HA-EC25T.jpg",  
+            "image": "JVC_HA-EC25T.jpg", 
+            "brand": "JVC"  
+        }
+    },
+    
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "LED-Galaxy-Moon",
+            "name": "LED Galaxy Starry Moon Light Projector With Speaker",
+            "description": "A multifunctional LED projector that displays starry moon lighting effects, paired with a built-in speaker for ambient sound. Ideal for room decor and mood lighting.",
+            "price": 7.99,
+            "category": "Audio",
+            "rating": 4.9,  
+            "image_url": "/media/products/LED_Galaxy_Moon.jpg",  
+            "image": "LED_Galaxy_Moon.jpg",  
+            "brand": null
+        }
+    },
+    
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "BOROFONE-BH85",
+            "name": "BOROFONE BH85 One Button Dashboard Car Phone Holder",
+            "description": "Convenient car phone holder featuring a one-button dashboard mount for secure and easy access to your device while driving. Compatible with most smartphones.",
+            "price": 3.33,
+            "category": "Car Accessories", 
+            "rating": 5,  
+            "image_url": "/media/products/BOROFONE_BH85.png", 
+            "image": "BOROFONE_BH85.png", 
+            "brand": "BOROFONE" 
+        }
+    },
+    
+    {
+        "pk":46,
+        "model": "products.product",
+        "fields": {
+            "sku": "BOROFONE-BC48",
+            "name": "BOROFONE BC48 18W + QC3.0 In-Car Bluetooth FM Transmitter",
+            "description": "In-car Bluetooth FM transmitter with 18W fast charging (QC3.0 support), enabling wireless audio streaming and hands-free calls. Compatible with most vehicles and smartphones.",
+            "price": 5.41,
+            "category": "Car Accessories",
+            "rating": null,
+            "image_url": "/media/products/BOROFONE_BC48.jpeg",
+            "image": "BOROFONE_BC48.jpeg",
+            "brand": "BOROFONE",
+            "features": [
+                "18W fast charging",
+                "QC3.0 technology",
+                "Bluetooth audio streaming",
+                "FM transmitter",
+                "Hands-free calling"
+            ]
+        }
+    },
+    
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "BOROFONE-BC48",
+            "name": "BOROFONE BC48 18W + QC3.0 In-Car Bluetooth FM Transmitter",
+            "description": "In-car Bluetooth FM transmitter with 18W fast charging (QC3.0 support), enabling wireless audio streaming and hands-free calls. Compatible with most vehicles and smartphones.",
+            "price": 5.41,
+            "category": "Car Accessories",
+            "rating": null,
+            "image_url": "/media/products/BOROFONE_BC48.jpeg",
+            "image": "BOROFONE_BC48.jpeg",
+            "brand": "BOROFONE",
+            "features": [
+                "18W fast charging",
+                "QC3.0 technology",
+                "Bluetooth audio streaming",
+                "FM transmitter",
+                "Hands-free calling"
+            ]
+        }
+    },
+    
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "HOCO-J96",
+            "name": "HOCO J96 Strider 5000mAh Power Bank",
+            "description": "Compact and portable 5000mAh power bank by HOCO, designed for on-the-go charging. Features fast charging support and lightweight design. Color options available.",
+            "price": 5.00,
+            "category": "HOCO > Power Banks",  
+            "rating": null,
+            "image_url": "/media/products/HOCO_J96.jpeg",
+            "image": "HOCO_J96.jpeg",
+            "brand": "HOCO",
+            "features": [
+                "5000mAh capacity",
+                "Fast charging support",
+                "Lightweight and portable",
+                "Multiple color options"  
+            ],
+            "color_options": ["Black", "White", "Blue"],  
+                "estimated_delivery": "1 day"
+            
+        }
+    },
+    
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "HOCO-J101A",
+            "name": "HOCO J101A Astute 22.5W 20000mAh Power Bank",
+            "description": "High-capacity 20000mAh power bank with 22.5W fast charging support, designed for multiple device charges on the go. Compact and reliable for travel.",
+            "price": 12.50,
+            "category": "HOCO > Power Banks",
+            "rating": null,
+            "image_url": "/media/products/HOCO_J101A.jpeg",
+            "image": "HOCO_J101A.jpeg",
+            "brand": "HOCO",
+            "features": [
+                "20000mAh large capacity",
+                "22.5W fast charging",
+                "Multiple device charges",
+                "Portable and travel-friendly",
+                "Color options available"
+            ],
+            "color_options": ["Black", "Silver", "Blue"], 
+            "estimated_delivery": "1 day"
+        }
+    },
 
 
 
+
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "Amazon-FireTV-HD",
+            "name": "Amazon Fire TV Stick HD 8 GB WiFi 5",
+            "description": "Stream your favorite content in HD with the Amazon Fire TV Stick. Features 8 GB storage, WiFi 5 connectivity, and access to thousands of apps, including Netflix, Prime Video, and more.",
+            "price": 25.00,
+            "category": "Accessories > Other Accessories",
+            "rating": null,
+            "image_url": "/media/products/Amazon_FireTV_HD.jpeg",
+            "image": "Amazon_FireTV_HD.jpeg",
+            "brand": "Amazon",
+            "features": [
+                "HD streaming (720p/1080p)",
+                "8 GB internal storage",
+                "WiFi 5 (802.11ac) for fast streaming",
+                "Alexa Voice Remote (assumed; verify if included)",
+                "Access to 500,000+ movies/TV shows"
+            ],
+            "estimated_delivery": "1 day",
+            "compatibility": [
+                "HDMI-compatible TVs",
+                "Requires Amazon account"
+            ]
+        }
+    },
+    
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "H0CO-GM109",
+            "name": "H0CO GM109 Smooth Series Active Universal Capacitive Touch Pen",
+            "description": "Precision stylus pen designed for universal capacitive touchscreens. Features a smooth tip for accurate writing and drawing, compatible with most smartphones and tablets.",
+            "price": 9.99,
+            "category": "Accessories > Other Accessories > Stylus Pens",
+            "rating": null,
+            "image_url": "/media/products/H0CO_GM109.jpeg",
+            "image": "H0CO_GM109.jpeg",
+            "brand": "H0CO",
+            "features": [
+                "Universal capacitive touch compatibility",
+                "Precision smooth tip",
+                "Lightweight and ergonomic design",
+                "No battery required (passive stylus)"
+            ],
+            "estimated_delivery": "1 day"
+        }
+    },
+    
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "H0CO-GM109",
+            "name": "H0CO GM109 Smooth Series Active Universal Capacitive Touch Pen",
+            "description": "Precision stylus pen designed for universal capacitive touchscreens. Features a smooth tip for accurate writing and drawing, compatible with most smartphones and tablets.",
+            "price": 9.99,
+            "category": "Accessories > Other Accessories > Stylus Pens",
+            "rating": null,
+            "image_url": "/media/products/H0CO_GM109.jpeg",
+            "image": "H0CO_GM109.jpeg",
+            "brand": "H0CO",
+            "features": [
+                "Universal capacitive touch compatibility",
+                "Precision smooth tip",
+                "Lightweight and ergonomic design",
+                "No battery required (passive stylus)"
+            ],
+            "estimated_delivery": "1 day"
+        }
+    },
+    
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "3D-45-RGB-RingLight",
+            "name": "3D-45 RGB 18-inch Multi-Colour Soft Ring Light With Tripod",
+            "description": "Professional 18-inch RGB ring light with adjustable multi-color lighting and included tripod stand. Ideal for photography, streaming, and video calls with soft, even illumination.",
+            "price": 20.83,
+            "category": "Accessories > Other Accessories > Tripods & Selfie Stick Stands",
+            "rating": null,
+            "image_url": "/media/products/3D-45_RGB_RingLight.jpeg",
+            "image": "3D-45_RGB_RingLight.jpeg",
+            "brand": "3D-45",  
+            "features": [
+                "18-inch RGB ring light",
+                "Adjustable color temperature (warm to cool)",
+                "10+ lighting effects (e.g., flash, fade)",
+                "Included adjustable tripod",
+                "Dimmable brightness levels"
+            ],
+            "estimated_delivery": "1 day"
+        }
+    }
 ]
+
+
+
+
+
+
+
+
+
+
+
 
 
 
