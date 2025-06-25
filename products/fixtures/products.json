@@ -9,8 +9,8 @@
             "price": 6.99,
             "category": "iPhone LCDs",
             "rating": 4.9,
-            
-            "image" :"31A-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp, 31B-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp ,31C-AAX-Iphone-11-HD-Incell-LCD-With-Plate-1.webp",
+            "image_url": "media/products/AAX-HD-Incell-iPhone11-LCD.jpg",
+            "image" :"AAX-HD-Incell-iPhone11-LCD.jpg",
             "brand" : "For apple",
             
             "shipping" :"Free shipping",
@@ -28,7 +28,7 @@
             "price": 6.99,
             "category": "APPLE LCDs > iPhone LCDs",
             "rating": 4.2,
-            "image_url": "",
+            "image_url": "/media/products/iphone8-se-lcd-display.jpg",
             "image": "iphone8-se-lcd-display.jpg"
         }
     },
@@ -42,7 +42,7 @@
             "price": 15.99,
             "category": "APPLE LCDs > iPhone LCDs",
             "rating": 4.3,
-            "image_url": "",
+            "image_url": "/media/products/iphone14-fhd-incell-lcd.jpg",
             "image": "iphone14-fhd-incell-lcd.jpg"
         }
     },
