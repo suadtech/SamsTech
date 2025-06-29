@@ -26,6 +26,11 @@ SECRET_KEY = 'django-insecure-9*tgqt+d+50@xh=^bv$@k6prp^k0q0=$@t$d*%q%)=qx8=2f5d
 DEBUG =  True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-suadtech-samstech-f91q9w7q7dr.ws-eu120.gitpod.io',
+    'https://*.gitpod.io', 
+]
+
 
 
 # Application definition
@@ -49,11 +54,13 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',  
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'SamsTech.urls'
 

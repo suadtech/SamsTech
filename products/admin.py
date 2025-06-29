@@ -1,26 +1,16 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Category, Product
 
-# Register your models here.
-
-
-class ProductAdmin(admin.ModelAdmin):
-    list_display = (
-        'sku',
-        'name',
-        'category',
-        'price',
-        'rating',
-        'image',
-    )
-
-    ordering = ('sku',)
+@admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = (
-        'friendly_name',
-        'name',
-    )
+    list_display = ['name', 'friendly_name']
+    search_fields = ['name', 'friendly_name']
+    prepopulated_fields = {'name': ('friendly_name',)}
 
-
-admin.site.register(Product)
-admin.site.register(Category)
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['name', 'sku', 'category', 'price', 'rating']
+    list_filter = ['category']
+    search_fields = ['name', 'sku', 'description']
+    list_editable = ['price']
+    readonly_fields = ['sku']
