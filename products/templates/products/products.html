@@ -1,0 +1,51 @@
+<div class="container">
+    <h1>SamTech Mobile Accessories</h1>
+    
+    <!-- Search Form -->
+    <form method="GET">
+        <input type="text" name="search" value="{{ current_search }}" placeholder="Search iPhone, Samsung...">
+        <select name="category">
+            <option value="">All Categories</option>
+            {% for cat in categories %}
+                <option value="{{ cat.name }}" {% if cat.name == current_category %}selected{% endif %}>
+                    {{ cat.friendly_name }}
+                </option>
+            {% endfor %}
+        </select>
+        <button type="submit">Search</button>
+    </form>
+    
+    <!-- Products Display -->
+    <div class="products-grid">
+        {% for product in products %}
+            <div class="product-card">
+                <!-- Product Image -->
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
+                {% else %}
+                    <div class="no-image">No Image</div>
+                {% endif %}
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h3 class="product-name">{{ product.name }}</h3>
+                    <p class="product-sku">SKU: {{ product.sku }}</p>
+                    <p class="product-category">{{ product.category }}</p>
+                    <p class="product-price">£{{ product.price }}</p>
+                    
+                    {% if product.rating %}
+                        <p class="product-rating">Rating: {{ product.rating }}/5</p>
+                    {% endif %}
+                    
+                    {% if product.description %}
+                        <p class="product-description">{{ product.description|truncatewords:20 }}</p>
+                    {% endif %}
+                    
+                    <button class="btn-view-product">View Details</button>
+                </div>
+            </div>
+        {% empty %}
+            <p>No products found matching your search.</p>
+        {% endfor %}
+    </div>
+</div>
