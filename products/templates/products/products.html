@@ -1,51 +1,300 @@
-<div class="container">
-    <h1>SamTech Mobile Accessories</h1>
-    
-    <!-- Search Form -->
-    <form method="GET">
-        <input type="text" name="search" value="{{ current_search }}" placeholder="Search iPhone, Samsung...">
-        <select name="category">
-            <option value="">All Categories</option>
-            {% for cat in categories %}
-                <option value="{{ cat.name }}" {% if cat.name == current_category %}selected{% endif %}>
-                    {{ cat.friendly_name }}
-                </option>
-            {% endfor %}
-        </select>
-        <button type="submit">Search</button>
-    </form>
-    
-    <!-- Products Display -->
-    <div class="products-grid">
-        {% for product in products %}
-            <div class="product-card">
-                <!-- Product Image -->
-                {% if product.image %}
-                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
-                {% else %}
-                    <div class="no-image">No Image</div>
-                {% endif %}
-                
-                <!-- Product Info -->
-                <div class="product-info">
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-sku">SKU: {{ product.sku }}</p>
-                    <p class="product-category">{{ product.category }}</p>
-                    <p class="product-price">£{{ product.price }}</p>
-                    
-                    {% if product.rating %}
-                        <p class="product-rating">Rating: {{ product.rating }}/5</p>
-                    {% endif %}
-                    
-                    {% if product.description %}
-                        <p class="product-description">{{ product.description|truncatewords:20 }}</p>
-                    {% endif %}
-                    
-                    <button class="btn-view-product">View Details</button>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="logo-font text-black mb-2">SamTech Mobile Accessories</h1>
+                <p class="text-muted">Professional Mobile Repair Parts & Accessories</p>
+                <hr class="w-50 mb-4">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- Search and Filter Section -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <form method="GET" class="row g-3">
+                            <div class="col-md-5">
+                                <label for="search" class="form-label small text-muted">Search Products</label>
+                                <input type="text" 
+                                       id="search"
+                                       name="search" 
+                                       value="{{ current_search }}" 
+                                       placeholder="Search iPhone, Samsung, LCD..." 
+                                       class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="category" class="form-label small text-muted">Category</label>
+                                <select name="category" id="category" class="form-select">
+                                    <option value="">All Categories</option>
+                                    {% for cat in categories %}
+                                        <option value="{{ cat.name }}" {% if cat.name == current_category %}selected{% endif %}>
+                                            {{ cat.friendly_name }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-end">
+                                <button type="submit" class="btn btn-black w-100">
+                                    <i class="fas fa-search me-2"></i>Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        {% empty %}
-            <p>No products found matching your search.</p>
-        {% endfor %}
+        </div>
+
+        <!-- Results Summary -->
+        {% if products %}
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="text-muted mb-0">
+                            {% if current_search or current_category %}
+                                Showing {{ products.paginator.count }} result{{ products.paginator.count|pluralize }} 
+                                {% if current_search %}for "{{ current_search }}"{% endif %}
+                                {% if current_category %}in {{ current_category }}{% endif %}
+                            {% else %}
+                                Showing all {{ products.paginator.count }} product{{ products.paginator.count|pluralize }}
+                            {% endif %}
+                        </p>
+                        {% if current_search or current_category %}
+                            <a href="{% url 'products:product_list' %}" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-times me-1"></i>Clear Filters
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <!-- Products Grid -->
+        <div class="row">
+            {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <!-- Product Image -->
+                        <div class="position-relative">
+                            {% if product.image %}
+                                <img src="{{ product.image.url }}" 
+                                     alt="{{ product.name }}" 
+                                     class="card-img-top product-image"
+                                     style="height: 200px; object-fit: cover;">
+                            {% else %}
+                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center" 
+                                     style="height: 200px;">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-image fa-2x mb-2"></i>
+                                        <p class="small mb-0">No Image Available</p>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            
+                            <!-- Product Badge -->
+                            {% if product.featured %}
+                                <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                                    <i class="fas fa-star me-1"></i>Featured
+                                </span>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Product Info -->
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-auto">
+                                <h6 class="card-title fw-bold text-truncate" title="{{ product.name }}">
+                                    {{ product.name }}
+                                </h6>
+                                
+                                <div class="small text-muted mb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <span>SKU: {{ product.sku }}</span>
+                                        {% if product.rating %}
+                                            <span>
+                                                {% for i in "12345" %}
+                                                    {% if forloop.counter <= product.rating %}
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    {% else %}
+                                                        <i class="far fa-star text-muted"></i>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                
+                                {% if product.category %}
+                                    <span class="badge bg-light text-dark small mb-2">{{ product.category }}</span>
+                                {% endif %}
+                                
+                                {% if product.description %}
+                                    <p class="card-text small text-muted">
+                                        {{ product.description|truncatewords:12 }}
+                                    </p>
+                                {% endif %}
+                            </div>
+                            
+                            <!-- Price and Action -->
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="h5 fw-bold text-black mb-0">£{{ product.price }}</span>
+                                        {% if product.msrp and product.msrp != product.price %}
+                                            <small class="text-muted text-decoration-line-through ms-1">
+                                                £{{ product.msrp }}
+                                            </small>
+                                        {% endif %}
+                                    </div>
+                                    <button class="btn btn-black btn-sm" 
+                                            onclick="viewProduct({{ product.id }})"
+                                            title="View {{ product.name }}">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                
+                                {% if product.stock_status %}
+                                    <div class="mt-2">
+                                        {% if product.stock_status == "In Stock" %}
+                                            <small class="text-success">
+                                                <i class="fas fa-check-circle me-1"></i>In Stock
+                                            </small>
+                                        {% elif product.stock_status == "Low Stock" %}
+                                            <small class="text-warning">
+                                                <i class="fas fa-exclamation-triangle me-1"></i>Low Stock
+                                            </small>
+                                        {% else %}
+                                            <small class="text-danger">
+                                                <i class="fas fa-times-circle me-1"></i>Out of Stock
+                                            </small>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Responsive Breaks -->
+                {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-3">
+                        <hr class="text-muted">
+                    </div>
+                {% endif %}
+                
+                {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3">
+                        <hr class="text-muted">
+                    </div>
+                {% endif %}
+                
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-3">
+                        <hr class="text-muted">
+                    </div>
+                {% endif %}
+                
+                {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-3">
+                        <hr class="text-muted">
+                    </div>
+                {% endif %}
+            {% empty %}
+                <div class="col-12">
+                    <div class="text-center py-5">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <h4 class="text-muted">No Products Found</h4>
+                        <p class="text-muted">
+                            {% if current_search %}
+                                No products match your search for "{{ current_search }}".
+                            {% else %}
+                                No products are currently available.
+                            {% endif %}
+                        </p>
+                        {% if current_search or current_category %}
+                            <a href="{% url 'products:product_list' %}" class="btn btn-black">
+                                <i class="fas fa-arrow-left me-2"></i>View All Products
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        {% if products.has_other_pages %}
+            <div class="row mt-4">
+                <div class="col-12">
+                    <nav aria-label="Product pagination">
+                        <ul class="pagination justify-content-center">
+                            {% if products.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" 
+                                       href="?page=1{% if current_search %}&search={{ current_search }}{% endif %}{% if current_category %}&category={{ current_category }}{% endif %}">
+                                        <i class="fas fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" 
+                                       href="?page={{ products.previous_page_number }}{% if current_search %}&search={{ current_search }}{% endif %}{% if current_category %}&category={{ current_category }}{% endif %}">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            
+                            <li class="page-item active">
+                                <span class="page-link">
+                                    {{ products.number }} of {{ products.paginator.num_pages }}
+                                </span>
+                            </li>
+                            
+                            {% if products.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" 
+                                       href="?page={{ products.next_page_number }}{% if current_search %}&search={{ current_search }}{% endif %}{% if current_category %}&category={{ current_category }}{% endif %}">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" 
+                                       href="?page={{ products.paginator.num_pages }}{% if current_search %}&search={{ current_search }}{% endif %}{% if current_category %}&category={{ current_category }}{% endif %}">
+                                        <i class="fas fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                    
+                    <p class="text-center text-muted small">
+                        Showing {{ products.start_index }}-{{ products.end_index }} of {{ products.paginator.count }} products
+                    </p>
+                </div>
+            </div>
+        {% endif %}
     </div>
-</div>
+
+    <!-- JavaScript for Enhanced Functionality -->
+    <script>
+        function viewProduct(productId) {
+            // Add your product detail view logic here
+            console.log('Viewing product:', productId);
+            // Example: window.location.href = `/products/${productId}/`;
+        }
+        
+         // Add smooth hover effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.transition = 'transform 0.3s ease';
+       
+(Content truncated due to size limit. Use line ranges to read in chunks)
+
+{% endblock %}
