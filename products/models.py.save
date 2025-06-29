@@ -46,8 +46,6 @@ class Product(models.Model):
     device_tier = models.CharField(max_length=254, null=True, blank=True)
     color = models.CharField(max_length=254, null=True, blank=True)
     size = models.CharField(max_length=254, null=True, blank=True)
-
-
     weight = models.CharField(max_length=254, null=True, blank=True)
     dimensions = models.CharField(max_length=254, null=True, blank=True)
     material = models.CharField(max_length=254, null=True, blank=True)
@@ -57,7 +55,6 @@ class Product(models.Model):
     excludes = models.CharField(max_length=254, null=True, blank=True)
     specifications = models.TextField(null=True, blank=True)
     tags = models.CharField(max_length=254, null=True, blank=True)
-
     category_path = models.CharField(max_length=254, null=True, blank=True)
     repair_difficulty = models.CharField(max_length=254, null=True, blank=True)
     tool_requirements = models.CharField(max_length=254, null=True, blank=True)
@@ -65,19 +62,12 @@ class Product(models.Model):
     difficulty = models.CharField(max_length=254, null=True, blank=True)
     installation = models.CharField(max_length=254, null=True, blank=True)
     installation_time = models.CharField(max_length=254, null=True, blank=True)
-    color_accuracy = models.CharField(max_length=254, null=True,blank=True)
- 
-    special_features = models.CharField(max_length=254, null=True, blank=True)
-    color_options = models.CharField(max_length=254, null=True, blank=True)
+    time_required = models.CharField(max_length=254, null=True, blank=True)
     
     # JSON field for additional flexible data
-    difficulty = models.CharField(max_length=254, null=True, blank=True)
-
-
     extra_data = models.JSONField(default=dict, blank=True, null=True)
     
     # System fields
-  
     is_active = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
     stock_quantity = models.PositiveIntegerField(default=0)

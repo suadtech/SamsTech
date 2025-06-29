@@ -12,3 +12,4 @@ urlpatterns = [
     path('ajax/search/', views.ajax_product_search, name='ajax_search'),
     path('ajax/category/<int:category_id>/', views.ajax_category_products, name='ajax_category_products'),
 ]
+
