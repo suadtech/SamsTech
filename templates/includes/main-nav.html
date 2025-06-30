@@ -1,92 +1,93 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products:products' %}?sort=price_low" class="dropdown-item">By Price</a>
+                <a href="{% url 'products:products' %}?sort=rating" class="dropdown-item">By Rating</a>
+                <a href="{% url 'products:products' %}?category=" class="dropdown-item">By Category</a>
+                <a href="{% url 'products:products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id=“LCDS-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                LCDS
+        
+        <li class="nav-item dropdown">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="lcds-link" data-bs-toggle="dropdown" aria-expanded="false">
+                LCDs
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby=“Lcds-link">
-                <a href="" class="dropdown-item">Apple LCDs</a>
-                <a href="" class="dropdown-item">Samsung LCDs</a>
-                <a href="" class="dropdown-item">Other LCDs</a>
-                <a href="" class="dropdown-item">All LCDs</a>
+            <div class="dropdown-menu border-0" aria-labelledby="lcds-link">
+                <a href="{% url 'products:products' %}?category=apple_lcds" class="dropdown-item">Apple LCDs</a>
+                <a href="{% url 'products:products' %}?category=samsung_lcds" class="dropdown-item">Samsung LCDs</a>
+                <a href="{% url 'products:products' %}?category=other_lcds" class="dropdown-item">Other LCDs</a>
+                <a href="{% url 'products:products' %}?category=lcds" class="dropdown-item">All LCDs</a>
             </div>
         </li>
-<li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id=“Parts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Parts
+        
+        <li class="nav-item dropdown">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="parts-link" data-bs-toggle="dropdown" aria-expanded="false">
+                Parts
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby=“Parts-link">
-                <a href="" class="dropdown-item">Batteries</a>
-                <a href="" class="dropdown-item">Back Camera</a>
-                <a href="" class="dropdown-item">Front Camera</a>
-                <a href="" class="dropdown-item">Charging ports & Flex</a> 
-                <a href="" class="dropdown-item">Lcd Main Flex</a>  
-                <a href="" class="dropdown-item">Home Button</a>  
-                <a href="" class="dropdown-item">Power/Volume Flex</a>
-                <a href="" class="dropdown-item">Back Camera Lens</a> 
-                <a href="" class="dropdown-item">Sim Tray</a>
-                <a href="" class="dropdown-item">Ear/Loud Speaker</a>
-                <a href="" class="dropdown-item">All Parts</a>
+            <div class="dropdown-menu border-0" aria-labelledby="parts-link">
+                <a href="{% url 'products:products' %}?category=batteries" class="dropdown-item">Batteries</a>
+                <a href="{% url 'products:products' %}?category=back_camera" class="dropdown-item">Back Camera</a>
+                <a href="{% url 'products:products' %}?category=front_camera" class="dropdown-item">Front Camera</a>
+                <a href="{% url 'products:products' %}?category=charging_ports" class="dropdown-item">Charging Ports & Flex</a> 
+                <a href="{% url 'products:products' %}?category=lcd_flex" class="dropdown-item">LCD Main Flex</a>  
+                <a href="{% url 'products:products' %}?category=home_button" class="dropdown-item">Home Button</a>  
+                <a href="{% url 'products:products' %}?category=power_volume" class="dropdown-item">Power/Volume Flex</a>
+                <a href="{% url 'products:products' %}?category=camera_lens" class="dropdown-item">Back Camera Lens</a> 
+                <a href="{% url 'products:products' %}?category=sim_tray" class="dropdown-item">Sim Tray</a>
+                <a href="{% url 'products:products' %}?category=speakers" class="dropdown-item">Ear/Loud Speaker</a>
+                <a href="{% url 'products:products' %}?category=parts" class="dropdown-item">All Parts</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id=“Parts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Accessories
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="accessories-link" data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby=“Accessories-link">
-                <a href="" class="dropdown-item">Tempered Glass</a>
-                <a href="" class="dropdown-item">Data Cables</a>
-                <a href="" class="dropdown-item">Power Adapters</a>
-                <a href="" class="dropdown-item">Audio</a> 
-                <a href="" class="dropdown-item">Car Accessories</a>  
-                <a href="" class="dropdown-item">Power Banks</a>  
-                <a href="" class="dropdown-item">Other Accessories</a>
-                 
+            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+                <a href="{% url 'products:products' %}?category=tempered_glass" class="dropdown-item">Tempered Glass</a>
+                <a href="{% url 'products:products' %}?category=data_cables" class="dropdown-item">Data Cables</a>
+                <a href="{% url 'products:products' %}?category=power_adapters" class="dropdown-item">Power Adapters</a>
+                <a href="{% url 'products:products' %}?category=audio" class="dropdown-item">Audio</a> 
+                <a href="{% url 'products:products' %}?category=car_accessories" class="dropdown-item">Car Accessories</a>  
+                <a href="{% url 'products:products' %}?category=power_banks" class="dropdown-item">Power Banks</a>  
+                <a href="{% url 'products:products' %}?category=other_accessories" class="dropdown-item">Other Accessories</a>
             </div>
         </li>
+        
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id=“Parts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Cases & Covers
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="cases-link" data-bs-toggle="dropdown" aria-expanded="false">
+                Cases & Covers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby=“Cases & Covers-link">
-                <a href="" class="dropdown-item">iPhones Cases & covers</a>
-                <a href="" class="dropdown-item">Samsung Galaxy Cases  & Covers </a>
-                <a href="" class="dropdown-item">Original Anti Burst Case</a>
-                <a href="" class="dropdown-item">Clear TPU Gel Cases</a> 
-                <a href="" class="dropdown-item">Black GEL TPU Cases</a>  
-                <a href="" class="dropdown-item">Book Cases</a>  
-                <a href="" class="dropdown-item">MagSafe  Clear Cases </a> 
-                <a href="" class="dropdown-item">Ring Armor Cases </a>     
-                <a href="" class="dropdown-item">Kids Cases</a>
-                <a href="" class="dropdown-item">Tap Leather Cases</a>
-                <a href="" class="dropdown-item">Other Cases</a> 
-                <a href="" class="dropdown-item">All Cases & Covers</a>                 
-                               
+            <div class="dropdown-menu border-0" aria-labelledby="cases-link">
+                <a href="{% url 'products:products' %}?category=iphone_cases" class="dropdown-item">iPhone Cases & Covers</a>
+                <a href="{% url 'products:products' %}?category=samsung_cases" class="dropdown-item">Samsung Galaxy Cases & Covers</a>
+                <a href="{% url 'products:products' %}?category=anti_burst" class="dropdown-item">Original Anti Burst Case</a>
+                <a href="{% url 'products:products' %}?category=clear_tpu" class="dropdown-item">Clear TPU Gel Cases</a> 
+                <a href="{% url 'products:products' %}?category=black_gel" class="dropdown-item">Black GEL TPU Cases</a>  
+                <a href="{% url 'products:products' %}?category=book_cases" class="dropdown-item">Book Cases</a>  
+                <a href="{% url 'products:products' %}?category=magsafe" class="dropdown-item">MagSafe Clear Cases</a> 
+                <a href="{% url 'products:products' %}?category=ring_armor" class="dropdown-item">Ring Armor Cases</a>     
+                <a href="{% url 'products:products' %}?category=kids_cases" class="dropdown-item">Kids Cases</a>
+                <a href="{% url 'products:products' %}?category=leather" class="dropdown-item">Tap Leather Cases</a>
+                <a href="{% url 'products:products' %}?category=other_cases" class="dropdown-item">Other Cases</a> 
+                <a href="{% url 'products:products' %}?category=cases" class="dropdown-item">All Cases & Covers</a>                 
             </div>
         </li>
 
- <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+            <a class="logo-font fw-bold nav-link text-black" href="#" id="specials-link" data-bs-toggle="dropdown" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                
+                <a href="{% url 'products:products' %}?sort=newest" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products:products' %}?special=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products:products' %}?special=clearance" class="dropdown-item">Clearance</a>
             </div>
         </li>
     </ul>
 </div>
+
