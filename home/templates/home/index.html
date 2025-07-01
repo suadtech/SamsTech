@@ -2,78 +2,83 @@
 {% load static %} {# Keep this for CSS and JS, but not for images #}
 
 {% block page_header %}
-    {# This block is intentionally left empty as the hero section will handle the main visual #}
+{# This block is intentionally left empty as the hero section will handle the main visual #}
 {% endblock %}
 
 {% block content %}
-    <div class="hero-section d-flex align-items-center text-black text-center" style="
-        background: url('/media/fulllogo13.jpg') no-repeat center center/cover; {# Now correctly points to project media #}
+<div class="hero-section d-flex align-items-center text-black text-center" style="
+         background: url('/media/fulllogo13.jpg') no-repeat center center/cover; {# Now correctly points to project media #}
         min-height: 70vh; /* Adjust as needed */
         position: relative;
         z-index: 1;">
-    
-        <div class="overlay"></div> {# Overlay for text readability #}
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1 class="display-4 logo-font fw-bold mb-3 animate__animated animate__fadeInDown">
-                        Unleash the Power of Your Devices
-                    </h1>
-                    <p class="lead mb-4 animate__animated animate__fadeInUp">
-                        Discover cutting-edge mobile accessories and repair parts for every need.
-                    </p>
-                    <div class="mt-4 animate__animated animate__zoomIn">
-                        <a href="{% url 'products:products' %}" class="btn btn-lg btn-warning rounded-pill text-uppercase py-2 px-8 shadow-lg">
-                            Shop Now <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container my-5">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="logo-font text-black mb-4">Featured Categories</h2>
-                <hr class="w-25 mx-auto mb-5">
-            </div>
-        </div>
+    <div class="overlay"></div> {# Overlay for text readability #}
+    <div class="container my-auto">
         <div class="row">
-            {# Example Featured Category Cards - Now all using /media/ #}
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
-                    {# IMPORTANT: Replace with actual image names from your /workspace/SamsTech/media/ folder #}
-                    <img src="/media/10A-Apple-Watch-Series-5-Replacement-LCD-Screen-40MM-GPS-LTE-A2156.webp" class="card-img-top" alt="LCDs"> {# Example #}
-                    <div class="card-body text-center">
-                        <h5 class="card-title logo-font">LCD Screens</h5>
-                        <p class="card-text text-muted small">High-quality displays for all models.</p>
-                        <a href="{% url 'products:products' %}?category=lcds" class="btn btn-outline-black btn-sm">View LCDs</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
-                    {# Replace with an actual image from your /workspace/SamsTech/media/ folder #}
-                    <img src="/media/cr2430-batteries.jpg" class="card-img-top" alt="Parts"> {# Placeholder #}
-                    <div class="card-body text-center">
-                        <h5 class="card-title logo-font">Repair Parts</h5>
-                        <p class="card-text text-muted small">Everything you need for DIY repairs.</p>
-                        <a href="{% url 'products:products' %}?category=parts" class="btn btn-outline-black btn-sm">View Parts</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
-                    {# Replace with an actual image from your /workspace/SamsTech/media/ folder #}
-                    <img src="/media/Amazon_FireTV_HD.jpeg" class="card-img-top" alt="Accessories"> {# Placeholder #}
-                    <div class="card-body text-center">
-                        <h5 class="card-title logo-font">Accessories</h5>
-                        <p class="card-text text-muted small">Enhance your mobile experience.</p>
-                        <a href="{% url 'products:products' %}?category=accessories" class="btn btn-outline-black btn-sm">View Accessories</a>
-                    </div>
+            <div class="col-lg-8 offset-lg-2">
+                <h1 class="display-4 logo-font fw-bold mb-3 animate__animated animate__fadeInDown">
+                    Unleash the Power of Your Devices
+                </h1>
+                <p class="lead mb-4 animate__animated animate__fadeInUp">
+                    Discover cutting-edge mobile accessories and repair parts for every need.
+                </p>
+                <div class="mt-4 animate__animated animate__zoomIn">
+                    <a href="{% url 'products:products' %}"
+                        class="btn btn-lg btn-warning rounded-pill text-uppercase py-2 px-8 shadow-lg">
+                        Shop Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-12">
+            <h2 class="logo-font text-black mb-4">Featured Categories</h2>
+            <hr class="w-25 mx-auto mb-5">
+        </div>
+    </div>
+    <div class="row">
+        {# Example Featured Category Cards - Now all using /media/ #}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                {# IMPORTANT: Replace with actual image names from your /workspace/SamsTech/media/ folder #}
+                <img src="/media/10A-Apple-Watch-Series-5-Replacement-LCD-Screen-40MM-GPS-LTE-A2156.webp"
+                    class="card-img-top" alt="LCDs"> {# Example #}
+                <div class="card-body text-center">
+                    <h5 class="card-title logo-font">LCDs Screens</h5>
+                    <p class="card-text text-muted small">High-quality displays for all models.</p>
+                    <a href="{% url 'products:products' %}?category=LCDs" class="btn btn-outline-black btn-sm">View
+                        LCDs</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                {# Replace with an actual image from your /workspace/SamsTech/media/ folder #}
+                <img src="/media/cr2430-batteries.jpg" class="card-img-top" alt="Parts"> {# Placeholder #}
+                <div class="card-body text-center">
+                    <h5 class="card-title logo-font">Repair Parts</h5>
+                    <p class="card-text text-muted small">Everything you need for DIY repairs.</p>
+                    <a href="{% url 'products:products' %}?category=parts" class="btn btn-outline-black btn-sm">View
+                        Parts</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                {# Replace with an actual image from your /workspace/SamsTech/media/ folder #}
+                <img src="/media/Amazon_FireTV_HD.jpeg" class="card-img-top" alt="Accessories"> {# Placeholder #}
+                <div class="card-body text-center">
+                    <h5 class="card-title logo-font">Accessories</h5>
+                    <p class="card-text text-muted small">Enhance your mobile experience.</p>
+                    <a href="{% url 'products:products' %}?category=accessories"
+                        class="btn btn-outline-black btn-sm">View Accessories</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
