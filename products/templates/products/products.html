@@ -75,7 +75,8 @@
                     Showing {{ products.paginator.count }} result{{ products.paginator.count|pluralize }}
                     {% if current_search %} for "{{ current_search }}"{% endif %}
                     {% if current_category %} in {{ current_category }}{% endif %}
-                    {% if current_sort and current_sort != 'id' %} sorted by {{ current_sort_display }}{% endif %} {# Changed here #}
+                    {% if current_category_obj %} in {{ current_category_obj.friendly_name }}{% endif %}
+
                 </p>
             </div>
         </div>
