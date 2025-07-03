@@ -21,7 +21,7 @@
             <a href="{% url 'products:products' %}?category=Apple LCDs" class="dropdown-item">Apple LCDs</a>
             <a href="{% url 'products:products' %}?category=Samsung LCDs" class="dropdown-item">Samsung LCDs</a>
             <a href="{% url 'products:products' %}?category=Other LCDs" class="dropdown-item">Other LCDs</a>
-            <a href="{% url 'products:products' %}?category=LCDs" class="dropdown-item">All LCDs</a> {# Use 'LCDs' as confirmed #}
+            <a href="{% url 'products:products' %}" class="dropdown-item">All LCDs</a> {# Use 'LCDs' as confirmed #}
 
         </div>
     </li>
@@ -42,7 +42,7 @@
             <a href="{% url 'products:products' %}?category=Camera Lens" class="dropdown-item">Back Camera Lens</a>
             <a href="{% url 'products:products' %}?category=Sim Tray" class="dropdown-item">Sim Tray</a>
             <a href="{% url 'products:products' %}?category=Speakers" class="dropdown-item">Ear/Loud Speaker</a>
-            <a href="{% url 'products:products' %}?category=Parts" class="dropdown-item">All Parts</a>
+            <a href="{% url 'products:products' %}?category=" class="dropdown-item">All Parts</a>
 
         </div>
     </li>
@@ -60,7 +60,7 @@
             <a href="{% url 'products:products' %}?category=Car Accessories" class="dropdown-item">Car Accessories</a>
             <a href="{% url 'products:products' %}?category=Power Banks" class="dropdown-item">Power Banks</a>
             <a href="{% url 'products:products' %}?category=Other Accessories" class="dropdown-item">Other Accessories</a>
-            
+            <a href="{% url 'products:products' %}?category=" class="dropdown-item">All Accessories</a>
         </div>
     </li>
 
