@@ -8,8 +8,11 @@ from .models import Product, Category # Ensure Category is imported
 def all_products(request):
     """Display all products with search, filtering, and sorting for SamTech."""
     products = Product.objects.all()
-    current_category_obj = None # Renamed for clarity, will hold a single Category object
-    
+    current_category_obj = None 
+    category_name_from_url = request.GET.get('category')
+    query = None
+    categories = None
+
     # Search functionality
     search_query = request.GET.get('search')
     if search_query:
@@ -24,7 +27,7 @@ def all_products(request):
         )
     
     # Category filtering (SIMPLIFIED for single category match)
-    category_name_from_url = request.GET.get('category')
+   
     if category_name_from_url:
         # Filter products where their 'category' CharField EXACTLY matches the URL parameter
         products = products.filter(category=category_name_from_url)
@@ -81,3 +84,4 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     context = {'product': product}
     return render(request, 'products/product_detail.html', context)
+
