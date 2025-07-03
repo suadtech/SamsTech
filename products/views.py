@@ -10,12 +10,14 @@ def all_products(request):
     products = Product.objects.all()
     current_category_obj = None 
     category_name_from_url = request.GET.get('category')
+
+   
     
     # Define aggregate categories and their sub-categories
     # The keys here MUST match the 'name' field in your Category model for these aggregate categories
     aggregate_categories = {
         'All LCDs': ['Apple LCDs', 'Samsung LCDs', 'Other LCDs'],
-        
+
         'All Parts': [
             'Batteries', 'Back Camera', 'Front Camera', 'Charging Ports & Flex',
             'LCDs Main Flex', 'Home Button', 'Power/Volume Flex', 'Back Camera Lens',

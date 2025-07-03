@@ -1,5 +1,5 @@
-{% load static %}
 
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,9 +22,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+    {% endblock %} {# <-- This closes the corecss block #}
 
-    {% block extra_css %}
+    {% block extra_css %}  {# <-- This closes the extra_css block #}
     {% endblock %}
 
   </head>
@@ -132,7 +132,9 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="mobile-main-nav-collapse">
-                        {% include 'includes/main-nav.html' %} {# Re-using main-nav for mobile menu #}
+                                            {# {% include 'includes/main-nav.html' %} #} {# Re-using main-nav for mobile menu #}
+
+ 
                     </div>
                 </nav>
             </div>
@@ -157,6 +159,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     {% block postload_js %}
+  
     {% endblock %}
 
   </body>
