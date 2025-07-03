@@ -10,8 +10,8 @@ def all_products(request):
     products = Product.objects.all()
     current_category_obj = None 
     category_name_from_url = request.GET.get('category')
-    query = None
-    categories = None
+   
+   
 
     # Search functionality
     search_query = request.GET.get('search')
