@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+
 {% load static %}
 
 {% block page_header %}
@@ -147,7 +147,7 @@
                 <div class="mb-4">
                     <div class="d-grid gap-2">
                         {% if product.stock_status != "Out of Stock" %}
-                            <button class="btn btn-black btn-lg" onclick="addToCart({ product.id })">
+                            <button class="btn btn-black btn-lg" onclick="addToCart({ product_id })">
                                 <i class="fas fa-shopping-cart me-2"></i>Add to Cart
                             </button>
                         {% else %}
@@ -158,7 +158,7 @@
                         
                         <div class="row g-2">
                             <div class="col-6">
-                                <button class="btn btn-outline-dark w-100" onclick="addToWishlist({ product.id })">
+                                <button class="btn btn-outline-dark w-100" onclick="addToWishlist({ product_id })">
                                     <i class="fas fa-heart me-1"></i>Wishlist
                                 </button>
                             </div>
@@ -217,4 +217,5 @@
     });
 </script>
 {% endblock %}
+
 
