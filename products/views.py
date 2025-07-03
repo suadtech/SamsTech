@@ -75,7 +75,8 @@ def all_products(request):
                 messages.warning(request, f"Category '{category_name_from_url}' not recognized.")
         
         # If no products found for the selected category (or aggregate), show a message
-        
+    if not products.exists():
+            messages.info(request, f"No products found in category: {category_name_from_url}")
     # Sorting functionality
     current_sort = request.GET.get('sort', 'id') # Default sort by 'id'
     sort_options = {
