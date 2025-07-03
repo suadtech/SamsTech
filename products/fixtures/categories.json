@@ -1,17 +1,20 @@
 [
     { "pk": 1, "model": "products.category", "fields": { "name": "ALL PRODUCTS", "friendly_name": "ALL PRODUCTS" } },
+
     { "pk": 2, "model": "products.category", "fields": { "name": "LCDS", "friendly_name": "LCDS" } },
+
     { "pk": 3, "model": "products.category", "fields": { "name": "Apple LCDs", "friendly_name": "Apple LCDs" } },
     { "pk": 4, "model": "products.category", "fields": { "name": "Samsung LCDs", "friendly_name": "Samsung LCDs" } },
     { "pk": 5, "model": "products.category", "fields": { "name": "Other LCDs", "friendly_name": "Other LCDs" } },
     { "pk": 6, "model": "products.category", "fields": { "name": "All LCDs", "friendly_name": "All LCDs" } },
        
     { "pk": 7, "model": "products.category", "fields": { "name": "PARTS", "friendly_name": "PARTS" } },
+
     { "pk": 8, "model": "products.category", "fields": { "name": "Batteries", "friendly_name": "Batteries" } } ,
     { "pk": 9, "model": "products.category", "fields": { "name": "Back Camera", "friendly_name": "Back Camera"} },
     { "pk": 10, "model": "products.category", "fields": { "name": "Front Camera", "friendly_name": "Front Camera"} },
-    { "pk": 11, "model": "products.category", "fields": { "name": "Charging  ports & Flex", "friendly_name": "Charging  ports & Flex" } },
-    { "pk": 12, "model": "products.category", "fields": { "name": "Lcd Main Flex", "friendly_name": "Lcd Main Flex" } },
+    { "pk": 11, "model": "products.category", "fields": { "name": "Charging ports & Flex", "friendly_name": "Charging ports & Flex" } },
+    { "pk": 12, "model": "products.category", "fields": { "name": "LCDs Main Flex", "friendly_name": "LCDs Main Flex" } },
     { "pk": 13, "model": "products.category", "fields": { "name": "Home Button", "friendly_name": "Home Button" } },
     { "pk": 14, "model": "products.category", "fields": { "name": "Power/Volume Flex" , "friendly_name": "Power/Volume Flex" } },
     { "pk": 15, "model": "products.category", "fields": { "name": "Back Camera Lens", "friendly_name": "Back Camera Lens" } },
@@ -20,6 +23,7 @@
     { "pk": 18, "model": "products.category", "fields": { "name": "All Parts", "friendly_name": "All Parts" } },   
    
     { "pk": 19, "model": "products.category", "fields": { "name": "ACCESSORIES","friendly_name": "ACCESSORIES" } },
+
     { "pk": 20, "model": "products.category", "fields": { "name": "Tempered Glass", "friendly_name": "Tempered Glass" } },
     { "pk": 21, "model": "products.category", "fields": { "name": "Power Adapters", "friendly_name": "Power Adapters" } },
     { "pk": 22, "model": "products.category", "fields": { "name": "Audio", "friendly_name": "Audio" } },
@@ -28,9 +32,9 @@
     { "pk": 25, "model": "products.category", "fields": { "name": "Other Accessories", "friendly_name": "Other Accessories" } },
 
     { "pk": 26, "model": "products.category", "fields": { "name": "CASES & COVERS", "friendly_name": "CASES & COVERS" } },
-    { "pk": 27, "model": "products.category", "fields": { "name": "iPhones Cases & Covers", "friendly_name": "iPhones Cases & Covers" } },
 
-    { "pk": 28, "model": "products.category", "fields": { "name": "Samsung Galaxy Cases & Covers", "friendly_name": "Deals" } },       
+    { "pk": 27, "model": "products.category", "fields": { "name": "iPhones Cases & Covers", "friendly_name": "iPhones Cases & Covers" } },
+    { "pk": 28, "model": "products.category", "fields": { "name": "Samsung Galaxy Cases & Covers", "friendly_name": "Samsung Galaxy Cases & Covers" } },       
     { "pk": 29, "model": "products.category", "fields": { "name": "Original Anti Burst Case", "friendly_name": "Original Anti Burst Case" } },
     { "pk": 30, "model": "products.category", "fields": { "name": "Clear TPU Gel Cases", "friendly_name": "Clear TPU Gel Cases" } },
     { "pk": 31, "model": "products.category", "fields": { "name": "SPECIAL OFFERS", "friendly_name": "SPECIAL OFFERS" } },
@@ -38,7 +42,6 @@
     { "pk": 33, "model": "products.category", "fields": { "name": "MagSafe Clear Cases", "friendly_name": "MagSafe Clear Cases" } },  
     { "pk": 34, "model": "products.category", "fields": { "name": "Ring Armor Cases", "friendly_name": "Ring Armor Cases" } },
     { "pk": 35, "model": "products.category", "fields": { "name": "Kids Cases", "friendly_name": "Kids Cases" } },
-
     { "pk": 36, "model": "products.category", "fields": { "name": "Tap Leather Cases", "friendly_name": "Tap Leather Cases" } },
     { "pk": 37, "model": "products.category", "fields": { "name": "Other Cases", "friendly_name": "Other Cases" } },
     { "pk": 38, "model": "products.category", "fields": { "name": "All Cases & Covers", "friendly_name": "All Cases & Covers" } },
