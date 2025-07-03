@@ -21,7 +21,8 @@
             <a href="{% url 'products:products' %}?category=Apple LCDs" class="dropdown-item">Apple LCDs</a>
             <a href="{% url 'products:products' %}?category=Samsung LCDs" class="dropdown-item">Samsung LCDs</a>
             <a href="{% url 'products:products' %}?category=Other LCDs" class="dropdown-item">Other LCDs</a>
-           
+            <a href="{% url 'products:products' %}?category=LCDs" class="dropdown-item">All LCDs</a> {# Use 'LCDs' as confirmed #}
+
         </div>
     </li>
 
@@ -42,6 +43,7 @@
             <a href="{% url 'products:products' %}?category=Sim Tray" class="dropdown-item">Sim Tray</a>
             <a href="{% url 'products:products' %}?category=Speakers" class="dropdown-item">Ear/Loud Speaker</a>
             <a href="{% url 'products:products' %}?category=Parts" class="dropdown-item">All Parts</a>
+
         </div>
     </li>
 
@@ -58,7 +60,7 @@
             <a href="{% url 'products:products' %}?category=Car Accessories" class="dropdown-item">Car Accessories</a>
             <a href="{% url 'products:products' %}?category=Power Banks" class="dropdown-item">Power Banks</a>
             <a href="{% url 'products:products' %}?category=Other Accessories" class="dropdown-item">Other Accessories</a>
-            <a href="{% url 'products:products' %}?category=Accessories" class="dropdown-item">All Accessories</a>
+            
         </div>
     </li>
 
@@ -68,18 +70,19 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="cases-link">
             {# IMPORTANT: Verify these names against your database Product.category values #}
-            <a href="{% url 'products:products' %}?category=iPhone Cases" class="dropdown-item">iPhone Cases & Covers</a>
-            <a href="{% url 'products:products' %}?category=Samsung Cases" class="dropdown-item">Samsung Galaxy Cases & Covers</a>
-            <a href="{% url 'products:products' %}?category=Anti Burst" class="dropdown-item">Original Anti Burst Case</a>
-            <a href="{% url 'products:products' %}?category=Clear TPU" class="dropdown-item">Clear TPU Gel Cases</a>
-            <a href="{% url 'products:products' %}?category=Black GEL" class="dropdown-item">Black GEL TPU Cases</a>
+            <a href="{% url 'products:products' %}?category=iPhones Cases & Covers"class="dropdown-item">iPhone Cases & Covers</a>
+            <a href="{% url 'products:products' %}?category=Samsung Galaxy Cases & Covers " class="dropdown-item">Samsung Galaxy Cases & Covers</a>
+            <a href="{% url 'products:products' %}?category=Original Anti Burst Case" class="dropdown-item">Original Anti Burst Case</a>
+            <a href="{% url 'products:products' %}?category=Clear TPU Gel Cases" class="dropdown-item">Clear TPU Gel Cases</a>
+            <a href="{% url 'products:products' %}?category=Black GEL TPU Cases" class="dropdown-item">Black GEL TPU Cases</a>
             <a href="{% url 'products:products' %}?category=Book Cases" class="dropdown-item">Book Cases</a>
-            <a href="{% url 'products:products' %}?category=MagSafe" class="dropdown-item">MagSafe Clear Cases</a>
-            <a href="{% url 'products:products' %}?category=Ring Armor" class="dropdown-item">Ring Armor Cases</a>
+            <a href="{% url 'products:products' %}?category=MagSafe Clear Cases" class="dropdown-item">MagSafe Clear Cases</a>
+            <a href="{% url 'products:products' %}?category=Ring Armor Cases" class="dropdown-item">Ring Armor Cases</a>
             <a href="{% url 'products:products' %}?category=Kids Cases" class="dropdown-item">Kids Cases</a>
-            <a href="{% url 'products:products' %}?category=Leather" class="dropdown-item">Tap Leather Cases</a>
+            <a href="{% url 'products:products' %}?category=Tap Leather Cases" class="dropdown-item">Tap Leather Cases</a>
             <a href="{% url 'products:products' %}?category=Other Cases" class="dropdown-item">Other Cases</a>
-            <a href="{% url 'products:products' %}?category=Cases" class="dropdown-item">All Cases & Covers</a>
+           <a href="{% url 'products:products' %}?category=All Cases & Covers" class="dropdown-item">All Cases & Covers</a>
+
         </div>
     </li>
 
@@ -94,4 +97,6 @@
         </div>
     </li>
 </ul>
+
+
 

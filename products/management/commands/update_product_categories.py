@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand
+update_product_categories.py , from django.core.management.base import BaseCommand
 from products.models import Category
 
 class Command(BaseCommand):
@@ -18,20 +18,7 @@ class Command(BaseCommand):
 
     def create_categories(self, dry_run=False):
         categories = [
-            ('lcd_screens', 'LCD Screens & Displays'),
-            ('batteries', 'Mobile Batteries'),
-            ('charging_accessories', 'Charging Accessories'),
-            ('phone_cases', 'Phone Cases & Covers'),
-            ('screen_protectors', 'Screen Protectors'),
-            ('repair_tools', 'Repair Tools'),
-            ('audio_accessories', 'Audio Accessories'),
-            ('camera_parts', 'Camera Parts'),
-            ('flex_cables', 'Flex Cables'),
-            ('spare_parts', 'Spare Parts'),
-            ('iphone_parts', 'iPhone Parts'),
-            ('samsung_parts', 'Samsung Parts'),
         ]
-
         for name, friendly_name in categories:
             if not dry_run:
                 category, created = Category.objects.get_or_create(
