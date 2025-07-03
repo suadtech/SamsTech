@@ -11,7 +11,7 @@ def all_products(request):
     current_category_obj = None 
     category_name_from_url = request.GET.get('category')
 
-   
+    print(f"DEBUG: URL Category Parameter Received: '{category_name_from_url}'")
     
     # Define aggregate categories and their sub-categories
     # The keys here MUST match the 'name' field in your Category model for these aggregate categories
@@ -54,6 +54,7 @@ def all_products(request):
         # Check if it's an aggregate category
         if category_name_from_url in aggregate_categories:
             sub_categories_to_filter = aggregate_categories[category_name_from_url]
+            print(f"DEBUG: Filtering by aggregate category '{category_name_from_url}'. Sub-categories: {sub_categories_to_filter}") 
             products = products.filter(category__in=sub_categories_to_filter)
             
             # Try to get the Category object for the aggregate category for display
@@ -62,8 +63,8 @@ def all_products(request):
             except Category.DoesNotExist:
                 current_category_obj = None 
                 messages.warning(request, f"Aggregate Category '{category_name_from_url}' not recognized in Category model.")
-        else:
-            # It's a single, specific category
+        else: # It's a single, specific category
+            print(f"DEBUG: Filtering by single category: '{category_name_from_url}'")
             products = products.filter(category=category_name_from_url)
             
             # Try to get the Category object for display purposes
@@ -76,6 +77,9 @@ def all_products(request):
         # If no products found for the selected category (or aggregate), show a message
         if not products.exists():
             messages.info(request, f"No products found in category: {category_name_from_url}")
+            print(f"DEBUG: No products found for category: '{category_name_from_url}'")
+        else:
+            print(f"DEBUG: Found {products.count()} products for category: '{category_name_from_url}'")
     
     # Sorting functionality
     current_sort = request.GET.get('sort', 'id') # Default sort by 'id'
