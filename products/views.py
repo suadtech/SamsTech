@@ -10,8 +10,29 @@ def all_products(request):
     products = Product.objects.all()
     current_category_obj = None 
     category_name_from_url = request.GET.get('category')
-   
-   
+    
+    # Define aggregate categories and their sub-categories
+    # The keys here MUST match the 'name' field in your Category model for these aggregate categories
+    aggregate_categories = {
+        'All LCDs': ['Apple LCDs', 'Samsung LCDs', 'Other LCDs'],
+        
+        'All Parts': [
+            'Batteries', 'Back Camera', 'Front Camera', 'Charging Ports & Flex',
+            'LCDs Main Flex', 'Home Button', 'Power/Volume Flex', 'Back Camera Lens',
+            'Sim Tray', 'Ear/Loud Speaker'
+        ],
+        'ACCESSORIES': [ # This is an aggregate category in your categories.json
+            'Tempered Glass', 'Power Adapters', 'Audio', 'Car Accessories',
+            'Power Banks', 'Other Accessories'
+        ],
+        'All Cases & Covers': [
+            'iPhones Cases & Covers', 'Samsung Galaxy Cases & Covers', 'Original Anti Burst Case',
+            'Clear TPU Gel Cases', 'Black GEL TPU Cases', 'Book Cases', 'MagSafe Clear Cases',
+            'RingArmor Cases', 'Kids Cases', 'Tap Leather Cases', 'Other Cases'
+        ],
+        # Add other aggregate categories if you have them, e.g., 'SPECIAL OFFERS'
+        # 'SPECIAL OFFERS': ['New Arrivals', 'Deals', 'Clearance'],
+    }
 
     # Search functionality
     search_query = request.GET.get('search')
@@ -26,20 +47,31 @@ def all_products(request):
             Q(description__icontains=search_query)
         )
     
-    # Category filtering (SIMPLIFIED for single category match)
-   
+    # Category filtering logic
     if category_name_from_url:
-        # Filter products where their 'category' CharField EXACTLY matches the URL parameter
-        products = products.filter(category=category_name_from_url)
+        # Check if it's an aggregate category
+        if category_name_from_url in aggregate_categories:
+            sub_categories_to_filter = aggregate_categories[category_name_from_url]
+            products = products.filter(category__in=sub_categories_to_filter)
+            
+            # Try to get the Category object for the aggregate category for display
+            try:
+                current_category_obj = Category.objects.get(name=category_name_from_url)
+            except Category.DoesNotExist:
+                current_category_obj = None 
+                messages.warning(request, f"Aggregate Category '{category_name_from_url}' not recognized in Category model.")
+        else:
+            # It's a single, specific category
+            products = products.filter(category=category_name_from_url)
+            
+            # Try to get the Category object for display purposes
+            try:
+                current_category_obj = Category.objects.get(name=category_name_from_url)
+            except Category.DoesNotExist:
+                current_category_obj = None 
+                messages.warning(request, f"Category '{category_name_from_url}' not recognized.")
         
-        # Try to get the Category object for display purposes
-        try:
-            current_category_obj = Category.objects.get(name=category_name_from_url)
-        except Category.DoesNotExist:
-            current_category_obj = None # Category not found in Category model
-            messages.warning(request, f"Category '{category_name_from_url}' not recognized.")
-        
-        # If no products found for the selected category, show a message
+        # If no products found for the selected category (or aggregate), show a message
         if not products.exists():
             messages.info(request, f"No products found in category: {category_name_from_url}")
     
