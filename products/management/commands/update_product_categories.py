@@ -1,4 +1,4 @@
-update_product_categories.py , from django.core.management.base import BaseCommand
+from django.core.management.base import BaseCommand
 from products.models import Category
 
 class Command(BaseCommand):
