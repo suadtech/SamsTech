@@ -49,8 +49,9 @@
     { "pk": 40, "model": "products.category", "fields": { "name": "New Arrivals", "friendly_name": "New Arrivals" } },
     { "pk": 41, "model": "products.category", "fields": { "name": "Deals", "friendly_name": "Deals" } },
     { "pk": 42, "model": "products.category", "fields": { "name": "Clearance", "friendly_name": "Clearance" } },
-   {"pk": 43, "model": "products.category", "fields": { "name": "Black GEL TPU Cases", "friendly_name": "Black GEL TPU Cases"}}
-         
+    {"pk": 43, "model": "products.category", "fields": { "name": "Data Cables", "friendly_name": "Data Cables"}},
+    { "pk": 44, "model": "products.category", "fields": { "name": "Black TPU Gel Cases", "friendly_name": "Black TPU Gel Cases" } }
+
    ]
 
 
