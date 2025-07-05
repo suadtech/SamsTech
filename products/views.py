@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.db.models.functions import Lower
 from django.contrib import messages
 
 from .models import Product, Category # Ensure Category is imported
@@ -30,7 +31,7 @@ def all_products(request):
         'All Cases & Covers': [
             'iPhones Cases & Covers', 'Samsung Galaxy Cases & Covers', 'Original Anti Burst Case',
             'Clear TPU Gel Cases', 'Black GEL TPU Cases', 'Book Cases', 'MagSafe Clear Cases',
-            'RingArmor Cases', 'Kids Cases', 'Tap Leather Cases', 'Other Cases'
+            'Ring Armor Cases', 'Kids Cases', 'Tap Leather Cases', 'Other Cases'
         ],
         # Add other aggregate categories if you have them, e.g., 'SPECIAL OFFERS'
         # 'SPECIAL OFFERS': ['New Arrivals', 'Deals', 'Clearance'],
@@ -75,25 +76,56 @@ def all_products(request):
                 messages.warning(request, f"Category '{category_name_from_url}' not recognized.")
         
         # If no products found for the selected category (or aggregate), show a message
-    if not products.exists():
+        if not products.exists():
             messages.info(request, f"No products found in category: {category_name_from_url}")
-    # Sorting functionality
-    current_sort = request.GET.get('sort', 'id') # Default sort by 'id'
-    sort_options = {
-        'id': 'Default (ID)',
-        'name': 'Name (A-Z)',
-        '-name': 'Name (Z-A)',
-        'price': 'Price (Low to High)',
-        '-price': 'Price (High to Low)',
-        'rating': 'Rating (Low to High)',
-        '-rating': 'Rating (High to Low)',
-        'created_at': 'Oldest First',
-        '-created_at': 'Newest First',
-    }
-    current_sort_display = sort_options.get(current_sort, 'Default (ID)')
 
-    if current_sort in sort_options: # Only apply valid sorts
-        products = products.order_by(current_sort)
+    # Enhanced Sorting functionality (Following tutorial approach)
+    sort = None
+    direction = None
+    sortkey = None
+    current_sorting = None
+
+    # Get sort and direction parameters
+    if 'sort' in request.GET:
+        sortkey = request.GET['sort']
+        sort = sortkey
+        
+        # Handle case-insensitive sorting for name field
+        if sortkey == 'name':
+            sortkey = 'lower_name'
+            products = products.annotate(lower_name=Lower('name'))
+        
+        # Handle direction parameter
+        if 'direction' in request.GET:
+            direction = request.GET['direction']
+            if direction == 'desc':
+                sortkey = f'-{sortkey}'
+        
+        # Apply the sorting
+        products = products.order_by(sortkey)
+        
+        # Create current_sorting string for template
+        current_sorting = f'{sort}_{direction}' if direction else f'{sort}_asc'
+    else:
+        # Fallback to existing sort parameter for backward compatibility
+        current_sort = request.GET.get('sort', 'id')
+        sort_options = {
+            'id': 'Default (ID)',
+            'name': 'Name (A-Z)',
+            '-name': 'Name (Z-A)', 
+            'price': 'Price (Low to High)',
+            '-price': 'Price (High to Low)',
+            'rating': 'Rating (Low to High)',
+            '-rating': 'Rating (High to Low)',
+            'created_at': 'Oldest First',
+            '-created_at': 'Newest First',
+        }
+        current_sort_display = sort_options.get(current_sort, 'Default (ID)')
+        
+        if current_sort in sort_options:
+            products = products.order_by(current_sort)
+        
+        current_sorting = 'none_none'
 
     # Pagination
     paginator = Paginator(products, 12)
@@ -107,8 +139,9 @@ def all_products(request):
         'current_search': search_query or '',
         'current_category': category_name_from_url or '', # The raw category string from URL
         'current_category_obj': current_category_obj, # The single Category object for display
-        'current_sort': current_sort,
-        'current_sort_display': current_sort_display,
+        'current_sort': current_sort if 'sort' not in request.GET else sort,
+        'current_sort_display': current_sort_display if 'sort' not in request.GET else None,
+        'current_sorting': current_sorting,  # New variable for enhanced sorting
         'total_products': products.count(),
     }
     
