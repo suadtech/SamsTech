@@ -58,22 +58,23 @@
     </li>
 
     <li class="list-inline-item">
-        <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="#cart">
-            <div class="text-center">
-                <div class="position-relative">
-                    <i class="fas fa-shopping-bag fa-lg"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="mobile-cart-count" style="font-size: 0.6rem;">
-                        0
-                    </span>
-                </div>
-                <p class="my-0">
-                    {% if grand_total %}
-                        £{{ grand_total|floatformat:2 }}
-                    {% else %}
-                        £0.00
-                    {% endif %}
-                </p>
-            </div>
-        </a>
+        <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'bag:view_bag' %}">
+    <div class="text-center">
+        <div class="position-relative">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="mobile-cart-count" style="font-size: 0.6rem;">
+                0
+            </span>
+        </div>
+        <p class="my-0">
+            {% if grand_total %}
+                £{{ grand_total|floatformat:2 }}
+            {% else %}
+                £0.00
+            {% endif %}
+        </p>
+    </div>
+</a>
+
     </li>
 </ul>
