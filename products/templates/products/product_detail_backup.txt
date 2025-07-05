@@ -21,9 +21,12 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-black">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}" class="text-black">Products</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}"
+                            class="text-black">Products</a></li>
                     {% if product.category %}
-                    <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}?category={{ product.category.name }}" class="text-black">{{ product.category }}</a></li>
+                    <li class="breadcrumb-item"><a
+                            href="{% url 'products:product_list' %}?category={{ product.category.name }}"
+                            class="text-black">{{ product.category }}</a></li>
                     {% endif %}
                     <li class="breadcrumb-item active" aria-current="page">{{ product.name|truncatewords:3 }}</li>
                 </ol>
@@ -36,17 +39,19 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank" title="View full size image">
-                        <img class="card-img-top img-fluid rounded shadow-sm" src="{{ product.image.url }}" alt="{{ product.name }}" style="max-height: 500px; object-fit: cover;">
-                    </a>
+                <a href="{{ product.image.url }}" target="_blank" title="View full size image">
+                    <img class="card-img-top img-fluid rounded shadow-sm" src="{{ product.image.url }}"
+                        alt="{{ product.name }}" style="max-height: 500px; object-fit: cover;">
+                </a>
                 {% else %}
-                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center rounded shadow-sm" style="height: 400px;">
-                        <div class="text-center text-muted">
-                            <i class="fas fa-image fa-4x mb-3"></i>
-                            <p class="h5">No Image Available</p>
-                            <p class="small">{{ product.name }}</p>
-                        </div>
+                <div class="card-img-top bg-light d-flex align-items-center justify-content-center rounded shadow-sm"
+                    style="height: 400px;">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-image fa-4x mb-3"></i>
+                        <p class="h5">No Image Available</p>
+                        <p class="small">{{ product.name }}</p>
                     </div>
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -56,17 +61,18 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <!-- Product Title -->
                 <h1 class="mb-3 logo-font text-black">{{ product.name }}</h1>
-                
+
                 <!-- Price Section -->
                 <div class="mb-4">
                     <span class="h2 fw-bold text-black mb-0">£{{ product.price }}</span>
                     {% if product.msrp and product.msrp != product.price %}
-                        <p class="text-muted text-decoration-line-through mb-0 mt-1">
-                            <small>RRP: £{{ product.msrp }}</small>
-                        </p>
-                        <p class="text-success mb-0">
-                            <small><strong>You save: £{{ product.msrp|floatformat:2|add:"-"|add:product.price|floatformat:2 }}</strong></small>
-                        </p>
+                    <p class="text-muted text-decoration-line-through mb-0 mt-1">
+                        <small>RRP: £{{ product.msrp }}</small>
+                    </p>
+                    <p class="text-success mb-0">
+                        <small><strong>You save: £{{ product.msrp|floatformat:2|add:"-"|add:product.price|floatformat:2
+                                }}</strong></small>
+                    </p>
                     {% endif %}
                 </div>
 
@@ -85,7 +91,7 @@
                             </div>
                             {% endif %}
                         </div>
-                        
+
                         <!-- Rating Section -->
                         {% if product.rating %}
                         <hr class="my-3">
@@ -95,12 +101,12 @@
                                 <div class="d-flex align-items-center">
                                     <div class="me-2">
                                         {% for i in "12345" %}
-                                            {% if forloop.counter <= product.rating %}
-                                                <i class="fas fa-star text-warning"></i>
+                                        {% if forloop.counter <= product.rating %} <i class="fas fa-star text-warning">
+                                            </i>
                                             {% else %}
-                                                <i class="far fa-star text-muted"></i>
+                                            <i class="far fa-star text-muted"></i>
                                             {% endif %}
-                                        {% endfor %}
+                                            {% endfor %}
                                     </div>
                                     <small class="text-muted">({{ product.rating }}/5)</small>
                                 </div>
@@ -115,17 +121,17 @@
                             <div class="col-12">
                                 <p class="small text-muted mb-1"><strong>Availability:</strong></p>
                                 {% if product.stock_status == "In Stock" %}
-                                    <small class="text-success">
-                                        <i class="fas fa-check-circle me-1"></i>In Stock - Ready to Ship
-                                    </small>
+                                <small class="text-success">
+                                    <i class="fas fa-check-circle me-1"></i>In Stock - Ready to Ship
+                                </small>
                                 {% elif product.stock_status == "Low Stock" %}
-                                    <small class="text-warning">
-                                        <i class="fas fa-exclamation-triangle me-1"></i>Low Stock - Order Soon
-                                    </small>
+                                <small class="text-warning">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Low Stock - Order Soon
+                                </small>
                                 {% else %}
-                                    <small class="text-danger">
-                                        <i class="fas fa-times-circle me-1"></i>Currently Out of Stock
-                                    </small>
+                                <small class="text-danger">
+                                    <i class="fas fa-times-circle me-1"></i>Currently Out of Stock
+                                </small>
                                 {% endif %}
                             </div>
                         </div>
@@ -143,47 +149,48 @@
                 </div>
                 {% endif %}
 
-                                <!-- Action Buttons -->
+                <!-- Action Buttons -->
                 <div class="mb-4">
                     <div class="d-grid gap-2">
                         {% if product.stock_status != "Out of Stock" %}
-                            <form class="form" action="{% url 'bag:add_to_bag' product.id %}" method="POST">
-                                {% csrf_token %}
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black rounded-0" 
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                                <i class="fas fa-minus fa-sm"></i>
-                                            </button>
-                                        </div>
-                                        <input class="form-control qty_input" type="number"
-                                            name="quantity" value="1" min="1" max="99"
-                                            data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
-                                        <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                                <i class="fas fa-plus fa-sm"></i>
-                                            </button>
-                                        </div>
+                        <form class="form" action="{% url 'bag:add_to_bag' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}"> {# ADD THIS LINE #}
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            <i class="fas fa-minus fa-sm"></i>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            <i class="fas fa-plus fa-sm"></i>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a href="{% url 'products:products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                            <span class="text-uppercase">Keep Shopping</span>
-                                        </a>
-                                        <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="{% url 'products:products' %}"
+                                        class="btn btn-outline-black rounded-0 mt-5">
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                        value="Add to Bag">
                                 </div>
-                            </form>
+                            </div>
+                        </form>
                         {% else %}
-                            <button class="btn btn-secondary btn-lg" disabled>
-                                <i class="fas fa-times me-2"></i>Out of Stock
-                            </button>
+                        <button class="btn btn-secondary btn-lg" disabled>
+                            <i class="fas fa-times me-2"></i>Out of Stock
+                        </button>
                         {% endif %}
-                        
+
                         <div class="row g-2">
                             <div class="col-6">
                                 <button class="btn btn-outline-dark w-100" onclick="addToWishlist({ product.id })">
@@ -198,6 +205,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Shipping Info Card -->
                 <div class="card border-0 shadow-sm">
@@ -220,11 +228,11 @@
 {% block postload_js %}
 <script>
     // Quantity increment/decrement functionality
-    $('.qty_input').each(function() {
+    $('.qty_input').each(function () {
         var item_id = $(this).data('item_id');
         var quantityInput = $('#id_qty_' + item_id);
 
-        $('#increment-qty_' + item_id).click(function(e) {
+        $('#increment-qty_' + item_id).click(function (e) {
             e.preventDefault();
             var currentQuantity = parseInt(quantityInput.val());
             if (currentQuantity < 99) { // Max quantity
@@ -232,7 +240,7 @@
             }
         });
 
-        $('#decrement-qty_' + item_id).click(function(e) {
+        $('#decrement-qty_' + item_id).click(function (e) {
             e.preventDefault();
             var currentQuantity = parseInt(quantityInput.val());
             if (currentQuantity > 1) { // Min quantity
@@ -254,15 +262,15 @@
     }
 
     // Image zoom functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const productImage = document.querySelector('.image-container img');
         if (productImage) {
-            productImage.addEventListener('mouseenter', function() {
+            productImage.addEventListener('mouseenter', function () {
                 this.style.transform = 'scale(1.05)';
                 this.style.transition = 'transform 0.3s ease';
             });
-            
-            productImage.addEventListener('mouseleave', function() {
+
+            productImage.addEventListener('mouseleave', function () {
                 this.style.transform = 'scale(1)';
             });
         }
