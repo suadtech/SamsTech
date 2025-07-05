@@ -50,16 +50,26 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-
+    print(f"Attempting to remove item_id: {item_id}") # Debug print
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
-        bag.pop(item_id)
-        messages.info(request, f'Removed {product.name} from your bag')
+        
+        print(f"Bag before removal: {bag}") # Debug print
+        
+        if str(item_id) in bag: # Ensure key type matches (session stores keys as strings)
+            bag.pop(str(item_id))
+            messages.info(request, f'Removed {product.name} from your bag')
+            print(f"Successfully removed {item_id}. Bag after removal: {bag}") # Debug print
+        else:
+            messages.error(request, f'Error removing item: {product.name} not found in bag.')
+            print(f"Error: {item_id} not found in bag.") # Debug print
+            return HttpResponse(status=404) # Return 404 if item not found in bag
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
+        print(f"Exception during removal: {e}") # Debug print
         return HttpResponse(status=500)
