@@ -49,7 +49,9 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'checkout'
+    'checkout',
+    'crispy_forms',
+    'django_countries',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',# required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
         },
@@ -185,4 +188,14 @@ STATICFILES_FINDERS = [
 # Delivery settings
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# Crispy Forms Configuration
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+# Make crispy forms available in all templates
+TEMPLATES[0]['OPTIONS']['builtins'] = [
+    'crispy_forms.templatetags.crispy_forms_tags',
+    'crispy_forms.templatetags.crispy_forms_field',
+]
 
