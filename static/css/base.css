@@ -1,5 +1,4 @@
 
-
 /* General Body & HTML */
 html {
     height: 100%;
@@ -165,4 +164,92 @@ main {
 .card-img-top {
     height: 180px; /* Fixed height for category images */
     object-fit: cover;
+}
+
+/* Toast Styling */
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 3px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545;
+}
+
+.toast {
+    display: block !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    top: 80px !important;
+    right: 20px !important;
+    z-index: 10000 !important;
+}
+
+.toast .btn-close {
+    opacity: 1 !important;
+}
+
+.message-container {
+    position: relative;
+    z-index: 9999;
+}
+
+.bag-notification-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+/* Quantity Input Fix - ONLY ONE RULE */
+.qty_input {
+    width: 60px !important;
+    min-width: 60px !important;
+    text-align: center !important;
+    border: 2px solid #000 !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold !important;
+    padding: 8px !important;
+    font-size: 16px !important;
+    display: block !important;
+}
+
+.input-group {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.input-group-prepend .btn,
+.input-group-append .btn {
+    border: 1px solid #000 !important;
+    background-color: #000 !important;
+    color: white !important;
+    padding: 8px 12px !important;
 }

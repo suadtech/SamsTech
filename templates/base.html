@@ -38,9 +38,9 @@
         <div id="main-header" class="container-fluid bg-white py-2 d-none d-lg-block">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-start">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center"> 
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center">
                         <img src="/media/screenshots project steps/logo.png " alt="SamTech Logo"
-                            style="height: 40px; margin-right: 10px;"> 
+                            style="height: 40px; margin-right: 10px;">
                         <h2 class="logo-font text-black my-0"><strong>Sam</strong>Tech</h2>
                     </a>
                 </div>
@@ -148,7 +148,20 @@
     <main class="flex-grow-1">
         <div class="message-container">
             {# Django messages will be rendered here #}
+         {% for message in messages %}
+        <div class="message-{{ message.tags }}">
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                {% include 'includes/toasts/toast_error.html' %}
+            {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                {% include 'includes/toasts/toast_warning.html' %}
+            {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+                {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
         </div>
+    {% endfor %}
+</div>
 
         {% block page_header %}
         {% endblock %}
@@ -164,8 +177,26 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     {% block postload_js %}
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toastElList = document.querySelectorAll('.toast');
+            var toastList = Array.from(toastElList).map(function (toastEl) {
+                var toast = new bootstrap.Toast(toastEl, {
+                    autohide: false
+                });
+                toast.show();
 
+                setTimeout(function () {
+                    toast.hide();
+                }, 5000);
+
+                return toast;
+            });
+        });
+    </script>
     {% endblock %}
+
 
 </body>
 
