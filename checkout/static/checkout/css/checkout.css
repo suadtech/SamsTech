@@ -173,3 +173,9 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+/* Country Select Styling */
+select.stripe-style-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'")}

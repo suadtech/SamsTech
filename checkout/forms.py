@@ -2,20 +2,23 @@ from django import forms
 from django_countries.fields import CountryField
 from .models import Order
 
-
 class OrderForm(forms.ModelForm):
+    country = CountryField(blank_label='Country *').formfield(
+        required=True,
+        widget=forms.Select(attrs={
+            'class': 'stripe-style-input',
+        })
+    )
+
     class Meta:
         model = Order
-        fields = ('full_name', 'email', 'phone_number', 'country',
-                  'postcode', 'town_or_city', 'street_address1',
-                  'street_address2', 'county',)
+        fields = ('full_name', 'email', 'phone_number', 
+                 'town_or_city', 'street_address1',
+                'street_address2', 'postcode', 'country', 'county',)
 
     def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
         super().__init__(*args, **kwargs)
+        
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',
@@ -29,11 +32,11 @@ class OrderForm(forms.ModelForm):
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'country':
+            if field != 'country':  # Skip country field
                 if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} *'
+                    placeholder = f'{placeholders.get(field, "")} *'
                 else:
-                    placeholder = placeholders[field]
+                    placeholder = placeholders.get(field, "")
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
