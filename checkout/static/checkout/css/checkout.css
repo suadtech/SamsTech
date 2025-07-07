@@ -133,6 +133,7 @@ select option[value=""] {
     overflow-y: auto;
 }
 
+<<<<<<< HEAD
 
 /* Loading overlay */
 #loading-overlay {
@@ -179,3 +180,5 @@ select.stripe-style-input {
     -moz-appearance: none;
     appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'")}
+=======
+>>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad

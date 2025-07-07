@@ -148,6 +148,7 @@
     <main class="flex-grow-1">
         <div class="message-container">
             {# Django messages will be rendered here #}
+<<<<<<< HEAD
             {% for message in messages %}
             <div class="message-{{ message.tags }}">
                 {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
@@ -162,6 +163,22 @@
             </div>
             {% endfor %}
         </div>
+=======
+         {% for message in messages %}
+        <div class="message-{{ message.tags }}">
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                {% include 'includes/toasts/toast_error.html' %}
+            {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                {% include 'includes/toasts/toast_warning.html' %}
+            {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+                {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+>>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
 
         {% block page_header %}
         {% endblock %}
@@ -177,7 +194,11 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     {% block postload_js %}
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var toastElList = document.querySelectorAll('.toast');
@@ -196,6 +217,7 @@
         });
     </script>
     {% endblock %}
+<<<<<<< HEAD
     {% block corejs %}
     <!-- Your existing JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -217,3 +239,10 @@ $(document).on('click', '[data-bs-dismiss="toast"], .btn-close', function(e) {
     $(this).closest('.toast, .message-container, .message-success').remove();
 });
 </script>
+=======
+
+
+</body>
+
+</html>
+>>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
