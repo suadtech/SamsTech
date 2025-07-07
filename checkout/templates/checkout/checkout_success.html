@@ -3,6 +3,15 @@
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<script>
+$(document).ready(function() {
+    $("[data-bs-dismiss=\"toast\"], .btn-close").click(function(e) {
+        e.preventDefault();
+        $(this).closest(".toast, .message-container").fadeOut(300);
+    });
+});
+</script>
+
 {% endblock %}
 
 {% block page_header %}
@@ -11,6 +20,15 @@
             <div class="col"></div>
         </div>
     </div>
+<script>
+$(document).ready(function() {
+    $("[data-bs-dismiss=\"toast\"], .btn-close").click(function(e) {
+        e.preventDefault();
+        $(this).closest(".toast, .message-container").fadeOut(300);
+    });
+});
+</script>
+
 {% endblock %}
 
 {% block content %}
@@ -201,4 +219,16 @@
 			</div>
 		</div>
     </div>
+
+
+
+<script>
+$(document).ready(function() {
+    $('[data-bs-dismiss="toast"], .btn-close').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.toast, .message-container').fadeOut(300);
+    });
+});
+</script>
+
 {% endblock %}

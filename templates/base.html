@@ -210,3 +210,10 @@
 </body>
 
 </html>
+<script>
+// Toast close button functionality
+$(document).on('click', '[data-bs-dismiss="toast"], .btn-close', function(e) {
+    e.preventDefault();
+    $(this).closest('.toast, .message-container, .message-success').remove();
+});
+</script>
