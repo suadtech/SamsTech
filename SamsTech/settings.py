@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 import env 
-=======
->>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
+
 """
 Django settings for SamsTech project.
 
@@ -15,12 +14,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-<<<<<<< HEAD
+
 from dotenv import load_dotenv
 load_dotenv()
-=======
 
->>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -34,7 +32,6 @@ SECRET_KEY = 'django-insecure-9*tgqt+d+50@xh=^bv$@k6prp^k0q0=$@t$d*%q%)=qx8=2f5d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  True
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
@@ -43,9 +40,6 @@ ALLOWED_HOSTS = [
 ]
 
 
-=======
-ALLOWED_HOSTS = ['*']
->>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-suadtech-samstech-f91q9w7q7dr.ws-eu120.gitpod.io',
     'https://*.gitpod.io', 
@@ -219,7 +213,6 @@ TEMPLATES[0]['OPTIONS']['builtins'] = [
     'crispy_forms.templatetags.crispy_forms_field',
 ]
 
-<<<<<<< HEAD
 # Stripe Configuration
 STRIPE_CURRENCY ='GBP'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
@@ -227,5 +220,3 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
 STRIPE_WH_SECRET = 'whsec_your_webhook_secret_here'  # For later use
 
-=======
->>>>>>> eb922ec0d8a8b03645b914fd5877800b77e1adad
