@@ -1,3 +1,4 @@
+import env 
 """
 Django settings for SamsTech project.
 
@@ -26,7 +27,14 @@ SECRET_KEY = 'django-insecure-9*tgqt+d+50@xh=^bv$@k6prp^k0q0=$@t$d*%q%)=qx8=2f5d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '8000-suadtech-samstech-4ww6d2bntll.ws-eu120.gitpod.io',
+    '*.gitpod.io',
+]
+
+
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-suadtech-samstech-f91q9w7q7dr.ws-eu120.gitpod.io',
     'https://*.gitpod.io', 
