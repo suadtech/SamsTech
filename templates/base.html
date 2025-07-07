@@ -1,0 +1,212 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SamTech Mobile Accessories</title>
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+    <!-- Bootstrap CSS (v5.3.0 ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (v6.4.0 ) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Lato ) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %} {# <-- This closes the corecss block #} {% block extra_css %} {# <-- This closes the extra_css block
+        #} {% endblock %} </head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="fixed-top">
+        <!-- Top Info Bar (Delivery Banner ) -->
+        <div id="top-header" class="row bg-black text-white text-center py-1">
+            <div class="col">
+                <h4 class="logo-font my-0">Free delivery on orders over £50{{ free_shipping_threshold }}</h4>
+            </div>
+        </div>
+
+        <!-- Main Header (Logo, Desktop Search, Account, Bag) - Visible on Large Screens and Up -->
+        <div id="main-header" class="container-fluid bg-white py-2 d-none d-lg-block">
+            <div class="row align-items-center">
+                <div class="col-lg-3 text-start">
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center">
+                        <img src="/media/screenshots project steps/logo.png " alt="SamTech Logo"
+                            style="height: 40px; margin-right: 10px;">
+                        <h2 class="logo-font text-black my-0"><strong>Sam</strong>Tech</h2>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <form method="GET" action="{% url 'products:products' %}">
+                        <div class="input-group w-100">
+                            <input class="form-control border border-black rounded-0" type="text" name="search"
+                                placeholder="Search our site">
+                            <button class="btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 text-end">
+                    <ul class="list-inline list-unstyled my-0 d-flex justify-content-end align-items-center">
+                        <li class="list-inline-item me-3">
+                            <a class="text-black nav-link" href="#" id="user-options-desktop" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <p class="my-0">My Account</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options-desktop">
+                                {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="#" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="#" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                {% endif %}
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link"
+                                href="{% url 'bag:view_bag' %}">
+                                <div class="text-center">
+                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                        £{{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                        £0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar (Product Categories) - Visible on Large Screens and Up -->
+        <nav id="main-nav-bar" class="navbar navbar-expand-lg navbar-light bg-white d-none d-lg-block py-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-nav-collapse" aria-controls="main-nav-collapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav-collapse">
+                    {% include 'includes/main-nav.html' %}
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Header - Visible on Small Screens Only -->
+        <div id="mobile-header" class="d-lg-none bg-white py-2">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                        <h2 class="logo-font text-black my-0"><strong>Sam</strong>Tech</h2>
+                    </a>
+                </div>
+                <div class="col-8">
+                    {% include 'includes/mobile-top-header.html' %}
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light w-100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mobile-main-nav-collapse" aria-controls="mobile-main-nav-collapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mobile-main-nav-collapse">
+                        {# {% include 'includes/main-nav.html' %} #} {# Re-using main-nav for mobile menu #}
+
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="message-container">
+            {# Django messages will be rendered here #}
+            {% for message in messages %}
+            <div class="message-{{ message.tags }}">
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                {% include 'includes/toasts/toast_error.html' %}
+                {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                {% include 'includes/toasts/toast_warning.html' %}
+                {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                {% include 'includes/toasts/toast_success.html' %}
+                {% else %}
+                {% include 'includes/toasts/toast_info.html' %}
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        {% block page_header %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (for potential custom scripts or Bootstrap components that might still rely on it ) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    {% block postload_js %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toastElList = document.querySelectorAll('.toast');
+            var toastList = Array.from(toastElList).map(function (toastEl) {
+                var toast = new bootstrap.Toast(toastEl, {
+                    autohide: false
+                });
+                toast.show();
+
+                setTimeout(function () {
+                    toast.hide();
+                }, 5000);
+
+                return toast;
+            });
+        });
+    </script>
+    {% endblock %}
+    {% block corejs %}
+    <!-- Your existing JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Add this line for Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+
+
+    {% block postloadjs %}
+    {% endblock %}
+
+</body>
+
+</html>

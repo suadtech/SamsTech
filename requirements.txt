@@ -1,0 +1,8 @@
+asgiref==3.8.1
+Django==5.2.3
+django-allauth==65.9.0
+django-countries==7.6.1
+django-crispy-forms==1.14.0
+pillow==11.3.0
+sqlparse==0.5.3
+stripe==12.3.0

@@ -1,0 +1,40 @@
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Card errors */
+#card-errors {
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+/* Payment form styling */
+#payment-form {
+    margin-top: 20px;
+}
+
+#card-element {
+    margin-bottom: 20px;
+}
+
+/* Submit button */
+#submit-button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background: #333;
+}
+
+#submit-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+

@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="logo-font text-black mb-2">SamTech Mobile Accessories</h1>
+            <p class="text-muted">Professional Mobile Repair Parts & Accessories</p>
+            <hr class="w-50 mb-4">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Breadcrumb Navigation -->
+    <div class="row mb-4">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-black">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}"
+                            class="text-black">Products</a></li>
+                    {% if product.category %}
+                    <li class="breadcrumb-item"><a
+                            href="{% url 'products:product_list' %}?category={{ product.category.name }}"
+                            class="text-black">{{ product.category }}</a></li>
+                    {% endif %}
+                    <li class="breadcrumb-item active" aria-current="page">{{ product.name|truncatewords:3 }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Product Image Section -->
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank" title="View full size image">
+                    <img class="card-img-top img-fluid rounded shadow-sm" src="{{ product.image.url }}"
+                        alt="{{ product.name }}" style="max-height: 500px; object-fit: cover;">
+                </a>
+                {% else %}
+                <div class="card-img-top bg-light d-flex align-items-center justify-content-center rounded shadow-sm"
+                    style="height: 400px;">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-image fa-4x mb-3"></i>
+                        <p class="h5">No Image Available</p>
+                        <p class="small">{{ product.name }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <!-- Product Title -->
+                <h1 class="mb-3 logo-font text-black">{{ product.name }}</h1>
+
+                <!-- Price Section -->
+                <div class="mb-4">
+                    <span class="h2 fw-bold text-black mb-0">£{{ product.price }}</span>
+                    {% if product.msrp and product.msrp != product.price %}
+                    <p class="text-muted text-decoration-line-through mb-0 mt-1">
+                        <small>RRP: £{{ product.msrp }}</small>
+                    </p>
+                    <p class="text-success mb-0">
+                        <small><strong>You save: £{{ product.msrp|floatformat:2|add:"-"|add:product.price|floatformat:2
+                                }}</strong></small>
+                    </p>
+                    {% endif %}
+                </div>
+
+                <!-- Product Info Cards -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="small text-muted mb-1"><strong>SKU:</strong></p>
+                                <p class="mb-0">{{ product.sku }}</p>
+                            </div>
+                            {% if product.category %}
+                            <div class="col-6">
+                                <p class="small text-muted mb-1"><strong>Category:</strong></p>
+                                <span class="badge bg-light text-dark small">{{ product.category }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <!-- Rating Section -->
+                        {% if product.rating %}
+                        <hr class="my-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="small text-muted mb-1"><strong>Rating:</strong></p>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2">
+                                        {% for i in "12345" %}
+                                        {% if forloop.counter <= product.rating %} <i class="fas fa-star text-warning">
+                                            </i>
+                                            {% else %}
+                                            <i class="far fa-star text-muted"></i>
+                                            {% endif %}
+                                            {% endfor %}
+                                    </div>
+                                    <small class="text-muted">({{ product.rating }}/5)</small>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Stock Status -->
+                        {% if product.stock_status %}
+                        <hr class="my-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="small text-muted mb-1"><strong>Availability:</strong></p>
+                                {% if product.stock_status == "In Stock" %}
+                                <small class="text-success">
+                                    <i class="fas fa-check-circle me-1"></i>In Stock - Ready to Ship
+                                </small>
+                                {% elif product.stock_status == "Low Stock" %}
+                                <small class="text-warning">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Low Stock - Order Soon
+                                </small>
+                                {% else %}
+                                <small class="text-danger">
+                                    <i class="fas fa-times-circle me-1"></i>Currently Out of Stock
+                                </small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Product Description -->
+                {% if product.description %}
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <h6 class="text-black mb-2">Product Description</h6>
+                        <p class="text-justify mb-0">{{ product.description }}</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Action Buttons -->
+                <div class="mb-4">
+                    <div class="d-grid gap-2">
+                        {% if product.stock_status != "Out of Stock" %}
+                        <form class="form" action="{% url 'bag:add_to_bag' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}"> {# ADD THIS LINE #}
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            <i class="fas fa-minus fa-sm"></i>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            <i class="fas fa-plus fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="{% url 'products:products' %}"
+                                        class="btn btn-outline-black rounded-0 mt-5">
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                        value="Add to Bag">
+                                </div>
+                            </div>
+                        </form>
+                        {% else %}
+                        <button class="btn btn-secondary btn-lg" disabled>
+                            <i class="fas fa-times me-2"></i>Out of Stock
+                        </button>
+                        {% endif %}
+
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <button class="btn btn-outline-dark w-100" onclick="addToWishlist({ product.id })">
+                                    <i class="fas fa-heart me-1"></i>Wishlist
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <a href="{% url 'products:product_list' %}" class="btn btn-outline-secondary w-100">
+                                    <i class="fas fa-arrow-left me-1"></i>Back to Products
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Shipping Info Card -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h6 class="text-black mb-3">Shipping Information</h6>
+                        <div class="small text-muted">
+                            <p class="mb-2"><i class="fas fa-truck me-2"></i>Free shipping on orders over £50</p>
+                            <p class="mb-2"><i class="fas fa-clock me-2"></i>Usually ships within 1-2 business days</p>
+                            <p class="mb-0"><i class="fas fa-shield-alt me-2"></i>30-day return policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block postload_js %}
+<script>
+    // Quantity increment/decrement functionality
+    $('.qty_input').each(function () {
+        var item_id = $(this).data('item_id');
+        var quantityInput = $('#id_qty_' + item_id);
+
+        $('#increment-qty_' + item_id).click(function (e) {
+            e.preventDefault();
+            var currentQuantity = parseInt(quantityInput.val());
+            if (currentQuantity < 99) { // Max quantity
+                quantityInput.val(currentQuantity + 1);
+            }
+        });
+
+        $('#decrement-qty_' + item_id).click(function (e) {
+            e.preventDefault();
+            var currentQuantity = parseInt(quantityInput.val());
+            if (currentQuantity > 1) { // Min quantity
+                quantityInput.val(currentQuantity - 1);
+            }
+        });
+    });
+
+    // Add to Cart (if still needed, otherwise remove)
+    function addToCart(productId) {
+        console.log('Adding product to cart:', productId);
+        alert('Product added to cart! (Cart functionality to be implemented)');
+    }
+
+    // Add to Wishlist (if still needed, otherwise remove)
+    function addToWishlist(productId) {
+        console.log('Adding product to wishlist:', productId);
+        alert('Product added to wishlist! (Wishlist functionality to be implemented)');
+    }
+
+    // Image zoom functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        const productImage = document.querySelector('.image-container img');
+        if (productImage) {
+            productImage.addEventListener('mouseenter', function () {
+                this.style.transform = 'scale(1.05)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+
+            productImage.addEventListener('mouseleave', function () {
+                this.style.transform = 'scale(1)';
+            });
+        }
+    });
+</script>
+{% endblock %}
