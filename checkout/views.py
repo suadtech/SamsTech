@@ -12,7 +12,8 @@ from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 import json
-
+from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
