@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
-    
+
     'home',
     'products',
     'bag',
@@ -223,3 +223,6 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
 STRIPE_WH_SECRET = 'whsec_your_webhook_secret_here'  # For later use
 
+# Email Configuration
+DEFAULT_FROM_EMAIL = 'yourstore@example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
