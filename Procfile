@@ -1,1 +1,1 @@
-web: gunicorn SamsTech.wsgi:application --loge-file -
+web: gunicorn SamsTech.wsgi:application --log-file -
