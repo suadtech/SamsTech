@@ -261,7 +261,7 @@ main {
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: rgb(36, 119, 125);
+    background: #77a5b2;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -285,7 +285,7 @@ main {
 .auth-container button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #0a2d2c;
     color: white;
     border: none;
     border-radius: 4px;
@@ -294,5 +294,5 @@ main {
 }
 
 .auth-container button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0a2d2c;
 }
