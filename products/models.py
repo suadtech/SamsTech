@@ -2,17 +2,21 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.urls import reverse
 import json
+
+
 class Category(models.Model):
-    class Meta:
-        verbose_name_plural = 'Categories'
-        ordering = ['name']
-    
-    name = models.CharField(max_length=254, null=True, blank=True)
-   
+    name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     def __str__(self):
-        return self.friendly_name or self.name
+        return self.name
+
+
+
+    
 
 class Product(models.Model):
     class Meta:

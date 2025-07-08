@@ -75,6 +75,7 @@
                                <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
 
                                 {% endif %}
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
