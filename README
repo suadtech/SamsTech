@@ -1,0 +1,497 @@
+SamsTech E-Commerce Platform
+
+A full-featured e-commerce web application built with Django, featuring product management, secure checkout, user authentication, and payment processing.
+
+🚀 Live Demo
+
+•
+Production: https://samstech-84d03d38bd6b.herokuapp.com
+
+•
+Development: Available on Gitpod workspace
+
+📋 Table of Contents
+
+•
+
+
+📋 Table of Contents
+
+•
+Features
+
+•
+Technology Stack
+
+•
+Installation
+
+•
+Configuration
+
+•
+Deployment
+
+•
+User Experience
+
+•
+Troubleshooting
+
+•
+Contributing
+
+✨ Features
+
+Core E-Commerce Functionality
+
+•
+Product Catalog: Browse and search products with categories
+
+•
+Product Management: Admin interface for adding/editing products
+
+•
+Shopping Cart: Add, remove, and modify items
+
+•
+Secure Checkout: Stripe payment integration
+
+•
+Order Management: Order confirmation and email notifications
+
+•
+User Authentication: Registration, login, and profile management
+
+Admin Features
+
+•
+Product Management: Add, edit, delete products with images
+
+•
+Category Management: Organize products by categories
+
+•
+Order Tracking: View and manage customer orders
+
+•
+User Management: Admin dashboard for user accounts
+
+Technical Features
+
+•
+Responsive Design: Mobile-friendly interface
+
+•
+Email Notifications: Order confirmation emails
+
+•
+Database Integration: PostgreSQL for production, SQLite for development
+
+•
+Static File Management: Optimized for deployment
+
+•
+Security: Environment variables for sensitive data
+
+🛠 Technology Stack
+
+Backend
+
+•
+Django 5.2.3 - Web framework
+
+•
+Python 3.11 - Programming language
+
+•
+PostgreSQL - Production database
+
+•
+SQLite - Development database
+
+•
+Gunicorn - WSGI server
+
+Frontend
+
+•
+HTML5/CSS3 - Structure and styling
+
+•
+Bootstrap - Responsive framework
+
+•
+JavaScript - Interactive functionality
+
+•
+Django Templates - Server-side rendering
+
+Payment & Authentication
+
+•
+Stripe - Payment processing
+
+•
+Django Allauth - User authentication
+
+•
+Django Crispy Forms - Form rendering
+
+Deployment & DevOps
+
+•
+Heroku - Cloud platform
+
+•
+Git/GitHub - Version control
+
+•
+Gitpod - Development environment
+
+🔧 Installation
+
+Prerequisites
+
+•
+Python 3.11+
+
+•
+Git
+
+•
+PostgreSQL (for production)
+
+Local Development Setup
+
+1.
+Clone the repository:
+
+Bash
+
+
+git clone https://github.com/your-username/SamsTech.git
+cd SamsTech
+
+
+1.
+Install dependencies:
+
+Bash
+
+
+pip install -r requirements.txt
+
+
+1.
+Set up environment variables:
+Create a .env file in the root directory:
+
+Plain Text
+
+
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+DEVELOPMENT=1
+STRIPE_PUBLIC_KEY=your-stripe-public-key
+STRIPE_SECRET_KEY=your-stripe-secret-key
+STRIPE_WH_SECRET=your-stripe-webhook-secret
+
+
+1.
+Run migrations:
+
+Bash
+
+
+python manage.py migrate
+
+
+1.
+Load sample data (optional):
+
+Bash
+
+
+python manage.py loaddata categories
+python manage.py loaddata products
+
+
+1.
+Create superuser:
+
+Bash
+
+
+python manage.py createsuperuser
+
+
+1.
+Start development server:
+
+Bash
+
+
+python manage.py runserver
+
+
+Visit http://127.0.0.1:8000 to view the application.
+
+
+
+⚙️ Configuration
+
+Environment Variables
+
+VariableDescriptionRequiredSECRET_KEYDjango secret keyYesDEBUGDebug mode (True/False)YesDATABASE_URLPostgreSQL connection stringProduction onlySTRIPE_PUBLIC_KEYStripe publishable keyYesSTRIPE_SECRET_KEYStripe secret keyYesSTRIPE_WH_SECRETStripe webhook secret
+
+Database Configuration
+
+The application automatically switches between databases:
+
+•
+Development: SQLite (db.sqlite3)
+
+•
+Production: PostgreSQL (via DATABASE_URL)
+
+ALLOWED_HOSTS
+
+Update ALLOWED_HOSTS in settings.py for your deployment:
+
+Python
+
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'your-gitpod-url.gitpod.io',
+    'your-heroku-app.herokuapp.com',
+
+]
+
+🚀 Deployment
+
+Heroku Deployment
+
+1.
+Create Heroku app:
+
+Bash
+
+
+heroku create your-app-name
+
+
+1.
+Set up Config Vars in Heroku:
+
+•
+DATABASE_URL - PostgreSQL connection string
+
+•
+SECRET_KEY - Secure production secret key
+
+•
+DISABLE_COLLECTSTATIC - Set to 1
+
+•
+STRIPE_PUBLIC_KEY - Your Stripe public key
+
+•
+STRIPE_SECRET_KEY - Your Stripe secret key
+
+•
+STRIPE_WH_SECRET - Your Stripe webhook secret
+
+1.
+Deploy:
+
+Bash
+
+
+git push heroku main
+
+
+Important Files for Deployment
+
+•
+Procfile: web: gunicorn SamsTech.wsgi:application
+
+•
+.python-version: 3.11
+
+•
+requirements.txt:
+
+👥 User Experience
+
+Customer Journey
+
+1.
+Browse Products: Users can view products by category or search
+
+2.
+Product Details: Detailed product pages with images and descriptions
+
+3.
+Add to Cart: Simple cart management with quantity updates
+
+4.
+Secure Checkout: Stripe-powered payment processing
+
+5.
+Order Confirmation: Email confirmation with order details
+
+6.
+User Accounts: Registration and profile management
+
+Admin Experience
+
+1.
+Product Management: Easy-to-use interface for adding/editing products
+
+2.
+Order Management: View and track customer orders
+
+3.
+User Management: Admin dashboard for user accounts
+
+4.
+Category Management: Organize products efficiently
+
+🐛 Troubleshooting
+
+Common Issues and Solutions
+
+1. Heroku Application Error
+
+Problem: "Application error" page on Heroku
+Solutions:
+
+•
+Check Heroku logs: Dashboard → More → View logs
+
+•
+Verify Config Vars are set correctly
+
+•
+Ensure Procfile is correctly named (capital P)
+
+•
+Check for typos in Procfile (e.g., --log-file not --loge-file)
+
+2. DisallowedHost Error
+
+Problem: Invalid HTTP_HOST header error
+Solution: Add your domain to ALLOWED_HOSTS in settings.py
+
+3. Database Connection Issues
+
+Problem: Database errors on Heroku
+Solutions:
+
+•
+Verify DATABASE_URL is set in Config Vars
+
+•
+Run migrations: heroku run python manage.py migrate
+
+•
+
+
+4. Static Files Not Loading
+
+Problem: CSS/JS files not loading on Heroku
+Solution: Ensure DISABLE_COLLECTSTATIC = 1 is set in Config Vars
+
+5. Stripe Payment Issues
+
+Problem: Payment processing fails
+Solutions:
+
+•
+Verify all Stripe keys are correctly set
+
+•
+Check webhook endpoints are configured
+
+•
+Test with Stripe test cards
+
+6. Migration Conflicts
+
+Problem: Migration errors during deployment
+Solutions:
+
+•
+Reset migrations if safe to do so
+
+•
+Use --fake flag for problematic migrations
+
+•
+Ensure database schema matches models
+
+Development Environment Issues
+
+1. Module Not Found Errors
+
+Solution: Install missing packages: pip install -r requirements.txt
+
+2. Database Locked Errors
+
+Solution: Close all database connections and restart server
+
+3. Port Already in Use
+
+Solution:
+ Kill existing processes or use different port
+
+📝 Project Structure
+SamsTech/
+├── SamsTech/                 # Main project directory
+│   ├── settings.py          # Django settings
+│   ├── urls.py              # URL configuration
+│   └── wsgi.py              # WSGI configuration
+├── products/                # Product management app
+│   ├── models.py            # Product and Category models
+│   ├── views.py             # Product views
+│   ├── forms.py             # Product forms
+│   └── templates/           # Product templates
+├── checkout/                # Checkout and payment app
+│   ├── models.py            # Order models
+│   ├── views.py             # Checkout views
+│   ├── webhook_handler.py   # Stripe webhooks
+│   └── templates/           # Checkout templates
+├── profiles/                # User profile app
+│   ├── models.py            # User profile models
+│   ├── views.py             # Profile views
+│   └── templates/           # Profile templates
+├── home/                    # Homepage app
+├── bag/                     # Shopping cart app
+├── static/                  # Static files (CSS, JS, images)
+├── media/                   # User uploaded files
+├── templates/               # Base templates
+├── requirements.txt         # Python dependencies
+├── Procfile                 # Heroku process file
+├── .python-version          # Python version specification
+└── README.md               # This file
+🤝 Contributing
+
+1.
+Fork the repository
+
+2.
+Create a feature branch: git checkout -b feature-name
+
+3.
+Make your changes and commit: git commit -m 'Add feature'
+
+4.
+Push to the branch: git push origin feature-name
+
+5.
+
+
+
