@@ -55,7 +55,7 @@
                                 <i class="fas fa-filter me-2"></i>Apply Filters
                             </button>
                             {% if current_search or current_category or current_sort and current_sort != 'id' %}
-                            <a href="{% url 'products:products' %}" class="btn btn-outline-secondary w-100">
+                            <a href="{% url 'products' %}" class="btn btn-outline-secondary w-100">
                                 <i class="fas fa-times me-2"></i>Clear All
                             </a>
                             {% endif %}
@@ -87,7 +87,7 @@
     <div class="row">
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <a href="{% url 'products:product_detail' product.id %}" class="text-decoration-none text-dark">
+            <a href="{% url 'product_detail' product.id %}" class="text-decoration-none text-dark">
                 <div class="card h-100 border-0 shadow-sm product-card">
                     <!-- Product Image -->
                     <div class="position-relative">
@@ -195,7 +195,7 @@
                     {% endif %}
                 </p>
                 {% if current_search or current_category %}
-                <a href="{% url 'products:products' %}" class="btn btn-black">
+                <a href="{% url 'products' %}" class="btn btn-black">
                     <i class="fas fa-arrow-left me-2"></i>View All Products
                 </a>
                 {% endif %}

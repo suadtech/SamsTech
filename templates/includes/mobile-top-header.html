@@ -7,7 +7,7 @@
             </div>
         </a>
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-            <form class="form" method="GET" action="{% url 'products:products' %}">
+            <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="search" placeholder="Search our site">
                     <button class="btn btn-black border border-black rounded-0" type="submit">
@@ -58,7 +58,7 @@
     </li>
 
     <li class="list-inline-item">
-        <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'bag:view_bag' %}">
+        <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
     <div class="text-center">
         <div class="position-relative">
             <i class="fas fa-shopping-bag fa-lg"></i>

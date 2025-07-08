@@ -5,14 +5,14 @@
         All Products
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-        <a href="{% url 'products:products' %}?sort=price&direction=asc" class="dropdown-item">By Price (Low to High)</a>
-        <a href="{% url 'products:products' %}?sort=price&direction=desc" class="dropdown-item">By Price (High to Low)</a>
-        <a href="{% url 'products:products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating (High to Low)</a>
-        <a href="{% url 'products:products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating (Low to High)</a>
-        <a href="{% url 'products:products' %}?sort=name&direction=asc" class="dropdown-item">By Name (A-Z)</a>
-        <a href="{% url 'products:products' %}?sort=name&direction=desc" class="dropdown-item">By Name (Z-A)</a>
-        <a href="{% url 'products:products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-        <a href="{% url 'products:products' %}" class="dropdown-item">All Products</a>
+        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price (Low to High)</a>
+        <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price (High to Low)</a>
+        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating (High to Low)</a>
+        <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating (Low to High)</a>
+        <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">By Name (A-Z)</a>
+        <a href="{% url 'products' %}?sort=name&direction=desc" class="dropdown-item">By Name (Z-A)</a>
+        <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
     </div>
 </li>
 
@@ -24,10 +24,10 @@
         <div class="dropdown-menu border-0" aria-labelledby="LCDs-link">
             {# IMPORTANT: These category values MUST EXACTLY match the 'name' field in your Category model #}
             {# and the 'category' CharField in your Product model for filtering to work. #}
-            <a href="{% url 'products:products' %}?category=Apple LCDs" class="dropdown-item">Apple LCDs</a>
-            <a href="{% url 'products:products' %}?category=Samsung LCDs" class="dropdown-item">Samsung LCDs</a>
-            <a href="{% url 'products:products' %}?category=Other LCDs" class="dropdown-item">Other LCDs</a>
-            <a href="{% url 'products:products' %}" class="dropdown-item">All LCDs</a> {# Use 'LCDs' as confirmed #}
+            <a href="{% url 'products' %}?category=Apple LCDs" class="dropdown-item">Apple LCDs</a>
+            <a href="{% url 'products' %}?category=Samsung LCDs" class="dropdown-item">Samsung LCDs</a>
+            <a href="{% url 'products' %}?category=Other LCDs" class="dropdown-item">Other LCDs</a>
+            <a href="{% url 'products' %}" class="dropdown-item">All LCDs</a> {# Use 'LCDs' as confirmed #}
 
         </div>
     </li>
@@ -38,17 +38,17 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="parts-link">
             {# IMPORTANT: Verify these names against your database Product.category values #}
-            <a href="{% url 'products:products' %}?category=Batteries" class="dropdown-item">Batteries</a>
-            <a href="{% url 'products:products' %}?category=Back Camera" class="dropdown-item">Back Camera</a>
-            <a href="{% url 'products:products' %}?category=Front Camera" class="dropdown-item">Front Camera</a>
-            <a href="{% url 'products:products' %}?category=Charging Ports & Flex" class="dropdown-item">Charging Ports & Flex</a>
-            <a href="{% url 'products:products' %}?category=LCDs Main Flex" class="dropdown-item">LCDs Main Flex</a>
-            <a href="{% url 'products:products' %}?category=Home Button" class="dropdown-item">Home Button</a>
-            <a href="{% url 'products:products' %}?category=Power/Volume Flex" class="dropdown-item">Power/Volume Flex</a>
-            <a href="{% url 'products:products' %}?category=Back Camera Lens" class="dropdown-item">Back Camera Lens</a>
-            <a href="{% url 'products:products' %}?category=Sim Tray" class="dropdown-item">Sim Tray</a>
-            <a href="{% url 'products:products' %}?category=Ear/Loud Speaker" class="dropdown-item">Ear/Loud Speaker</a>
-            <a href="{% url 'products:products' %}?category=" class="dropdown-item">All Parts</a>
+            <a href="{% url 'products' %}?category=Batteries" class="dropdown-item">Batteries</a>
+            <a href="{% url 'products' %}?category=Back Camera" class="dropdown-item">Back Camera</a>
+            <a href="{% url 'products' %}?category=Front Camera" class="dropdown-item">Front Camera</a>
+            <a href="{% url 'products' %}?category=Charging Ports & Flex" class="dropdown-item">Charging Ports & Flex</a>
+            <a href="{% url 'products' %}?category=LCDs Main Flex" class="dropdown-item">LCDs Main Flex</a>
+            <a href="{% url 'products' %}?category=Home Button" class="dropdown-item">Home Button</a>
+            <a href="{% url 'products' %}?category=Power/Volume Flex" class="dropdown-item">Power/Volume Flex</a>
+            <a href="{% url 'products' %}?category=Back Camera Lens" class="dropdown-item">Back Camera Lens</a>
+            <a href="{% url 'products' %}?category=Sim Tray" class="dropdown-item">Sim Tray</a>
+            <a href="{% url 'products' %}?category=Ear/Loud Speaker" class="dropdown-item">Ear/Loud Speaker</a>
+            <a href="{% url 'products' %}?category=" class="dropdown-item">All Parts</a>
 
         </div>
     </li>
@@ -59,14 +59,14 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
             {# IMPORTANT: Verify these names against your database Product.category values #}
-            <a href="{% url 'products:products' %}?category=Tempered Glass" class="dropdown-item">Tempered Glass</a>
-            <a href="{% url 'products:products' %}?category=Data Cables" class="dropdown-item">Data Cables</a>
-            <a href="{% url 'products:products' %}?category=Power Adapters" class="dropdown-item">Power Adapters</a>
-            <a href="{% url 'products:products' %}?category=Audio" class="dropdown-item">Audio</a>
-            <a href="{% url 'products:products' %}?category=Car Accessories" class="dropdown-item">Car Accessories</a>
-            <a href="{% url 'products:products' %}?category=Power Banks" class="dropdown-item">Power Banks</a>
-            <a href="{% url 'products:products' %}?category=Other Accessories" class="dropdown-item">Other Accessories</a>
-            <a href="{% url 'products:products' %}?category=" class="dropdown-item">All Accessories</a>
+            <a href="{% url 'products' %}?category=Tempered Glass" class="dropdown-item">Tempered Glass</a>
+            <a href="{% url 'products' %}?category=Data Cables" class="dropdown-item">Data Cables</a>
+            <a href="{% url 'products' %}?category=Power Adapters" class="dropdown-item">Power Adapters</a>
+            <a href="{% url 'products' %}?category=Audio" class="dropdown-item">Audio</a>
+            <a href="{% url 'products' %}?category=Car Accessories" class="dropdown-item">Car Accessories</a>
+            <a href="{% url 'products' %}?category=Power Banks" class="dropdown-item">Power Banks</a>
+            <a href="{% url 'products' %}?category=Other Accessories" class="dropdown-item">Other Accessories</a>
+            <a href="{% url 'products' %}?category=" class="dropdown-item">All Accessories</a>
         </div>
     </li>
 
@@ -76,20 +76,20 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="cases-link">
             {# IMPORTANT: Verify these names against your database Product.category values #}
-          <a href="{% url 'products:products' %}?category=iPhones%20Cases%20%26%20Covers" class="dropdown-item">iPhones Cases & Covers</a>
+          <a href="{% url 'products' %}?category=iPhones%20Cases%20%26%20Covers" class="dropdown-item">iPhones Cases & Covers</a>
 
-           <a href="{% url 'products:products' %}?category=Samsung%20Galaxy%20Cases%20%26%20Covers" class="dropdown-item">Samsung Galaxy Cases & Covers</a>
+           <a href="{% url 'products' %}?category=Samsung%20Galaxy%20Cases%20%26%20Covers" class="dropdown-item">Samsung Galaxy Cases & Covers</a>
 
-            <a href="{% url 'products:products' %}?category=Original Anti Burst Case" class="dropdown-item">Original Anti Burst Case</a>
-            <a href="{% url 'products:products' %}?category=Clear TPU Gel Cases" class="dropdown-item">Clear TPU Gel Cases</a>
-            <a href="{% url 'products:products' %}?category=Black TPU Gel Cases" class="dropdown-item">Black TPU Gel Cases</a>
-            <a href="{% url 'products:products' %}?category=Book Cases" class="dropdown-item">Book Cases</a>
-            <a href="{% url 'products:products' %}?category=MagSafe Clear Cases" class="dropdown-item">MagSafe Clear Cases</a>
-            <a href="{% url 'products:products' %}?category=RingArmor Cases" class="dropdown-item">RingArmor Cases</a>
-            <a href="{% url 'products:products' %}?category=Kids Cases" class="dropdown-item">Kids Cases</a>
-            <a href="{% url 'products:products' %}?category=Tap Leather Cases" class="dropdown-item">Tap Leather Cases</a>
-            <a href="{% url 'products:products' %}?category=Other Cases" class="dropdown-item">Other Cases</a>
-           <a href="{% url 'products:products' %}?category=" class="dropdown-item">All Cases & Covers</a>
+            <a href="{% url 'products' %}?category=Original Anti Burst Case" class="dropdown-item">Original Anti Burst Case</a>
+            <a href="{% url 'products' %}?category=Clear TPU Gel Cases" class="dropdown-item">Clear TPU Gel Cases</a>
+            <a href="{% url 'products' %}?category=Black TPU Gel Cases" class="dropdown-item">Black TPU Gel Cases</a>
+            <a href="{% url 'products' %}?category=Book Cases" class="dropdown-item">Book Cases</a>
+            <a href="{% url 'products' %}?category=MagSafe Clear Cases" class="dropdown-item">MagSafe Clear Cases</a>
+            <a href="{% url 'products' %}?category=RingArmor Cases" class="dropdown-item">RingArmor Cases</a>
+            <a href="{% url 'products' %}?category=Kids Cases" class="dropdown-item">Kids Cases</a>
+            <a href="{% url 'products' %}?category=Tap Leather Cases" class="dropdown-item">Tap Leather Cases</a>
+            <a href="{% url 'products' %}?category=Other Cases" class="dropdown-item">Other Cases</a>
+           <a href="{% url 'products' %}?category=" class="dropdown-item">All Cases & Covers</a>
 
         </div>
     </li>
@@ -99,9 +99,9 @@
             Special Offers
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-            <a href="{% url 'products:products' %}?sort=-created_at" class="dropdown-item">New Arrivals</a>
-            <a href="{% url 'products:products' %}?special=deals" class="dropdown-item">Deals</a>
-            <a href="{% url 'products:products' %}?special=clearance" class="dropdown-item">Clearance</a>
+            <a href="{% url 'products' %}?sort=-created_at" class="dropdown-item">New Arrivals</a>
+            <a href="{% url 'products' %}?special=deals" class="dropdown-item">Deals</a>
+            <a href="{% url 'products' %}?special=clearance" class="dropdown-item">Clearance</a>
         </div>
     </li>
 

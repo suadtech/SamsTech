@@ -44,7 +44,7 @@
                             </td>
                             <td class="py-3">
                                 <form class="form update-form" method="POST"
-                                    action="{% url 'bag:adjust_bag' item.item_id %}">
+                                    action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %} {# Make sure this line is also inside the form #}
 
                                     <div class="form-group">
@@ -92,7 +92,7 @@
                         You could get free delivery by spending just <strong>£{{ free_delivery_delta|floatformat:2 }}</strong> more!
                     </p>
                     {% endif %}
-                    <a href="{% url 'products:products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -108,7 +108,7 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products:products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>

@@ -46,7 +46,8 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form method="GET" action="{% url 'products:products' %}">
+                    <form method="GET" action="{% url 'products' %}">
+
                         <div class="input-group w-100">
                             <input class="form-control border border-black rounded-0" type="text" name="search"
                                 placeholder="Search our site">
@@ -71,7 +72,8 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options-desktop">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                <a href="{% url 'admin:index' %}" class="dropdown-item">Product Management</a>
+                               <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -83,7 +85,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link"
-                                href="{% url 'bag:view_bag' %}">
+                                href="{% url 'view_bag' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
