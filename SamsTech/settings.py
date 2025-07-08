@@ -1,6 +1,4 @@
 
-import env 
-
 """
 Django settings for SamsTech project.
 
@@ -17,7 +15,8 @@ from pathlib import Path
 import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
-
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +36,7 @@ DEBUG =  True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '8000-suadtech-samstech-4ww6d2bntll.ws-eu120.gitpod.io',  # Gitpod development
+    '8000-suadtech-samstech-xqq1ej556e2.ws-eu120.gitpod.io',  # Gitpod development
     'samstech-84d03d38bd6b.herokuapp.com',  # Heroku production
 ]
 
