@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -28,16 +28,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-9*tgqt+d+50@xh=^bv$@k6prp^k0q0=$@t$d*%q%)=qx8=2f5d'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  True
 
 ALLOWED_HOSTS = [
-    'localhost',
     '127.0.0.1',
-    '8000-suadtech-samstech-4ww6d2bntll.ws-eu120.gitpod.io',
-    '*.gitpod.io',
+    'localhost',
+    '8000-suadtech-samstech-4ww6d2bntll.ws-eu120.gitpod.io',  # Gitpod development
+    'samstech-84d03d38bd6b.herokuapp.com',  # Heroku production
 ]
+
+
+
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -132,12 +136,21 @@ WSGI_APPLICATION = 'SamsTech.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+
+ 
+
 
 
 # Password validation
