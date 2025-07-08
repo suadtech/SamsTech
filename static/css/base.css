@@ -253,3 +253,46 @@ main {
     color: white !important;
     padding: 8px 12px !important;
 }
+
+/* Authentication Pages Styling */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgb(36, 119, 125);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container input[type="text"], 
+.auth-container input[type="email"], 
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
