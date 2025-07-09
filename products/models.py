@@ -5,7 +5,7 @@ import json
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=254)
+    name = models.CharField(max_length=500)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     class Meta:
