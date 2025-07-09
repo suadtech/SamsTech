@@ -6,8 +6,8 @@ import json
 
 class Category(models.Model):
     name = models.CharField(max_length=500)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
-
+    friendly_name = models.CharField(max_length=500, null=True, blank=True)
+    
     class Meta:
         verbose_name_plural = 'Categories'
 
