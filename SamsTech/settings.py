@@ -206,7 +206,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'samstech'    
+    AWS_STORAGE_BUCKET_NAME = 'samstech-vscode-bucket'   
    
     AWS_S3_REGION_NAME = 'us-east-1' 
 
