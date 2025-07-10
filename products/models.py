@@ -267,3 +267,4 @@ class Product(models.Model):
     fixture_data = models.JSONField(default=dict, blank=True, null=True)
     fixture_data = models.JSONField(default=dict, blank=True, null=True)
     fixture_data = models.JSONField(default=dict, blank=True, null=True)
+    display_technology = models.CharField(max_length=500, null=True, blank=True)

@@ -8,22 +8,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SamTech Mobile Accessories</title>
-    <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+               <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+
+
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-    <!-- Bootstrap CSS (v5.3.0 ) -->
+    <!-- Bootstrap CSS (v5.3.0  ) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome (v6.4.0 ) -->
+    <!-- Font Awesome (v6.4.0  ) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts (Lato ) -->
+    <!-- Google Fonts (Lato  ) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -32,7 +36,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <header class="fixed-top">
-        <!-- Top Info Bar (Delivery Banner ) -->
+        <!-- Top Info Bar (Delivery Banner  ) -->
         <div id="top-header" class="row bg-black text-white text-center py-1">
             <div class="col">
                 <h4 class="logo-font my-0">Free delivery on orders over £50{{ free_shipping_threshold }}</h4>
@@ -197,14 +201,14 @@
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery (for potential custom scripts or Bootstrap components that might still rely on it ) -->
+    <!-- jQuery (for potential custom scripts or Bootstrap components that might still rely on it  ) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     {% block postload_js %}
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function ( ) {
             var toastElList = document.querySelectorAll('.toast');
             var toastList = Array.from(toastElList).map(function (toastEl) {
                 var toast = new bootstrap.Toast(toastEl, {
@@ -237,7 +241,7 @@
 </html>
 <script>
 // Toast close button functionality
-$(document).on('click', '[data-bs-dismiss="toast"], .btn-close', function(e) {
+$(document ).on('click', '[data-bs-dismiss="toast"], .btn-close', function(e) {
     e.preventDefault();
     $(this).closest('.toast, .message-container, .message-success').remove();
 });
@@ -248,5 +252,3 @@ $(document).on('click', '[data-bs-dismiss="toast"], .btn-close', function(e) {
 </body>
 
 </html>
-
-
