@@ -1,12 +1,11 @@
 from django.urls import path
 from . import views
-from . import webhooks 
-app_name = 'checkout'
+from .webhooks import webhook
 
 urlpatterns = [
     path('', views.checkout, name='checkout'),
+    # THIS IS THE FIX: Ensure the name is 'checkout_success'
     path('checkout_success/<order_number>', views.checkout_success, name='checkout_success'),
-    path('wh/', webhooks.webhook, name='webhook'),
     path('cache_checkout_data/', views.cache_checkout_data, name='cache_checkout_data'),
-
+    path('wh/', webhook, name='webhook'),
 ]
