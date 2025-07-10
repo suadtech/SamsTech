@@ -1,3 +1,5 @@
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 """SamsTech URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -21,7 +23,12 @@ from django.conf.urls.static import static
 
 
 
-urlpatterns = [
+
+
+    path('favicon.ico', RedirectView.as_view(
+        url=staticfiles_storage.url('images/favicon.ico')
+    )),
+
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
