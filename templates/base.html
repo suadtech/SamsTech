@@ -8,17 +8,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SamTech Mobile Accessories</title>
-               
-       {% load static %}
-<head>
     <!-- Favicon Configuration -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon_io/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon_io/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon_io/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'favicon_io/site.webmanifest' %}">
     <link rel="shortcut icon" href="{% static 'favicon_io/favicon.ico' %}">
-</head>
-
+    {% endblock meta %}
 
     {% block extra_meta %}
     {% endblock %}
@@ -32,15 +28,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %} {# <-- This closes the corecss block #} {% block extra_css %} {# <-- This closes the extra_css block
-        #} {% endblock %} </head>
+    {% endblock %}
+    
+    {% block extra_css %}
+    {% endblock %}
+</head>
 
 <body class="d-flex flex-column min-vh-100">
     <header class="fixed-top">
         <!-- Top Info Bar (Delivery Banner  ) -->
         <div id="top-header" class="row bg-black text-white text-center py-1">
             <div class="col">
-                <h4 class="logo-font my-0">Free delivery on orders over £50{{ free_shipping_threshold }}</h4>
+                <h4 class="logo-font my-0">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
             </div>
         </div>
 
@@ -82,10 +81,8 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options-desktop">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                               <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-
+                               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
