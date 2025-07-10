@@ -1,8 +1,22 @@
+import json
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+def get_product_price(product):
+    """
+    Safely gets the price of a product, handling complex price strings.
+    """
+    try:
+        price_value = product.price
+        if isinstance(price_value, str) and price_value.startswith('{') and price_value.endswith('}'):
+            price_dict = json.loads(price_value.replace("'", "\""))
+            return float(price_dict.get('single', price_dict.get('unit_price', 0.0)))
+        else:
+            return float(price_value)
+    except (ValueError, TypeError, json.JSONDecodeError):
+        return 0.0
 
 def bag_contents(request):
     bag_items = []
@@ -11,9 +25,11 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     for item_id, item_data in bag.items():
+        product = get_object_or_404(Product, pk=item_id)
+        product_price_for_calc = get_product_price(product)
+
         if isinstance(item_data, int):
-            product = get_object_or_404(Product, pk=item_id)
-            total += int(item_data) * float(product.price)
+            total += item_data * product_price_for_calc
             product_count += item_data
             bag_items.append({
                 'item_id': item_id,
@@ -21,9 +37,8 @@ def bag_contents(request):
                 'product': product,
             })
         else:
-            product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
-                total += int(quantity) * float(product.price)
+                total += quantity * product_price_for_calc
                 product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
@@ -55,4 +70,3 @@ def bag_contents(request):
     }
 
     return context
-
