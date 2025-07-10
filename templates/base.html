@@ -128,7 +128,7 @@
             </div>
         </nav>
 
-        <!-- Mobile Header - Visible on Small Screens Only -->
+                <!-- Mobile Header - Visible on Small Screens Only -->
         <div id="mobile-header" class="d-lg-none bg-white py-2">
             <div class="row align-items-center">
                 <div class="col-4">
@@ -142,19 +142,16 @@
             </div>
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#mobile-main-nav-collapse" aria-controls="mobile-main-nav-collapse"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-main-nav-collapse" aria-controls="mobile-main-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="mobile-main-nav-collapse">
-                        {# {% include 'includes/main-nav.html' %} #} {# Re-using main-nav for mobile menu #}
-
-
+                        {% include 'includes/main-nav.html' %}
                     </div>
                 </nav>
             </div>
         </div>
+
     </header>
 
     <main class="flex-grow-1">
