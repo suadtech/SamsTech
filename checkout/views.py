@@ -11,7 +11,7 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
-from bag.contexts import bag_contents, get_product_price # Import our helper function
+from bag.contexts import bag_contents
 
 @require_POST
 def cache_checkout_data(request ):
@@ -36,7 +36,6 @@ def checkout(request):
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
-        # THIS IS THE FIX: Use .get() to safely access form data
         form_data = {
             'full_name': request.POST.get('full_name'),
             'email': request.POST.get('email'),
@@ -58,11 +57,7 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    
-                    numerical_price = get_product_price(product)
-                    
                     if isinstance(item_data, int):
-                        product.price = numerical_price 
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
@@ -70,8 +65,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
+                        # This handles products with sizes, if you have them
                         for size, quantity in item_data['items_by_size'].items():
-                            product.price = numerical_price
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -87,8 +82,9 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_bag'))
 
+            # Save user info and redirect to success page
             request.session['save_info'] = 'save-info' in request.POST
-           return redirect(reverse('checkout:checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout:checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -149,11 +145,9 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
