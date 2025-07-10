@@ -8,8 +8,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    # Add this line
-    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('favicon.ico'))),
+   
+   
+path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico'))),
+
     
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
