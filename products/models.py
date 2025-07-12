@@ -26,6 +26,7 @@ class Product(models.Model):
     name = models.CharField(max_length=500, null=True, blank=True)
     sku = models.CharField(max_length=500, null=True, blank=True)
     category = models.CharField(max_length=500, null=True, blank=True)
+
     description = models.TextField()
     price = models.CharField(max_length=500, null=True, blank=True)
     rating = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
@@ -268,3 +269,7 @@ class Product(models.Model):
     fixture_data = models.JSONField(default=dict, blank=True, null=True)
     fixture_data = models.JSONField(default=dict, blank=True, null=True)
     display_technology = models.CharField(max_length=500, null=True, blank=True)
+
+def __str__(self):
+
+        return self.name or f"Product {self.id}"

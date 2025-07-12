@@ -65,7 +65,6 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        # This handles products with sizes, if you have them
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
@@ -82,9 +81,10 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_bag'))
 
-            # Save user info and redirect to success page
             request.session['save_info'] = 'save-info' in request.POST
+             
             return redirect(reverse('checkout:checkout_success', args=[order.order_number]))
+
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
