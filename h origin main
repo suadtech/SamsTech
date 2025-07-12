@@ -1,0 +1,143 @@
+[33m5f41bcc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m adding screenshot
+[33m5d19cf7[m update and adding some screenshots
+[33m01dae9b[m update and add User stories screenshots
+[33m2f91d7e[m  update and add some wireframe imgs
+[33ma0694d1[m add some pic for wireframe
+[33m11095da[m add some img for wireframe
+[33md85a0e1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m update file and AWS fix
+[33m419d9c4[m update to mobaile Header for small screen
+[33mc8838fe[m add jpeg
+[33m245d52e[m update
+[33mf074116[m Final attempt: Trigger rebuild after purging cache
+[33m8866346[m Fix: Restore correct favicon links in base.html
+[33m05cf249[m Fix: Correct indentation in checkout view by replacing file
+[33mec289a0[m Trigger rebuild after purging cache
+[33m16d5566[m Fix: Add namespace to reverse() call for checkout_success
+[33m46b36fa[m Fix: Add missing URL pattern for checkout_success
+[33mc98448b[m Fix: Add missing namespace for checkout app
+[33mffa4049[m Trigger rebuild after purging cache
+[33ma4487e5[m Fix: Correctly configure WhiteNoise for Heroku
+[33m92bb4d9[m Feat: Use direct static links for favicon
+[33m391a52a[m Fix: Correct RedirectView path for favicon
+[33m8ade82d[m Fix: Add RedirectView for favicon
+[33m7886ef9[m Fix: Manually replace corrupted urls.py
+[33ma3d0592[m Implement robust favicon solution with RedirectView
+[33m3623503[m Fix TemplateSyntaxError in base.html
+[33m60eb2f4[m Fix favicon paths to include favicon_io subdirectory
+[33m00dd4f8[m Fix NoReverseMatch for checkout_success URL
+[33m717cde6[m Fix MultiValueDictKeyError by making county optional in OrderForm
+[33m8d3bd2c[m Fix MultiValueDictKeyError for county in checkout
+[33m62aaf00[m Fix ValidationError in checkout by parsing price before saving OrderLineItem
+[33md866754[m Fix ValueError in bag_contents with a robust price parsing function
+[33ma9c83b1[m Ensure bag_contents price parsing fix is deployed
+[33me8ac570[m Fix ValueError in bag_contents, correct favicon links in base.html, and update static files
+[33m915e105[m Add display_technology field to Product model
+[33m0a262ba[m Add fixture_data JSONField and smart product loader
+[33m6b08679[m Fix Product model field lengths - remove duplicates and increase limits
+[33me7ad7bf[m Increase Category friendly_name field length
+[33mc44f9c3[m Increase field lengths for data loading
+[33mfb86b14[m Fix Python version and dependencies
+[33m4434d15[m update
+[33m6a30068[m Initial commit
+[33m2688ebb[m deployment aws
+[33ma80335d[m update
+[33m6d4b813[m update
+[33m8a1aee3[m adding some screenshots and update on account fils
+[33ma4c3663[m  update 'crispy_bootstrap4'
+[33mf417e4a[m Reload data for categories and products - removed sensitive files
+[33md878e70[m update
+[33m3ca9d9d[m update
+[33m672023d[m update
+[33m85aedd6[m Fix gunicorn command
+[33mb5cf306[m update Procfile
+[33m0f904e2[m Update ALLOWED_HOSTS for deployment
+[33m804f52b[m Create a database,Create a new Heroku app,Deploying to Heroku
+[33m53849c3[m Product Management system is working perfectly
+[33mdaf7dec[m update and create Product Form
+[33mdf9de50[m update email confirmations
+[33md4f3bc8[m add some photos and updates
+[33m1e42d7f[m update
+[33m463860c[m update
+[33m399d8bc[m SECURITY: Remove sensitive files from tracking
+[33md4f7812[m create profile file
+[33m62adc18[m update
+[33m86b2e0d[m update
+[33m1e3bb32[m update
+[33m0ac974a[m Merge remote changes with local branch
+[33me2537b9[m update
+[33md36e147[m update
+[33md857a33[m webhooks are working
+[33md9906e3[m update checkout_success.html
+[33m2c4d019[m update
+[33m8222cad[m Clean SamsTech e-commerce platform with working checkout
+[33m7fbac3b[m update
+[33m1e6d2ae[m update
+[33m2820593[m update checkout
+[33mbc9d301[m update toasts files
+[33ma4defe7[m update
+[33md873d10[m update
+[33mcbfee30[m upbdat and create filels app bag , checkout
+[33m3b4b083[m update
+[33m700edef[m update
+[33mf5fb020[m update
+[33me359200[m update
+[33me3e25c0[m update
+[33m1ff8243[m  update and screenshotsfolder
+[33m7e4cd26[m update
+[33mcb50e33[m update
+[33mf5d53ac[m update
+[33m1a13eab[m update
+[33mc0cce3e[m update
+[33mec70708[m update
+[33m8bf9531[m update
+[33m52d802b[m update
+[33m16c59e6[m update
+[33ma90545e[m update
+[33maa00d81[m update products
+[33mf768578[m update products
+[33m0c36a9c[m update products
+[33mfb26a6d[m update
+[33m36eeb21[m update products
+[33m5a1d7f0[m update
+[33mb88df0c[m update
+[33m78fe96d[m update
+[33m24bf7b5[m update
+[33m9e970ae[m update
+[33m6fba362[m update produacts detalis
+[33mab659d8[m update Products Template
+[33m838f130[m update
+[33m663fc4d[m added products app, models and fixtures ,and screenshots files
+[33mf6a5980[m update products
+[33m8e154b1[m update
+[33m48a7144[m uodeate Products
+[33mecd7b21[m update productes
+[33m280520e[m tosave
+[33m64254ef[m tosave
+[33m426c848[m update products
+[33mac80639[m update
+[33mb5262b0[m images update
+[33m4662041[m to save
+[33m6e18b1a[m update
+[33m158c87b[m products update
+[33m550b333[m  update
+[33md9cc1d4[m  products update
+[33mc4a85e4[m update
+[33m6d8b0d2[m add products
+[33m912cd13[m add fixtures files
+[33m90ac0bf[m index.html update
+[33m3ec2862[m save
+[33m977e5a7[m to save changes
+[33m5cff4fa[m main navbar
+[33m522eb49[m add includes file
+[33m1adafca[m update
+[33m4e63f78[m home page done
+[33m47064fd[m add static file
+[33m7b7d917[m add top header
+[33mfae823e[m home pege
+[33mb9b08c2[m templetes
+[33m8d4bb73[m add home app
+[33m8fe301e[m add base.html
+[33mebf2a67[m setup allauth
+[33m1d30a8c[m Allauth Setup
+[33me1c0cb8[m intialcomint
+[33me0d6684[m Initial commit
