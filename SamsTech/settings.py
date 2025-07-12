@@ -1,4 +1,3 @@
-
 """
 Django settings for SamsTech project.
 
@@ -36,10 +35,11 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
+    '8000-suadtech-samstech-7zagrholl2i.ws-eu120.gitpod.io', # Add this line
+    'samstech-84d03d38bd6b.herokuapp.com',
     'localhost',
-    '8000-suadtech-samstech-xqq1ej556e2.ws-eu120.gitpod.io',  # Gitpod development
-    'samstech-84d03d38bd6b.herokuapp.com',  # Heroku production
+    '127.0.0.1',
+    '*.gitpod.io',
 ]
 
 
@@ -208,6 +208,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
+ # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'samstech'   
     AWS_S3_REGION_NAME = 'eu-north-1' 
@@ -222,7 +228,9 @@ if 'USE_AWS' in os.environ:
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
-    # Override static and media URLs in production
+  
+
+  # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
@@ -258,8 +266,10 @@ STRIPE_CURRENCY ='GBP'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
-STRIPE_WH_SECRET = 'whsec_your_webhook_secret_here'  # For later use
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '') 
 
 # Email Configuration
 DEFAULT_FROM_EMAIL = 'yourstore@example.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
