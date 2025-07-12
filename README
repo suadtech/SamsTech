@@ -491,7 +491,6 @@ Make your changes and commit: git commit -m 'Add feature'
 4.
 Push to the branch: git push origin feature-name
 
-5.
 
 
 
