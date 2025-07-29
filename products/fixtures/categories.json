@@ -1,5 +1,5 @@
 [
-    { "pk": 1, "model": "products.category", "fields": { "name": "ALL PRODUCTS", "friendly_name": "ALL PRODUCTS" } },
+    { "pk": 1, "model": "products.cat egory", "fields": { "name": "ALL PRODUCTS", "friendly_name": "ALL PRODUCTS" } },
 
     { "pk": 2, "model": "products.category", "fields": { "name": "LCDS", "friendly_name": "LCDS" } },
 
@@ -53,5 +53,6 @@
     { "pk": 44, "model": "products.category", "fields": { "name": "Black TPU Gel Cases", "friendly_name": "Black TPU Gel Cases" } }
 
    ]
+
 
 

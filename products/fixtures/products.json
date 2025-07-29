@@ -67,7 +67,7 @@
         "model": "products.product",
         "fields": {
             "sku": "IW5-40MM-LTE-LCD",
-            "name": "iWatch Series 5 Replacement LCD Screen 40MM – GPS LTE – A2156",
+            "name": "iWatch Series 5 Replacement LCD Screen 40MM \u2013 GPS LTE \u2013 A2156",
             "description": "Genuine-compatible LCD replacement screen for Apple Watch Series 5 40mm (Model A2156) with GPS + LTE functionality. Includes full display assembly for precise touch response.",
             "price": "62.99",
             "category": "Apple LCDs",
@@ -82,7 +82,7 @@
         "model": "products.product",
         "fields": {
             "sku": "IW1-38MM-LCD",
-            "name": "iWatch Series 1 Replacement LCD Screen 38MM – A1802",
+            "name": "iWatch Series 1 Replacement LCD Screen 38MM \u2013 A1802",
             "description": "Compatible LCD replacement screen for Apple Watch Series 1 38mm (Model A1802). Includes display assembly with responsive touch functionality for watch repairs.",
             "price": "29.99",
             "category": "Apple LCDs",
@@ -97,15 +97,13 @@
         "model": "products.product",
         "fields": {
             "sku": "SMA16-4G-LCD-FRAME",
-            "name": "Genuine LCD Screen For Samsung Galaxy A16 4G (A165) With Frame and Touchpad – Black (GH82-36253A)",
+            "name": "Genuine LCD Screen For Samsung Galaxy A16 4G (A165) With Frame and Touchpad \u2013 Black (GH82-36253A)",
             "description": "Original-quality LCD replacement for Samsung Galaxy A16 4G (Model A165), including pre-installed frame and touchpad. Black color variant with part number GH82-36253A.",
             "price": "33.49",
             "category": "Samsung LCDs",
             "rating": 4.6,
             "image_url": "/media/products/samsung-a16-lcd-frame.jpg",
             "image": "samsung-a16-lcd-frame.jpg",
-            "stock_status": "In Stock",
-            "warranty": "12 months",
             "brand": " Samsung"
         }
     },
@@ -114,22 +112,14 @@
         "model": "products.product",
         "fields": {
             "sku": "SMA600F-LCD-FRAME",
-            "name": "Genuine LCD Screen For Samsung Galaxy A6 (2018) (SM-A600F) With Frame and Touchpad – Black (GH97-21897A)",
+            "name": "Genuine LCD Screen For Samsung Galaxy A6 (2018) (SM-A600F) With Frame and Touchpad \u2013 Black (GH97-21897A)",
             "description": "OEM-compatible LCD replacement for Samsung Galaxy A6 2018 (Model SM-A600F), including pre-assembled frame and touchpad. Black color variant with official part number GH97-21897A.",
             "price": "32.99",
             "category": "Samsung LCDs",
             "rating": 4.4,
             "image_url": "/media/products/samsung-a6-2018-lcd.jpg",
             "image": "samsung-a6-2018-lcd.jpg",
-            "brand": " Samsung",
-            "compatibility": "SM-A600F (2018 International Model)",
-            "warranty": "12 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Screen",
-                "Frame",
-                "Touchpad"
-            ]
+            "brand": " Samsung"
         }
     },
     {
@@ -137,23 +127,14 @@
         "model": "products.product",
         "fields": {
             "sku": "SMS23FE-OLED-FRAME",
-            "name": "Replacement OLED LCD Screen For Samsung Galaxy S23 FE (S71IB) – With Frame",
+            "name": "Replacement OLED LCD Screen For Samsung Galaxy S23 FE (S71IB) \u2013 With Frame",
             "description": "Premium OLED display replacement for Samsung Galaxy S23 FE (Model S71IB), including pre-installed frame. Features vibrant colors and energy efficiency compared to traditional LCDs.",
             "price": "29.99",
             "category": "Samsung LCDs",
             "rating": 4.7,
             "image_url": "/media/products/samsung-s23fe-oled.jpg",
             "image": "samsung-s23fe-oled.jpg",
-            "brand": " Samsung",
-            "display_type": "OLED",
-            "compatibility": "Galaxy S23 FE (S71IB model only)",
-            "warranty": "24 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "OLED Screen",
-                "Frame"
-            ],
-            "release_year": 2023
+            "brand": " Samsung"
         }
     },
     {
@@ -161,25 +142,14 @@
         "model": "products.product",
         "fields": {
             "sku": "SMA115-LCD-FRAME",
-            "name": "Genuine LCD Screen for Samsung Galaxy A11 (A115) With Frame and Touchpad – Black (GH81-18760A)",
+            "name": "Genuine LCD Screen for Samsung Galaxy A11 (A115) With Frame and Touchpad \u2013 Black (GH81-18760A)",
             "description": "OEM-quality LCD replacement for Samsung Galaxy A11 (Model A115), including pre-assembled frame and touchpad. Black color variant with official part number GH81-18760A. Budget-friendly solution for A11 repairs.",
             "price": "29.99",
             "category": "Samsung LCDs",
             "rating": 4.1,
             "image_url": "/media/products/samsung-a11-lcd-frame.jpg",
             "image": "samsung-a11-lcd-frame.jpg",
-            "brand": " Samsung",
-            "display_type": "LCD",
-            "compatibility": "SM-A115 (Global Model)",
-            "warranty": "12 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Screen",
-                "Frame",
-                "Touchpad"
-            ],
-            "release_year": 2020,
-            "device_tier": "Budget"
+            "brand": " Samsung"
         }
     },
     {
@@ -187,33 +157,14 @@
         "model": "products.product",
         "fields": {
             "sku": "MOTE20-LCD-TOUCH",
-            "name": "Replacement LCD Display Touch Screen For Motorola Moto E20 – XT2155 – No Frame",
+            "name": "Replacement LCD Display Touch Screen For Motorola Moto E20 \u2013 XT2155 \u2013 No Frame",
             "description": "Basic LCD touch screen replacement for Motorola Moto E20 (Model XT2155). Screen-only assembly (frame not included) for cost-effective repairs on budget devices.",
             "price": "9.99",
             "category": "Other LCDs",
             "rating": 3.9,
             "image_url": "/media/products/motorola-e20-lcd.jpg",
             "image": "motorola-e20-lcd.jpg",
-            "brand": " Motorola",
-            "display_type": "LCD",
-            "compatibility": "Moto E20 (XT2155 only)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Screen",
-                "Touch Layer"
-            ],
-            "excludes": [
-                "Frame"
-            ],
-            "release_year": 2021,
-            "device_tier": "Entry-Level",
-            "repair_difficulty": "Intermediate (Frame not included)",
-            "tool_requirements": [
-                "Suction Cup",
-                "Pry Tools",
-                "Adhesive"
-            ]
+            "brand": " Motorola"
         }
     },
     {
@@ -221,35 +172,14 @@
         "model": "products.product",
         "fields": {
             "sku": "MOTG05-LCD-BASIC",
-            "name": "Replacement LCD Display Touch Screen For Motorola Moto G05 – No Frame – Black",
+            "name": "Replacement LCD Display Touch Screen For Motorola Moto G05 \u2013 No Frame \u2013 Black",
             "description": "Cost-effective LCD touch screen replacement for Motorola Moto G05. Screen-only assembly (frame not included) with basic touch functionality. Ideal for budget-conscious repairs.",
             "price": "12.99",
             "category": "Other LCDs",
             "rating": 3.8,
             "image_url": "/media/products/motorola-g05-lcd.jpg",
             "image": "motorola-g05-lcd.jpg",
-            "brand": " Motorola",
-            "display_type": "LCD",
-            "compatibility": "Moto G05 (All Variants)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Screen",
-                "Touch Layer"
-            ],
-            "excludes": [
-                "Frame",
-                "Adhesive"
-            ],
-            "release_year": 2023,
-            "device_tier": "Entry-Level",
-            "repair_difficulty": "Intermediate",
-            "tool_requirements": [
-                "Suction Cup",
-                "Pry Tools",
-                "Adhesive"
-            ],
-            "install_notes": "Requires frame transfer from original device"
+            "brand": " Motorola"
         }
     },
     {
@@ -257,37 +187,14 @@
         "model": "products.product",
         "fields": {
             "sku": "GPIX3A-LCD-ASM",
-            "name": "OEM LCD Screen Display Touch and Digitizer Assembly For Google Pixel 3A (G020G) – No Frame",
+            "name": "OEM LCD Screen Display Touch and Digitizer Assembly For Google Pixel 3A (G020G) \u2013 No Frame",
             "description": "Original-equivalent LCD display with integrated touch digitizer for Google Pixel 3A (Model G020G). Screen-only assembly (frame not included) designed for precise color accuracy and touch response.",
             "price": "39.99",
             "category": "Other LCDs",
             "rating": 4.2,
             "image_url": "/media/products/pixel3a-lcd-assembly.jpg",
             "image": "pixel3a-lcd-assembly.jpg",
-            "brand": " Google Pixel",
-            "display_type": "LCD",
-            "compatibility": "Pixel 3A (G020G only)",
-            "warranty": "12 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Panel",
-                "Digitizer",
-                "Touch Assembly"
-            ],
-            "excludes": [
-                "Frame",
-                "Adhesive"
-            ],
-            "release_year": 2019,
-            "device_tier": "Mid-Range",
-            "repair_difficulty": "Advanced",
-            "tool_requirements": [
-                "Heat Gun",
-                "Pry Tools",
-                "Adhesive Strips"
-            ],
-            "install_notes": "Requires careful separation of original frame. Not recommended for first-time repairers.",
-            "color_accuracy": "98% sRGB"
+            "brand": " Google Pixel"
         }
     },
     {
@@ -295,36 +202,14 @@
         "model": "products.product",
         "fields": {
             "sku": "GPIX4A-OLED-FRAME",
-            "name": "Replacement OLED LCD Screen Display Touch and Digitizer Assembly For Google Pixel 4A 4G – With Frame",
+            "name": "Replacement OLED LCD Screen Display Touch and Digitizer Assembly For Google Pixel 4A 4G \u2013 With Frame",
             "description": "Premium OLED display assembly with pre-installed frame for Google Pixel 4A 4G. Features integrated touch digitizer, vibrant colors (100% DCI-P3), and factory-calibrated accuracy. Complete plug-and-play solution.",
             "price": "74.99",
             "category": "Other LCDs",
             "rating": 4.8,
             "image_url": "/media/products/pixel4a-oled-frame.jpg",
             "image": "pixel4a-oled-frame.jpg",
-            "brand": " Google Pixel",
-            "display_type": "OLED",
-            "compatibility": "Pixel 4A 4G (All Regions)",
-            "warranty": "24 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "OLED Panel",
-                "Frame",
-                "Digitizer",
-                "Adhesive"
-            ],
-            "release_year": 2020,
-            "device_tier": "Mid-Range+",
-            "repair_difficulty": "Beginner-Friendly",
-            "tool_requirements": [
-                "None (Pre-Assembled)"
-            ],
-            "color_accuracy": "100% DCI-P3",
-            "special_features": [
-                "Factory calibration",
-                "HDR support",
-                "Always-On Display ready"
-            ]
+            "brand": " Google Pixel"
         }
     },
     {
@@ -332,37 +217,14 @@
         "model": "products.product",
         "fields": {
             "sku": "OP3T-LCD-WHITE",
-            "name": "Replacement LCD Display Touch Screen For One Plus 3T (A3003) – With Frame – White",
+            "name": "Replacement LCD Display Touch Screen For One Plus 3T (A3003) \u2013 With Frame \u2013 White",
             "description": "Complete LCD touch screen assembly with white frame for OnePlus 3T (Model A3003). Includes pre-installed frame and adhesive for simplified installation. Maintains original display clarity.",
             "price": "12.99",
             "category": "Other LCDs",
             "rating": 4.0,
             "image_url": "/media/products/oneplus3t-lcd-white.jpg",
             "image": "oneplus3t-lcd-white.jpg",
-            "brand": " OnePlus",
-            "display_type": "LCD",
-            "compatibility": "OnePlus 3T (A3003 only)",
-            "warranty": "12 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Panel",
-                "Touch Screen",
-                "White Frame",
-                "Adhesive"
-            ],
-            "color_options": [
-                "White"
-            ],
-            "release_year": 2016,
-            "device_tier": "Flagship (Previous Gen)",
-            "repair_difficulty": "Beginner",
-            "tool_requirements": [
-                "None"
-            ],
-            "special_features": [
-                "Optic AMOLED-equivalent calibration",
-                "Dash Charge compatible"
-            ]
+            "brand": " OnePlus"
         }
     },
     {
@@ -370,38 +232,14 @@
         "model": "products.product",
         "fields": {
             "sku": "XM12C-LCD-BASIC",
-            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Redmi 12C – No Frame",
+            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Redmi 12C \u2013 No Frame",
             "description": "Budget LCD display with integrated touch digitizer for Xiaomi Redmi 12C. Screen-only assembly requires frame transfer. Designed for cost-effective repairs on Xiaomi's entry-level devices.",
             "price": "9.99",
             "category": "Other LCDs",
             "rating": 3.7,
             "image_url": "/media/products/xiaomi-12c-lcd.jpg",
             "image": "xiaomi-12c-lcd.jpg",
-            "brand": " xiaomi",
-            "display_type": "LCD",
-            "compatibility": "Redmi 12C (2022 Model Only)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "includes": [
-                "LCD Panel",
-                "Digitizer"
-            ],
-            "excludes": [
-                "Frame",
-                "Adhesive"
-            ],
-            "release_year": 2022,
-            "device_tier": "Entry-Level",
-            "repair_difficulty": "Intermediate",
-            "tool_requirements": [
-                "Suction Cup",
-                "Pry Tools"
-            ],
-            "display_features": [
-                "HD+ Resolution",
-                "Sunlight Readability Enhanced"
-            ],
-            "market": "Emerging Markets Focus"
+            "brand": " xiaomi"
         }
     },
     {
@@ -409,42 +247,14 @@
         "model": "products.product",
         "fields": {
             "sku": "XMN10-LCD-BLACK",
-            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Mi Note 10 Black – No Frame",
+            "name": "Replacement LCD Screen Display Touch and Digitizer Assembly for Xiaomi Mi Note 10 Black \u2013 No Frame",
             "description": "High-quality LCD replacement for Xiaomi Mi Note 10 (2019 flagship). Features AMOLED-like color calibration and 1080p resolution. Screen-only assembly requires professional installation.",
             "price": "23.99",
             "category": "Other LCDs",
             "rating": 4.1,
             "image_url": "/media/products/xiaomi-minote10-lcd.jpg",
             "image": "xiaomi-minote10-lcd.jpg",
-            "brand": " xiaomi",
-            "display_type": "LCD (AMOLED-Calibrated)",
-            "compatibility": "Mi Note 10 (Global Version)",
-            "warranty": "12 months",
-            "stock_status": "Low Stock",
-            "includes": [
-                "LCD Panel",
-                "Digitizer",
-                "Flex Cable"
-            ],
-            "excludes": [
-                "Frame",
-                "Adhesive"
-            ],
-            "release_year": 2019,
-            "device_tier": "Former Flagship",
-            "repair_difficulty": "Advanced",
-            "tool_requirements": [
-                "Heat Gun",
-                "UV Glue",
-                "Precision Tools"
-            ],
-            "resolution": "1080x2340",
-            "special_features": [
-                "DCI-P3 Color Support",
-                "HDR10 Compatibility",
-                "In-Display Fingerprint Ready"
-            ],
-            "market": "Enthusiast/Refurbisher"
+            "brand": " xiaomi"
         }
     },
     {
@@ -459,25 +269,7 @@
             "rating": 4.0,
             "image_url": "/media/products/samsung-a03core-flex.jpg",
             "image": "samsung-a03core-flex.jpg",
-            "brand": " Samsung",
-            "part_type": "Charging Ports & Flex",
-            "compatibility": "Galaxy A03 Core (All Variants)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "connector_type": "USB-C",
-            "functions": [
-                "Charging",
-                "Data Transfer"
-            ],
-            "release_year": 2021,
-            "device_tier": "Budget",
-            "repair_difficulty": "Beginner",
-            "tool_requirements": [
-                "Phillips #00 Screwdriver",
-                "Spudger"
-            ],
-            "installation_time": "15-20 minutes",
-            "oem_equivalent": true
+            "brand": " Samsung"
         }
     },
     {
@@ -492,31 +284,7 @@
             "rating": 4.2,
             "image_url": "/media/products/samsung-a04-charging-flex.jpg",
             "image": "samsung-a04-charging-flex.jpg",
-            "brand": " Samsung",
-            "part_type": "Charging Flex Cable",
-            "compatibility": "Galaxy A04 (All Models)",
-            "warranty": "6 months",
-            "stock_status": "In Stock (High Volume)",
-            "connector_type": "USB-C",
-            "functions": [
-                "Charging",
-                "Data Transfer",
-                "Audio Accessories"
-            ],
-            "release_year": 2022,
-            "device_tier": "Budget",
-            "repair_difficulty": "Beginner",
-            "tool_requirements": [
-                "Phillips #00 Screwdriver",
-                "Plastic Pry Tool"
-            ],
-            "installation_time": "10-15 minutes",
-            "oem_equivalent": true,
-            "durability_features": [
-                "Reinforced Strain Relief",
-                "Gold-Plated Contacts"
-            ],
-            "popularity_rank": "Top 10 Repair Part"
+            "brand": " Samsung"
         }
     },
     {
@@ -531,34 +299,7 @@
             "rating": 4.5,
             "image_url": "/media/products/iphone13pro-camera-lens.jpg",
             "image": "iphone13pro-camera-lens.jpg",
-            "brand": "Apple ",
-            "part_type": "Camera Lens",
-            "compatibility": "iPhone 13 Pro & 13 Pro Max",
-            "warranty": "6 months",
-            "stock_status": "In Stock (Bulk Available)",
-            "material": "Sapphire-Coated Glass",
-            "functions": [
-                "Protects Camera Sensors",
-                "Maintains Image Quality"
-            ],
-            "release_year": 2021,
-            "device_tier": "Premium",
-            "repair_difficulty": "Beginner",
-            "tool_requirements": [
-                "Hair Dryer",
-                "Tweezers"
-            ],
-            "installation_time": "5-10 minutes",
-            "oem_equivalent": true,
-            "optical_properties": [
-                "99% Light Transmission",
-                "Anti-Reflective Coating"
-            ],
-            "package_contents": [
-                "Lens Cover",
-                "Pre-Cut Adhesive",
-                "Cleaning Cloth"
-            ]
+            "brand": "Apple "
         }
     },
     {
@@ -573,33 +314,7 @@
             "rating": 4.3,
             "image_url": "/media/products/iphone12mini-flash.jpg",
             "image": "iphone12mini-flash.jpg",
-            "brand": " Apple",
-            "part_type": "Flash Module",
-            "compatibility": "iPhone 12 Mini (A2176, A2398, A2399, A2400)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "technology": "True Tone",
-            "functions": [
-                "Camera Flash",
-                "Flashlight Function",
-                "Emergency Signaling"
-            ],
-            "release_year": 2020,
-            "device_tier": "Compact Premium",
-            "repair_difficulty": "Intermediate",
-            "tool_requirements": [
-                "Pentalobe Screwdriver",
-                "Plastic Spudger",
-                "Tweezers"
-            ],
-            "installation_time": "15-20 minutes",
-            "oem_equivalent": true,
-            "brightness": "50 Lumens",
-            "color_temp": "6000K (Daylight Balanced)",
-            "safety_features": [
-                "Overheat Protection",
-                "Auto Power Cutoff"
-            ]
+            "brand": " Apple"
         }
     },
     {
@@ -614,43 +329,7 @@
             "rating": 4.0,
             "image_url": "/media/products/iphone-homebutton-flex.jpg",
             "image": "iphone-homebutton-flex.jpg",
-            "brand": " Apple",
-            "part_type": "Flex Cable Assembly",
-            "compatibility": [
-                "iPhone 7",
-                "iPhone 8",
-                "iPhone SE (2020)",
-                "iPhone SE (2022)"
-            ],
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "connectors": [
-                "Touch ID Sensor",
-                "Taptic Engine",
-                "Backlight"
-            ],
-            "release_years": [
-                2016,
-                2017,
-                2020,
-                2022
-            ],
-            "device_tier": "Legacy Support",
-            "repair_difficulty": "Advanced",
-            "tool_requirements": [
-                "Pentalobe Screwdriver",
-                "Y000 Tri-point Screwdriver",
-                "ESD-safe Tweezers"
-            ],
-            "installation_time": "30-45 minutes",
-            "oem_equivalent": true,
-            "biometric_note": "Touch ID requires original home button",
-            "color_options": [
-                "Black",
-                "White",
-                "Product Red"
-            ],
-            "haptic_support": true
+            "brand": " Apple"
         }
     },
     {
@@ -665,36 +344,7 @@
             "rating": 4.4,
             "image_url": "/media/products/iphonex-speaker.jpg",
             "image": "iphonex-speaker.jpg",
-            "brand": " Apple",
-            "part_type": "Bottom Speaker Assembly",
-            "compatibility": "iPhone X (A1865, A1901, A1902)",
-            "warranty": "6 months",
-            "stock_status": "In Stock",
-            "specifications": {
-                "impedance": "8Ω",
-                "frequency_response": "80Hz-20kHz",
-                "sensitivity": "86dB ±3dB"
-            },
-            "water_resistance": "IP67 Mesh Protection",
-            "release_year": 2017,
-            "device_tier": "Premium (Legacy)",
-            "repair_difficulty": "Intermediate",
-            "tool_requirements": [
-                "Pentalobe Screwdriver",
-                "Plastic Pry Tool",
-                "iSesamo Opener"
-            ],
-            "installation_time": "20-25 minutes",
-            "oem_equivalent": true,
-            "audio_features": [
-                "Stereo Sound Support",
-                "Dolby Atmos Compatible",
-                "Call Speaker Function"
-            ],
-            "quality_marks": [
-                "Rubber Gasket Sealed",
-                "Magnetic Shielding"
-            ]
+            "brand": " Apple"
         }
     },
     {
@@ -704,61 +354,12 @@
             "sku": "PM-CR1620-5PK",
             "name": "5 X PoundMax CR1620 3V Lithium Coin Cell Batteries",
             "description": "5-pack of CR1620 lithium coin cell batteries (3V). Compatible with DL1620/ECR1620 equivalents. Ideal for watches, calculators, car key fobs, and small electronics. Long shelf life with leak-resistant design.",
-            "price": {
-                "single": "2.39",
-                "unit_price": "0.48",
-                "bulk_discounts": [
-                    {
-                        "quantity": 2,
-                        "price": "2.27"
-                    },
-                    {
-                        "quantity": 3,
-                        "price": 2.15
-                    }
-                ]
-            },
+            "price": "2.39",
             "category": "Batteries",
             "rating": 4.7,
             "image_url": "/media/products/cr1620-batteries.jpg",
             "image": "cr1620-batteries.jpg",
-            "brand": " cr1620",
-            "specifications": {
-                "type": "Lithium Coin Cell",
-                "voltage": "3V",
-                "capacity": "75mAh",
-                "equivalents": [
-                    "DL1620",
-                    "ECR1620",
-                    "BR1620"
-                ],
-                "operating_temp": "-30°C to 60°C"
-            },
-            "seller_info": {
-                "name": "SAMTECH ACCESSORIES",
-                "rating": "100% Positive",
-                "items_sold": 33
-            },
-            "stock": {
-                "available": ">10 units",
-                "condition": "New"
-            },
-            "compatibility": [
-                "Watches",
-                "Car Key Fobs",
-                "Calculators",
-                "Medical Devices",
-                "IoT Sensors"
-            ],
-            "safety_certifications": [
-                "CE",
-                "RoHS",
-                "UN38.3"
-            ],
-            "promotions": {
-                "multi_buy": "Up to 15% off",
-                "min_quantity": 2
-            }
+            "brand": " cr1620"
         }
     },
     {
@@ -768,63 +369,12 @@
             "sku": "PM-2CR5-1PK",
             "name": "PoundMax 2CR5 6V Lithium Photo Battery (High Capacity)",
             "description": "Professional-grade 2CR5 lithium battery (6V) for high-drain photography equipment. Compatible with DL245 models. Ideal for DSLRs, film cameras, and medical devices requiring long-lasting power.",
-            "price": {
-                "single": "5.28",
-                "unit_price": "5.28",
-                "bulk_discount": "Up to 15% off multi-buy"
-            },
+            "price": "5.28",
             "category": "Batteries",
             "rating": 4.8,
             "image_url": "/media/products/2cr5-battery.jpg",
             "image": "2cr5-battery.jpg",
-            "brand": " 2cr5",
-            "specifications": {
-                "chemistry": "Lithium-Ion",
-                "voltage": "6V",
-                "capacity": "1500mAh",
-                "equivalents": [
-                    "DL245",
-                    "CR-V5",
-                    "EL2CR5"
-                ],
-                "operating_temp": "-20°C to 50°C",
-                "shelf_life": "10 years"
-            },
-            "seller_info": {
-                "name": "SAMTECH ACCESSORIES",
-                "rating": "100% Positive",
-                "items_sold": 219,
-                "total_sales": "20K+ items"
-            },
-            "stock": {
-                "available": 6,
-                "sold": 10,
-                "condition": "New"
-            },
-            "compatibility": {
-                "cameras": [
-                    "Canon EOS 5D (Original)",
-                    "Nikon F6",
-                    "Olympus IS-3000"
-                ],
-                "medical": [
-                    "Portable Ultrasound Devices",
-                    "Surgical Scopes"
-                ]
-            },
-            "performance": {
-                "shots_per_charge": "~1200 (DSLR)",
-                "voltage_stability": "±0.1V under load"
-            },
-            "promotions": {
-                "multi_buy": true,
-                "best_offer": true
-            },
-            "certifications": [
-                "CE",
-                "FCC",
-                "IEC 60086"
-            ]
+            "brand": " 2cr5"
         }
     },
     {
@@ -834,87 +384,11 @@
             "sku": "PM-27A-5PK",
             "name": "5 Pack x Super Alkaline 27A 12V Batteries (GP27A/MN27/A27)",
             "description": "5-pack of high-performance 27A 12V alkaline batteries. Compatible with GP27A, MN27, and A27 models. Ideal for security devices, garage door openers, and medical alert systems. Leak-proof construction with 10-year shelf life.",
-            "price": {
-                "single": "3.45",
-                "unit_price": "0.69",
-                "bulk_discount": "Up to 15% off multi-buy"
-            },
+            "price": "3.45",
             "category": "Batteries",
             "rating": 4.6,
             "image_url": "/media/products/27a-batteries.jpg",
-            "image": "27a-batteries.jpg",
-            "specifications": {
-                "type": "Alkaline",
-                "voltage": "12V",
-                "size": "27A/L828",
-                "equivalents": [
-                    "GP27A",
-                    "MN27",
-                    "A27",
-                    "E90"
-                ],
-                "operating_temp": "-10°C to 55°C",
-                "shelf_life": "10 years"
-            },
-            "seller_info": {
-                "name": "SAMTECH ACCESSORIES",
-                "rating": "100% Positive",
-                "items_sold": 220,
-                "total_sales": "20K+ items"
-            },
-            "stock": {
-                "available": ">10 units",
-                "sold": 9,
-                "condition": "New"
-            },
-            "key_features": [
-                "Leak-proof design",
-                "Instant power delivery",
-                "Constant voltage output",
-                "Safety-tested for high-drain devices"
-            ],
-            "compatibility": {
-                "security": [
-                    "Smoke Detectors",
-                    "Doorbell Chimes",
-                    "Alarm Panels"
-                ],
-                "medical": [
-                    "Blood Pressure Monitors",
-                    "Glucose Meters"
-                ],
-                "automotive": [
-                    "Keyless Entry Fobs",
-                    "TPMS Sensors"
-                ]
-            },
-            "promotions": {
-                "multi_buy": true,
-                "discount_tiers": [
-                    {
-                        "min_qty": 2,
-                        "discount": "5%"
-                    },
-                    {
-                        "min_qty": 3,
-                        "discount": "10%"
-                    },
-                    {
-                        "min_qty": 5,
-                        "discount": "15%"
-                    }
-                ]
-            },
-            "safety_certifications": [
-                "CE",
-                "RoHS",
-                "IEC 60086"
-            ],
-            "package_details": {
-                "quantity": 5,
-                "weight": "85g",
-                "dimensions": "8 x 5 x 2 cm"
-            }
+            "image": "27a-batteries.jpg"
         }
     },
     {
@@ -924,74 +398,12 @@
             "sku": "PM-CR2430-15PK",
             "name": "15 x CR2430 3V PoundMax Lithium Coin Cell Batteries",
             "description": "15-pack of CR2430 lithium coin batteries (3V) with equivalents DL2430/K2430L/ECR2430. High-capacity cells for medical devices, fitness trackers, and keyless car systems. Military-grade temperature tolerance.",
-            "price": {
-                "single": "5.98",
-                "unit_price": "0.40",
-                "bulk_discount": "Multi-buy discounts available"
-            },
+            "price": "5.98",
             "category": "Batteries",
             "rating": 4.5,
             "image_url": "/media/products/cr2430-batteries.jpg",
             "image": "cr2430-batteries.jpg",
-            "brand": "cr2430",
-            "specifications": {
-                "chemistry": "Lithium Manganese Dioxide",
-                "voltage": "3V",
-                "capacity": "285mAh",
-                "diameter": "24.5mm",
-                "height": "3.0mm",
-                "equivalents": [
-                    "DL2430",
-                    "K2430L",
-                    "ECR2430",
-                    "BR2430"
-                ],
-                "operating_temp": "-40°C to 85°C",
-                "shelf_life": "7 years"
-            },
-            "seller_info": {
-                "name": "SAMTECH ACCESSORIES",
-                "rating": "100% Positive",
-                "items_sold": 220,
-                "total_sales": "20K+ items"
-            },
-            "stock": {
-                "available": ">10 units",
-                "sold": 1,
-                "condition": "New"
-            },
-            "key_applications": {
-                "medical": [
-                    "Hearing Aids",
-                    "Glucose Monitors",
-                    "Pill Reminders"
-                ],
-                "wearables": [
-                    "Smart Watches",
-                    "Fitness Trackers"
-                ],
-                "automotive": [
-                    "Keyless Entry Fobs",
-                    "TPMS Sensors"
-                ]
-            },
-            "performance": {
-                "self_discharge": "<1% per year",
-                "load_capacity": "Continuous 0.2mA"
-            },
-            "promotions": {
-                "multi_buy": true,
-                "discount_threshold": 2
-            },
-            "certifications": [
-                "IEC 60086",
-                "UL",
-                "CE"
-            ],
-            "environmental": {
-                "mercury_free": true,
-                "recyclable": "Specialty Battery Programs"
-            }
+            "brand": "cr2430"
         }
     },
     {
@@ -1006,45 +418,7 @@
             "rating": 4.6,
             "image_url": "/media/products/pixel6pro-tempered-glass.jpg",
             "image": "pixel6pro-tempered-glass.jpg",
-            "brand": "Google Pixel",
-            "compatibility": "Google Pixel 6 Pro (All Models)",
-            "warranty": "Lifetime Replacement",
-            "stock_status": "In Stock",
-            "material": "9D Tempered Glass",
-            "thickness": "0.33mm",
-            "features": [
-                "9H Hardness Rating",
-                "Oleophobic Coating",
-                "Bubble-Free Adhesive",
-                "Case-Friendly Edges",
-                "Fingerprint Sensor Compatible"
-            ],
-            "installation": {
-                "difficulty": "Easy",
-                "includes": [
-                    "Alignment Frame",
-                    "Cleaning Kit"
-                ],
-                "time_required": "2 minutes"
-            },
-            "optical_properties": {
-                "transparency": "99.9%",
-                "blue_light_filter": false,
-                "anti_glare": false
-            },
-            "protection_levels": {
-                "scratch_resistance": "9H Pencil Hardness",
-                "drop_protection": "Up to 2m",
-                "impact_absorption": "Distributes 95% force"
-            },
-            "seller_note": "Lifetime warranty against bubbles/cracking",
-            "promotions": {
-                "multi_buy": "Buy 2 Get 10% Off",
-                "currency_options": [
-                    "GBP",
-                    "EUR"
-                ]
-            }
+            "brand": "Google Pixel"
         }
     },
     {
@@ -1059,51 +433,7 @@
             "rating": 4.7,
             "image_url": "/media/products/huawei-p40-ceramic-glass.jpg",
             "image": "huawei-p40-ceramic-glass.jpg",
-            "brand": "huawei",
-            "compatibility": "Huawei P40 (All Variants)",
-            "warranty": "Lifetime Warranty",
-            "stock_status": "In Stock",
-            "material": "Zirconia Ceramic + Tempered Glass",
-            "thickness": "0.25mm",
-            "key_features": [
-                "Ceramic Hybrid Construction",
-                "Self-Healing Nano Layer",
-                "Anti-Microbial Coating",
-                "99.8% Light Transmission",
-                "Ultrasonic Fingerprint Compatible"
-            ],
-            "protection_specs": {
-                "scratch_resistance": "9H+ (Mohs Scale 6)",
-                "drop_protection": "3m Military Standard",
-                "impact_absorption": "98% Energy Dissipation",
-                "uv_protection": "Blocks 99% UV Rays"
-            },
-            "installation": {
-                "difficulty": "Medium",
-                "kit_includes": [
-                    "Alignment Frame",
-                    "Wet/Dry Wipes",
-                    "Dust Stickers",
-                    "Squeegee"
-                ],
-                "curing_time": "24h (Full Bond)"
-            },
-            "advanced_tech": {
-                "oleophobic_coating": "3x Standard Durability",
-                "hydrogel_layer": "Edge Crack Prevention",
-                "static_charge": "Anti-Dust Technology"
-            },
-            "promotions": {
-                "multi_buy": "Buy 2 Get 15% Off",
-                "currency_options": [
-                    "GBP",
-                    "EUR"
-                ]
-            },
-            "environmental": {
-                "lead_free": true,
-                "bpa_free": true
-            }
+            "brand": "huawei"
         }
     },
     {
@@ -1118,53 +448,7 @@
             "rating": 4.4,
             "image_url": "/media/products/samsung-a04-tempered-glass.jpg",
             "image": "samsung-a04-tempered-glass.jpg",
-            "brand": "Samsung",
-            "compatibility": "Samsung Galaxy A04 (All Models)",
-            "warranty": "Lifetime Replacement",
-            "stock_status": "In Stock",
-            "material_composition": {
-                "base_layer": "9D Tempered Glass",
-                "impact_layer": "11D Polymer Dispersion",
-                "coating": "Dual Oleophobic"
-            },
-            "thickness": "0.2mm",
-            "protection_features": [
-                "6H Scratch Resistance",
-                "3m Drop Protection",
-                "Anti-Spy Privacy (45° Viewing Angle)",
-                "Blue Light Filter (30% Reduction)"
-            ],
-            "display_optimization": {
-                "touch_sensitivity": "98% Original Accuracy",
-                "clarity": "99.7% Light Transmission",
-                "notch_precision": "Laser-Cut"
-            },
-            "installation": {
-                "difficulty": "Easy",
-                "kit_includes": [
-                    "Alignment Tray",
-                    "Microfiber Cloth",
-                    "Wet Wipe",
-                    "Dust Removal Stickers"
-                ],
-                "curing_time": "12h (Full Adhesion)"
-            },
-            "special_editions": [
-                "Privacy Version",
-                "Blue Light Filter Version",
-                "Clear Version"
-            ],
-            "promotions": {
-                "multi_buy": "Buy 3 Get 20% Off",
-                "currency_options": [
-                    "GBP",
-                    "EUR"
-                ]
-            },
-            "environmental": {
-                "lead_free": true,
-                "bubble_free_adhesive": "Eco-Solvent Based"
-            }
+            "brand": "Samsung"
         }
     },
     {
@@ -1179,54 +463,7 @@
             "rating": 4.8,
             "image_url": "/media/products/oneplus7pro-tempered-glass.jpg",
             "image": "oneplus7pro-tempered-glass.jpg",
-            "brand": " OnePlus",
-            "compatibility": "OnePlus 7 Pro (All Models)",
-            "warranty": "Lifetime Warranty",
-            "stock_status": "In Stock",
-            "material_tech": {
-                "base_layer": "9D Aluminosilicate Glass",
-                "impact_layer": "11D ShockSpread Polymer",
-                "coating": "Military-Grade Oleophobic"
-            },
-            "curved_display_specs": {
-                "edge_coverage": "Full 3D Curvature",
-                "thickness": "0.28mm",
-                "adhesive_type": "UV-Cured Liquid Dispersion"
-            },
-            "performance_features": [
-                "90Hz Refresh Rate Compatible",
-                "Warp Charge 30T Thermal Resistant",
-                "HDR10+ Certified Clarity",
-                "In-Display Fingerprint Compatible"
-            ],
-            "protection_rating": {
-                "drop_test": "2.5m (8.2ft) Survival",
-                "scratch_resistance": "9H Pencil Hardness",
-                "impact_dissipation": "92% Energy Absorption"
-            },
-            "installation": {
-                "difficulty": "Professional Recommended",
-                "kit_includes": [
-                    "UV Light Curing Tool",
-                    "Locator Frame",
-                    "Alcohol Wipes",
-                    "Microfiber Cloth",
-                    "Dust Stickers"
-                ],
-                "curing_process": "3-Stage UV Bonding"
-            },
-            "oneplus_specific": {
-                "alert_slider_cutout": "Precision Aligned",
-                "popup_camera_clearance": "0.1mm Tolerance",
-                "warp_charge_optimized": true
-            },
-            "promotions": {
-                "multi_buy": "Buy 2 Get Free Installation Kit",
-                "currency_options": [
-                    "GBP",
-                    "EUR"
-                ]
-            }
+            "brand": " OnePlus"
         }
     },
     {
@@ -1241,64 +478,7 @@
             "rating": 4.6,
             "image_url": "/media/products/hdmi-4k-cable.jpg",
             "image": "hdmi-4k-cable.jpg",
-            "brand": "hdmi-4k",
-            "specifications": {
-                "length": "1.5m",
-                "bandwidth": "48Gbps",
-                "resolution": "4K@60Hz (2160p)",
-                "hdr_support": [
-                    "HDR10+",
-                    "Dolby Vision",
-                    "HLG"
-                ],
-                "connectors": "24K Gold-Plated",
-                "awg": "28",
-                "version": "HDMI 2.1"
-            },
-            "performance_features": [
-                "VRR (Variable Refresh Rate)",
-                "ALLM (Auto Low Latency Mode)",
-                "eARC (Enhanced Audio Return Channel)",
-                "QFT/QMS (Quick Media Switching)"
-            ],
-            "construction": {
-                "conductors": "Oxygen-Free Copper",
-                "shielding": [
-                    "Aluminum Foil",
-                    "Braided Mesh",
-                    "PET Layer"
-                ],
-                "jacket": "Nylon-Braided",
-                "bend_radius": "5mm"
-            },
-            "compatibility": {
-                "devices": [
-                    "PS5/Xbox Series X",
-                    "4K Blu-ray Players",
-                    "Apple TV 4K",
-                    "NVIDIA/AMD GPUs"
-                ],
-                "ports": "HDMI 2.0/2.1"
-            },
-            "certifications": [
-                "HDMI Forum Certified",
-                "Ultra High Speed HDMI",
-                "CE/FCC/RoHS"
-            ],
-            "gaming_optimized": {
-                "input_lag": "<1ms",
-                "refresh_rate": "Up to 120Hz",
-                "color_depth": "12-bit 4:4:4"
-            },
-            "warranty": "Lifetime",
-            "promotions": {
-                "multi_buy": "Buy 2 Get 10% Off",
-                "length_options": [
-                    "1m",
-                    "2m",
-                    "3m"
-                ]
-            }
+            "brand": "hdmi-4k"
         }
     },
     {
@@ -1308,82 +488,12 @@
             "sku": "USBCC-AAA-APPLE",
             "name": "AAA Data Cable Type C To Type C",
             "description": "MFi-certified USB-C to USB-C cable with Power Delivery 3.0 and USB4 compatibility. Features 100W charging, 40Gbps data transfer, and woven nylon reinforcement. Optimized for Apple devices but works universally.",
-            "price": {
-                "range": {
-                    "min": 0.83,
-                    "max": 1.67
-                },
-                "length_based": [
-                    {
-                        "length": "1m",
-                        "price": "0.83"
-                    },
-                    {
-                        "length": "2m",
-                        "price": 1.25
-                    },
-                    {
-                        "length": "3m",
-                        "price": 1.67
-                    }
-                ]
-            },
+            "price": "0.83",
             "category": "Data Cables",
             "rating": 4.5,
             "image_url": "/media/products/usbc-aaa-cable.jpg",
             "image": "usbc-aaa-cable.jpg",
-            "brand": "Apple (MFi Certified)",
-            "specifications": {
-                "standards": [
-                    "USB4",
-                    "Thunderbolt 3",
-                    "PD 3.0"
-                ],
-                "data_speed": "40Gbps",
-                "power_delivery": "100W",
-                "connectors": "24K Gold-Plated",
-                "emc_shielding": "Double-Layer"
-            },
-            "performance": {
-                "video_support": [
-                    "8K@60Hz",
-                    "4K@120Hz"
-                ],
-                "charging_speed": [
-                    "MacBook Pro 16\" (96W)",
-                    "iPad Pro (45W)",
-                    "iPhone 15 (27W)"
-                ],
-                "daisy_chaining": "Up to 6 devices"
-            },
-            "durability": {
-                "bend_cycles": "20,000+",
-                "jacket": "Military-Grade Nylon",
-                "stress_relief": "3D Molded"
-            },
-            "apple_specific": {
-                "mfi_certification": true,
-                "optimized_for": [
-                    "MacBooks",
-                    "iPad Pro",
-                    "iPhone 15 Series"
-                ],
-                "ios_features": [
-                    "Fast Pairing",
-                    "Optimized Charging"
-                ]
-            },
-            "compatibility": {
-                "universal": [
-                    "Windows Laptops",
-                    "Android Devices",
-                    "Game Consoles"
-                ]
-            },
-            "warranty": "18 Months",
-            "promotions": {
-                "bundle": "Buy 2 Cables Get 15% Off"
-            }
+            "brand": "Apple (MFi Certified)"
         }
     },
     {
@@ -1398,48 +508,7 @@
             "rating": 4.3,
             "image_url": "/media/products/tab-p1000-cable.jpg",
             "image": "tab-p1000-cable.jpg",
-            "brand": "Tab P1000",
-            "connector_specs": {
-                "type_a": "Standard USB 2.0",
-                "type_b": "Micro-USB (P1000 Proprietary)",
-                "plating": "Gold-Plated Contacts"
-            },
-            "performance": {
-                "data_transfer": "480Mbps (USB 2.0)",
-                "charging": "5V/2A (10W Max)",
-                "sync_speed": "3x Faster Than Standard Cables"
-            },
-            "durability": {
-                "tensile_strength": "50N Pull Test",
-                "bend_life": "5000+ Cycles",
-                "jacket": "TPU Reinforced",
-                "connector": "Zinc Alloy Housing"
-            },
-            "compatibility": {
-                "devices": [
-                    "Tab P1000 (All Variants)",
-                    "Tab P1000 Pro",
-                    "Tab P1000 Lite"
-                ],
-                "os_support": [
-                    "Android 4.0+",
-                    "Windows XP+",
-                    "macOS 10.7+"
-                ]
-            },
-            "package_includes": [
-                "1x Data Cable",
-                "User Manual",
-                "Velcro Cable Tie"
-            ],
-            "warranty": "12 Months",
-            "environmental": {
-                "rohs_compliant": true,
-                "reach_compliant": true
-            },
-            "promotions": {
-                "bulk_discount": "Buy 5 Get 20% Off"
-            }
+            "brand": "Tab P1000"
         }
     },
     {
@@ -1447,70 +516,14 @@
         "model": "products.product",
         "fields": {
             "sku": "ANG-BT024-2M",
-            "name": "ANG BT024 – USB C Braided Fast Charging Data Cable 2 Meter",
+            "name": "ANG BT024 \u2013 USB C Braided Fast Charging Data Cable 2 Meter",
             "description": "Premium 2-meter braided USB-C cable with 100W Power Delivery and 480Mbps data transfer. Features nylon-braided jacket, aluminum alloy connectors, and 3A fast charging. Compatible with smartphones, tablets, and laptops.",
             "price": "1.46",
             "category": "Data Cables",
             "rating": 4.2,
             "image_url": "/media/products/ang-bt024-cable.jpg",
             "image": "ang-bt024-cable.jpg",
-            "brand": "ANG",
-            "specifications": {
-                "length": "2m",
-                "connectors": "USB-C to USB-C",
-                "charging": {
-                    "power": "100W Max",
-                    "current": "3A",
-                    "protocols": [
-                        "PD 3.0",
-                        "QC 3.0"
-                    ]
-                },
-                "data_transfer": "480Mbps (USB 2.0)",
-                "materials": {
-                    "cable": "Nylon-Braided",
-                    "connectors": "Aluminum Alloy",
-                    "internal": "Tinned Copper"
-                }
-            },
-            "key_features": [
-                "Reinforced Stress Points",
-                "Tangle-Free Design",
-                "Over-Current Protection",
-                "Universal USB-C Compatibility"
-            ],
-            "compatibility": {
-                "devices": [
-                    "Smartphones (USB-C)",
-                    "Tablets",
-                    "Laptops",
-                    "Nintendo Switch"
-                ],
-                "chargers": [
-                    "PD Chargers (Up to 100W)",
-                    "QC 3.0 Chargers",
-                    "Standard USB Chargers"
-                ]
-            },
-            "durability": {
-                "bend_cycles": "10,000+",
-                "pull_test": "60N",
-                "abrasion_resistance": "IPX4"
-            },
-            "package_includes": [
-                "1x ANG BT024 Cable",
-                "User Manual",
-                "Velcro Cable Tie"
-            ],
-            "warranty": "18 Months",
-            "promotions": {
-                "multi_buy": "Buy 2 Get 15% Off"
-            },
-            "safety_certifications": [
-                "CE",
-                "FCC",
-                "RoHS"
-            ]
+            "brand": "ANG"
         }
     },
     {
@@ -1525,59 +538,7 @@
             "rating": 4.9,
             "image_url": "/media/products/apple-20w-adapter.jpg",
             "image": "apple-20w-adapter.jpg",
-            "brand": "Apple (Genuine)",
-            "specifications": {
-                "output": {
-                    "power": "20W",
-                    "voltage": "5V/3A or 9V/2.22A",
-                    "protocol": "USB Power Delivery (PD)"
-                },
-                "input": {
-                    "voltage": "100-240V",
-                    "frequency": "50-60Hz"
-                },
-                "connector": "USB-C",
-                "dimensions": "42mm x 42mm x 27mm",
-                "weight": "58g"
-            },
-            "compatibility": {
-                "devices": [
-                    "iPhone 8 & Later",
-                    "iPad Pro",
-                    "iPad Air (4th Gen+)",
-                    "AirPods Pro"
-                ],
-                "requires": "USB-C to Lightning Cable (Sold Separately)"
-            },
-            "performance": {
-                "charging_speed": "50% in 30 mins (iPhone 13)",
-                "efficiency": ">85% Energy Efficient",
-                "safety_features": [
-                    "Overvoltage Protection",
-                    "Overcurrent Protection",
-                    "Temperature Control"
-                ]
-            },
-            "certifications": [
-                "MFi Certified",
-                "CE",
-                "UL",
-                "PSE",
-                "CCC"
-            ],
-            "package_includes": [
-                "20W USB-C Power Adapter",
-                "Documentation",
-                "Retail Packaging"
-            ],
-            "warranty": "1 Year Apple Warranty",
-            "environmental": {
-                "energy_star": true,
-                "material": "PC+ABS Fire-Resistant"
-            },
-            "promotions": {
-                "bundle": "Pair with USB-C to Lightning Cable for 10% Off"
-            }
+            "brand": "Apple (Genuine)"
         }
     },
     {
@@ -1592,68 +553,7 @@
             "rating": 4.8,
             "image_url": "/media/products/samsung-25w-adapter.jpg",
             "image": "samsung-25w-adapter.jpg",
-            "brand": "Samsung (Genuine)",
-            "specifications": {
-                "model": "EP-TA800",
-                "output": {
-                    "standard": "25W Max",
-                    "voltage_current": [
-                        "5V/3A",
-                        "9V/2.77A",
-                        "15V/1.67A"
-                    ],
-                    "protocols": [
-                        "PD 3.0",
-                        "PPS"
-                    ]
-                },
-                "input": {
-                    "voltage": "100-240V",
-                    "frequency": "50/60Hz"
-                },
-                "dimensions": "50 × 50 × 28 mm",
-                "weight": "62g",
-                "color": "Black"
-            },
-            "galaxy_optimization": {
-                "super_fast_charging": true,
-                "compatible_models": [
-                    "Galaxy S22/S23 Series",
-                    "Galaxy Z Fold/Flip",
-                    "Galaxy Tab S8/S9"
-                ],
-                "battery_protection": [
-                    "Temperature Control",
-                    "Overcurrent Prevention"
-                ]
-            },
-            "universal_compatibility": {
-                "devices": [
-                    "iPhone 15 Series",
-                    "iPad Pro",
-                    "MacBook Air"
-                ],
-                "cables": "USB-C to USB-C/Lightning"
-            },
-            "certifications": [
-                "KC",
-                "CE",
-                "UL",
-                "PSE"
-            ],
-            "package_includes": [
-                "25W Power Adapter",
-                "User Manual",
-                "Regulatory Guide"
-            ],
-            "warranty": "12 Months Samsung Warranty",
-            "environmental": {
-                "energy_efficiency": "Level VI",
-                "material": "V0 Fire-Retardant PC"
-            },
-            "promotions": {
-                "bundle": "Pair with 5A USB-C Cable for 15% Off"
-            }
+            "brand": "Samsung (Genuine)"
         }
     },
     {
@@ -1668,72 +568,7 @@
             "rating": "4.4",
             "image_url": "/media/products/wlx-a9plus-charger.jpg",
             "image": "wlx-a9plus-charger.jpg",
-            "brand": "Tab P1000",
-            "specifications": {
-                "ports": {
-                    "total": 8,
-                    "type": "USB-A",
-                    "smart_ic": true,
-                    "output_per_port": "5V/2.4A Max"
-                },
-                "total_output": "60W",
-                "input": "AC 100-240V",
-                "display": {
-                    "type": "LED Digital",
-                    "metrics": [
-                        "Voltage",
-                        "Current",
-                        "Power"
-                    ]
-                },
-                "dimensions": "150mm × 80mm × 30mm"
-            },
-            "smart_features": [
-                "Auto Device Detection",
-                "Optimal Current Allocation",
-                "Overcharge Protection",
-                "Short Circuit Prevention"
-            ],
-            "compatibility": {
-                "devices": [
-                    "Smartphones",
-                    "Tablets",
-                    "Bluetooth Headphones",
-                    "Power Banks"
-                ],
-                "exclusions": [
-                    "Laptops",
-                    "High-Power Devices"
-                ]
-            },
-            "use_cases": {
-                "commercial": [
-                    "Retail Display Charging",
-                    "Hotel Room Stations"
-                ],
-                "personal": [
-                    "Family Charging Hub",
-                    "Travel Charging Center"
-                ]
-            },
-            "safety_certifications": [
-                "CE",
-                "FCC",
-                "RoHS"
-            ],
-            "package_includes": [
-                "WLX-A9+ Charger",
-                "1.5m Power Cable",
-                "User Manual"
-            ],
-            "warranty": "24 Months",
-            "environmental": {
-                "energy_efficiency": ">85%",
-                "standby_power": "<0.3W"
-            },
-            "promotions": {
-                "commercial_discount": "10% Off 5+ Units"
-            }
+            "brand": "Tab P1000"
         }
     },
     {
@@ -1748,72 +583,7 @@
             "rating": "4.3",
             "image_url": "/media/products/borofone-bo110.jpg",
             "image": "borofone-bo110.jpg",
-            "brand": "BOROFONE (HOCO)",
-            "specifications": {
-                "drivers": {
-                    "size": "50mm",
-                    "type": "Neodymium",
-                    "frequency_response": "20Hz-20kHz",
-                    "impedance": "32Ω"
-                },
-                "microphone": {
-                    "type": "Omnidirectional",
-                    "sensitivity": "-38dB ±3dB",
-                    "features": [
-                        "Noise Cancellation",
-                        "Flexible Boom"
-                    ]
-                },
-                "connectivity": {
-                    "interface": "3.5mm Jack",
-                    "cable_length": "2.2m",
-                    "splitter": "Y-Cable Included"
-                },
-                "lighting": {
-                    "rgb_effects": "7 Colors",
-                    "control": "In-Line Switch"
-                }
-            },
-            "comfort_features": [
-                "Memory Protein Ear Cushions",
-                "Adjustable Headband",
-                "Lightweight (280g)",
-                "Over-Ear Design"
-            ],
-            "platform_compatibility": {
-                "pc": "Front Panel Audio",
-                "consoles": [
-                    "PS4",
-                    "PS5",
-                    "Xbox One",
-                    "Nintendo Switch"
-                ],
-                "mobile": "3.5mm Devices"
-            },
-            "color_options": [
-                "Black-RGB",
-                "White-RGB",
-                "Blue-RGB"
-            ],
-            "package_includes": [
-                "BO110 Headset",
-                "Detachable Mic",
-                "User Manual",
-                "HOCO Sticker"
-            ],
-            "warranty": "12 Months",
-            "promotions": {
-                "bundle": "Pair with HOCO Mousepad for 10% Off"
-            },
-            "gaming_features": {
-                "surround_sound": "Virtual 7.1",
-                "mic_monitoring": true,
-                "in_line_controls": [
-                    "Volume",
-                    "Mic Mute",
-                    "RGB Toggle"
-                ]
-            }
+            "brand": "BOROFONE (HOCO)"
         }
     },
     {
@@ -1828,75 +598,7 @@
             "rating": 4.7,
             "image_url": "/media/products/borofone-bfk15.jpg",
             "image": "borofone-bfk15.jpg",
-            "brand": "BOROFONE",
-            "specifications": {
-                "audio_quality": {
-                    "sample_rate": "48KHz",
-                    "bit_depth": "24-bit",
-                    "frequency_response": "50Hz-18KHz",
-                    "snr": "≥70dB"
-                },
-                "wireless": {
-                    "technology": "2.4GHz Digital",
-                    "range": "15m (Line-of-Sight)",
-                    "latency": "<20ms",
-                    "channels": "Dual Independent"
-                },
-                "recording_modes": [
-                    "Single-Mic",
-                    "Dual-Mic Mix",
-                    "Safety Track (-6dB)"
-                ],
-                "connectors": {
-                    "transmitter": [
-                        "Lightning",
-                        "USB-C"
-                    ],
-                    "receiver": [
-                        "3.5mm TRS",
-                        "USB-C Digital"
-                    ]
-                }
-            },
-            "included_accessories": [
-                "2x Lavalier Mics",
-                "Magnetic Clips",
-                "Foam Windshields",
-                "USB-C/Lightning Adapters",
-                "Portable Charging Case"
-            ],
-            "battery": {
-                "life": "8 Hours Continuous",
-                "charging": "USB-C (1.5H Full Charge)",
-                "case_charges": "3 Additional Cycles"
-            },
-            "compatibility": {
-                "phones": [
-                    "iPhone 7+ (Lightning)",
-                    "Android USB-C Phones",
-                    "iPad Pro"
-                ],
-                "cameras": [
-                    "DSLR/Mirrorless (3.5mm)",
-                    "Action Cams",
-                    "Camcorders"
-                ],
-                "software": [
-                    "Native Camera Apps",
-                    "Zoom/Skype",
-                    "Premiere Pro/Final Cut"
-                ]
-            },
-            "use_cases": [
-                "Vlogging",
-                "Podcast Interviews",
-                "TikTok/Reels Creation",
-                "Lecture Recording"
-            ],
-            "warranty": "18 Months",
-            "promotions": {
-                "content_creator_bundle": "Tripod + LED Ring Light (15% Off)"
-            }
+            "brand": "BOROFONE"
         }
     },
     {
@@ -1918,7 +620,7 @@
         "model": "products.product",
         "fields": {
             "sku": "JBL-TuneBuds",
-            "name": "JBL Tune Buds – True Wireless Noise Cancelling Earbuds",
+            "name": "JBL Tune Buds \u2013 True Wireless Noise Cancelling Earbuds",
             "description": "True wireless earbuds with active noise cancellation (ANC), high-quality JBL sound, and portable design. Ideal for music and calls on the go.",
             "price": "32.99",
             "category": "Audio",
@@ -1935,7 +637,7 @@
             "name": "JVC HA-EC25T Fitness Series Sports True Wireless Earbuds",
             "description": "Sports-focused true wireless earbuds by JVC, designed for fitness enthusiasts with secure fit and sweat resistance. Part of the JVC Fitness Series.",
             "price": "18.00",
-            "category":"Audio" ,
+            "category": "Audio",
             "rating": 5,
             "image_url": "/media/products/JVC_HA-EC25T.jpg",
             "image": "JVC_HA-EC25T.jpg",
@@ -1950,7 +652,7 @@
             "name": "LED Galaxy Starry Moon Light Projector With Speaker",
             "description": "A multifunctional LED projector that displays starry moon lighting effects, paired with a built-in speaker for ambient sound. Ideal for room decor and mood lighting.",
             "price": " 7.99",
-            "category":"Other Accessories" ,
+            "category": "Other Accessories",
             "rating": 4.9,
             "image_url": "/media/products/LED_Galaxy_Moon.jpg",
             "image": "LED_Galaxy_Moon.jpg",
@@ -1984,14 +686,7 @@
             "rating": 5,
             "image_url": "/media/products/BOROFONE_BC48.jpeg",
             "image": "BOROFONE_BC48.jpeg",
-            "brand": "BOROFONE",
-            "features": [
-                "18W fast charging",
-                "QC3.0 technology",
-                "Bluetooth audio streaming",
-                "FM transmitter",
-                "Hands-free calling"
-            ]
+            "brand": "BOROFONE"
         }
     },
     {
@@ -2002,23 +697,11 @@
             "name": "HOCO J96 Strider 5000mAh Power Bank",
             "description": "Compact and portable 5000mAh power bank by HOCO, designed for on-the-go charging. Features fast charging support and lightweight design. Color options available.",
             "price": "5.00",
-            "category": "Power Banks"
-            ,
+            "category": "Power Banks",
             "rating": 4.9,
             "image_url": "/media/products/HOCO_J96.jpeg",
             "image": "HOCO_J96.jpeg",
             "brand": "HOCO",
-            "features": [
-                "5000mAh capacity",
-                "Fast charging support",
-                "Lightweight and portable",
-                "Multiple color options"
-            ],
-            "color_options": [
-                "Black",
-                "White",
-                "Blue"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2035,18 +718,6 @@
             "image_url": "/media/products/HOCO_J101A.jpeg",
             "image": "HOCO_J101A.jpeg",
             "brand": "HOCO",
-            "features": [
-                "20000mAh large capacity",
-                "22.5W fast charging",
-                "Multiple device charges",
-                "Portable and travel-friendly",
-                "Color options available"
-            ],
-            "color_options": [
-                "Black",
-                "Silver",
-                "Blue"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2058,23 +729,12 @@
             "name": "Amazon Fire TV Stick HD 8 GB WiFi 5",
             "description": "Stream your favorite content in HD with the Amazon Fire TV Stick. Features 8 GB storage, WiFi 5 connectivity, and access to thousands of apps, including Netflix, Prime Video, and more.",
             "price": "25.00",
-            "category":"Other Accessories" ,
+            "category": "Other Accessories",
             "rating": 5,
             "image_url": "/media/products/Amazon_FireTV_HD.jpeg",
             "image": "Amazon_FireTV_HD.jpeg",
             "brand": "Amazon",
-            "features": [
-                "HD streaming (720p/1080p)",
-                "8 GB internal storage",
-                "WiFi 5 (802.11ac) for fast streaming",
-                "Alexa Voice Remote (assumed; verify if included)",
-                "Access to 500,000+ movies/TV shows"
-            ],
-            "estimated_delivery": "1 day",
-            "compatibility": [
-                "HDMI-compatible TVs",
-                "Requires Amazon account"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2090,12 +750,6 @@
             "image_url": "/media/products/H0CO_GM109.jpeg",
             "image": "H0CO_GM109.jpeg",
             "brand": "H0CO",
-            "features": [
-                "Universal capacitive touch compatibility",
-                "Precision smooth tip",
-                "Lightweight and ergonomic design",
-                "No battery required (passive stylus)"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2112,12 +766,6 @@
             "image_url": "/media/products/H0CO_GM109.jpeg",
             "image": "H0CO_GM109.jpeg",
             "brand": "H0CO",
-            "features": [
-                "Universal capacitive touch compatibility",
-                "Precision smooth tip",
-                "Lightweight and ergonomic design",
-                "No battery required (passive stylus)"
-            ],
             "estimated_delivery": "3 day"
         }
     },
@@ -2134,13 +782,6 @@
             "image_url": "/media/products/3D-45_RGB_RingLight.jpeg",
             "image": "3D-45_RGB_RingLight.jpeg",
             "brand": "3D-45_RGB",
-            "features": [
-                "18-inch RGB ring light",
-                "Adjustable color temperature (warm to cool)",
-                "10+ lighting effects (e.g., flash, fade)",
-                "Included adjustable tripod",
-                "Dimmable brightness levels"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2157,19 +798,6 @@
             "image_url": "/media/products/iPhone11_AngleCase.jpeg",
             "image": "iPhone11_AngleCase.jpeg",
             "brand": "Apple ",
-            "features": [
-                "Adjustable viewing angles",
-                "Lightweight and durable",
-                "Precise cutouts for ports/buttons",
-                "Anti-slip grip"
-            ],
-            "color_options": [
-                "Black",
-                "Clear"
-            ],
-            "compatibility": [
-                "iPhone 11"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2181,21 +809,11 @@
             "name": "Camera Holder MagSafe Case for iPhone 15 Pro",
             "description": "Protective MagSafe-compatible case for iPhone 15 Pro with a built-in camera holder for stability during photos/videos. Features precise cutouts, wireless charging support, and a sleek design.",
             "price": "2.08",
-            "category":"iPhones Cases & Covers" ,
+            "category": "iPhones Cases & Covers",
             "rating": 4.9,
             "image_url": "/media/products/iPhone15Pro_MagSafeCase.jpeg",
             "image": "iPhone15Pro_MagSafeCase.jpeg",
             "brand": " Apple",
-            "features": [
-                "MagSafe compatibility (aligns with Apple accessories)",
-                "Built-in camera holder for stability",
-                "Wireless charging support",
-                "Scratch-resistant material"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPhone 15 Pro"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2212,16 +830,6 @@
             "image_url": "/media/products/iPhone14ProMax_ClearTPU.jpeg",
             "image": "iPhone14ProMax_ClearTPU.jpeg",
             "brand": "Apple",
-            "features": [
-                "Crystal-clear TPU material",
-                "Slim and lightweight design",
-                "Anti-yellowing technology",
-                "Precise cutouts for ports/buttons",
-                "Shock-absorbing corners"
-            ],
-            "compatibility": [
-                "iPhone 14 Pro Max"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2238,19 +846,6 @@
             "image_url": "/media/products/Samsung_A55_CardCase.jpeg ",
             "image": "Samsung_A55_CardCase.jpeg",
             "brand": "Samsung",
-            "features": [
-                "Built-in card slots (2-3 cards)",
-                "Slim and lightweight",
-                "Anti-scratch material",
-                "Raised edges for screen/camera protection"
-            ],
-            "color_options": [
-                "Black",
-                "Clear"
-            ],
-            "compatibility": [
-                "Samsung Galaxy A55"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2267,16 +862,6 @@
             "image_url": "/media/products/SamsungA03_ClearTPU.jpeg",
             "image": "Samsung_A03_ClearTPU.jpeg",
             "brand": "Samsung",
-            "features": [
-                "Crystal-clear TPU material",
-                "Slim and lightweight design",
-                "Anti-yellowing technology",
-                "Precise cutouts for ports/buttons",
-                "Shock-absorbing corners"
-            ],
-            "compatibility": [
-                "Samsung A03"
-            ],
             "estimated_delivery": "3 day"
         }
     },
@@ -2293,16 +878,6 @@
             "image_url": "/media/products/GooglePixel6A_AntiBurstCase.jpeg",
             "image": "GooglePixel6A_AntiBurstCase.jpeg",
             "brand": "Google Pixel",
-            "features": [
-                "Anti-burst protection technology",
-                "Slim and lightweight design",
-                "Precise cutouts for ports/buttons",
-                "Enhanced grip texture",
-                "Official Google Pixel accessory"
-            ],
-            "compatibility": [
-                "Google Pixel 6A"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2319,17 +894,6 @@
             "image_url": "/media/products/GooglePixel9_AntiBurstCase.jpeg",
             "image": "GooglePixel9_AntiBurstCase.jpeg",
             "brand": "Google Pixel",
-            "features": [
-                "Official Google Pixel accessory",
-                "Anti-burst protection technology",
-                "Slim and lightweight design",
-                "Precise cutouts for ports and buttons",
-                "Enhanced grip texture",
-                "Scratch-resistant material"
-            ],
-            "compatibility": [
-                "Google Pixel 9"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2341,22 +905,11 @@
             "name": "Camera Lens Black TPU Gel Case for Google Pixel 6 Pro",
             "description": "Protective black TPU gel case designed specifically for Google Pixel 6 Pro, featuring raised camera lens protection and a non-slip grip. Maintains slim profile while offering shock absorption.",
             "price": " 0.79",
-            "category":"Black TPU Gel Cases",
+            "category": "Black TPU Gel Cases",
             "rating": null,
-            "image_url":"/media/products/GooglePixel6Pro_BlackTPU.jpeg",
+            "image_url": "/media/products/GooglePixel6Pro_BlackTPU.jpeg",
             "image": "GooglePixel6Pro_BlackTPU.jpeg",
             "brand": "Google Pixel",
-            "features": [
-                "Durable black TPU gel material",
-                "Raised camera lens protection",
-                "Shock-absorbing corners",
-                "Precise cutouts for all ports/buttons",
-                "Non-slip textured grip",
-                "Slim and lightweight design"
-            ],
-            "compatibility": [
-                "Google Pixel 6 Pro"
-            ],
             "estimated_delivery": "1 day"
         }
     },
@@ -2373,23 +926,7 @@
             "image_url": "/media/products/iPhone12Pro_BlackTPU.jpeg",
             "image": "iPhone12Pro_BlackTPU.jpeg",
             "brand": "Apple ",
-            "features": [
-                "Durable black TPU gel material",
-                "Raised camera lip protection",
-                "Shock-absorbing corners",
-                "Precise button and port cutouts",
-                "Anti-slip textured surface",
-                "Slim form factor (1.2mm thickness)"
-            ],
-            "compatibility": [
-                "iPhone 12 Pro"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Thermoplastic Polyurethane (TPU)",
-            "protection": [
-                "1.2m drop protection",
-                "Scratch-resistant back"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2400,28 +937,12 @@
             "name": "Camera Lens Black TPU Gel Case for Samsung A03",
             "description": "Protective black TPU gel case designed for Samsung A03, featuring raised camera lens protection and shock-absorbing corners. Provides a secure grip while maintaining a slim profile.",
             "price": " 0.79",
-            "category":"Black TPU Gel Cases" ,
+            "category": "Black TPU Gel Cases",
             "rating": null,
             "image_url": "/media/products/SamsungA03_BlackTPU.jpeg",
             "image": "SamsungA03_BlackTPU.jpeg",
             "brand": "Samsung",
-            "features": [
-                "Durable black TPU gel material",
-                "Raised camera lens protection",
-                "Shock-absorbing corners",
-                "Precise cutouts for ports/buttons",
-                "Non-slip textured grip",
-                "Slim and lightweight design"
-            ],
-            "compatibility": [
-                "Samsung A03"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Thermoplastic Polyurethane (TPU)",
-            "protection": [
-                "Basic drop protection",
-                "Scratch-resistant back"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2432,29 +953,12 @@
             "name": "ANG Premium Leather Book Case for iPhone 16e",
             "description": "Premium leather book-style case for iPhone 16e, offering full-body protection with a flip cover. Features card slots, a luxurious leather finish, and precise cutouts for easy access to all functions.",
             "price": "1.67",
-            "category":"Book Cases" ,
+            "category": "Book Cases",
             "rating": null,
             "image_url": "/media/products/ANG_iPhone16e_BookCase.jpeg",
             "image": "ANG_iPhone16e_BookCase.jpeg",
             "brand": "ANG",
-            "features": [
-                "Genuine or synthetic leather material",
-                "Book-style flip cover design",
-                "Built-in card slots (assumed from 'Book Case' type)",
-                "Magnetic closure for secure flip cover",
-                "Precise cutouts for ports and buttons",
-                "Slim profile with full-edge protection"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPhone 16e"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Premium Leather",
-            "protection": [
-                "360° device protection",
-                "Shock-absorbing inner lining"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2470,24 +974,7 @@
             "image_url": "/media/products/ANG_S25Ultra_BookCase.jpeg",
             "image": "ANG_S25Ultra_BookCase.jpeg",
             "brand": "ANG",
-            "features": [
-                "Adamu leather (premium grade)",
-                "Book-style flip cover with closure",
-                "Built-in card slots (assumed from 'Book Case' type)",
-                "Precise cutouts for S Pen, ports, and buttons",
-                "Shock-absorbing inner lining",
-                "Compatible with wireless charging"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "Samsung Galaxy S25 Ultra"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Adamu Leather",
-            "protection": [
-                "360° protection",
-                "Raised bezels for screen/camera"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2503,27 +990,7 @@
             "image_url": "/media/products/GooglePixel2XL_LeatherBookCase.jpeg",
             "image": "GooglePixel2XL_LeatherBookCase.jpeg",
             "brand": "Google Pixel",
-            "features": [
-                "Flip wallet design with card slots",
-                "Leather exterior (verify if genuine or synthetic)",
-                "Secure magnetic or snap closure",
-                "Precise cutouts for charging/buttons",
-                "Slim profile with full-edge protection",
-                "Compatible with wireless charging"
-            ],
-            "color_options": [
-                "Black",
-                "Clear"
-            ],
-            "compatibility": [
-                "Google Pixel 2XL"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Leather",
-            "protection": [
-                "Basic drop protection",
-                "Raised bezel for screen/camera"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2534,30 +1001,12 @@
             "name": "Leather Flip Wallet Book Case for Google Pixel 8",
             "description": "Multi-functional leather flip wallet case for Google Pixel 8, offering device protection and integrated card storage. Features a book-style design with secure closure and precise cutouts for all ports and buttons.",
             "price": "0.99",
-            "category":"Book Cases" ,
+            "category": "Book Cases",
             "rating": 4.5,
             "image_url": "/media/products/GooglePixel8_LeatherBookCase.jpeg",
             "image": "GooglePixel8_LeatherBookCase.jpeg",
             "brand": "Google Pixel",
-            "features": [
-                "Flip wallet design with card slots (assumed)",
-                "Leather exterior (likely synthetic at this price)",
-                "Secure closure (magnetic or snap)",
-                "Precise cutouts for charging/buttons",
-                "Wireless charging compatibility",
-                "Raised edges for screen/camera protection"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "Google Pixel 8"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Synthetic Leather",
-            "protection": [
-                "Basic drop protection (1m)",
-                "Scratch-resistant back"
-            ],
-            "accessories_included": false
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2573,26 +1022,7 @@
             "image_url": "/media/products/iPhone14_ClearMagSafe.jpeg",
             "image": "iPhone14_ClearMagSafe.jpeg",
             "brand": "Apple ",
-            "features": [
-                "MagSafe compatible (perfect alignment with Apple accessories)",
-                "Crystal-clear polycarbonate/TPU hybrid material",
-                "Anti-yellowing technology",
-                "Precise cutouts for ports/buttons",
-                "Wireless charging support",
-                "Slim yet protective design (0.5mm thickness)"
-            ],
-            "compatibility": [
-                "iPhone 14"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Polycarbonate + TPU",
-            "protection": [
-                "1.2m drop protection",
-                "Scratch-resistant back"
-            ],
-            "certifications": [
-                "MagSafe certified (verify if official)"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2603,28 +1033,12 @@
             "name": "Clear MagSafe Case for iPhone 16e",
             "description": "Transparent MagSafe-compatible case for iPhone 16e, designed to work seamlessly with Apple's MagSafe accessories while maintaining a slim profile and showcasing the device's original design. Features anti-yellowing material and precise cutouts.",
             "price": "1.67",
-            "category":"MagSafe Clear Cases" ,
+            "category": "MagSafe Clear Cases",
             "rating": null,
             "image_url": "/media/products/iPhone16e_ClearMagSafe.jpeg",
             "image": "iPhone16e_ClearMagSafe.jpeg",
             "brand": "Apple ",
-            "features": [
-                "MagSafe compatibility (aligns with Apple accessories)",
-                "Crystal-clear anti-yellowing material",
-                "Slim and lightweight design",
-                "Precise cutouts for ports and buttons",
-                "Wireless charging supported",
-                "Scratch-resistant back"
-            ],
-            "compatibility": [
-                "iPhone 16e"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Polycarbonate + TPU",
-            "protection": [
-                "Basic drop protection",
-                "Raised edges for screen/camera protection"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2640,25 +1054,7 @@
             "image_url": "/media/products/iPhone11Pro_Ring Armor Cases.jpeg",
             "image": "iPhone11Pro_Ring Armor Cases.jpeg",
             "brand": "Apple ",
-            "features": [
-                "Built-in 360° rotatable ring stand",
-                "Dual-layer shockproof design (PC + TPU)",
-                "Military-grade drop protection (MIL-STD-810G)",
-                "Precise cutouts for ports/buttons",
-                "Non-slip textured grip",
-                "Slim profile (2mm thickness)"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPhone 11 Pro"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Polycarbonate + TPU",
-            "protection": [
-                "2m drop protection",
-                "Raised bezels for screen/camera"
-            ],
-            "stand_functionality": true
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2670,34 +1066,11 @@
             "description": "Premium protective case for iPhone 16 Pro Max featuring a built-in rotating ring stand, military-grade drop protection, and a slim dual-layer design. Officially branded by Apple for guaranteed compatibility.",
             "price": "1.67",
             "category": "Ring Armor Cases",
-
             "rating": null,
             "image_url": "/media/products/iPhone16ProMax_RingArmor.jpeg",
             "image": "iPhone16ProMax_RingArmor.jpeg",
             "brand": "Apple",
-            "features": [
-                "Apple-official ring armor case",
-                "360° rotatable metal ring stand",
-                "Dual-layer construction (PC + shock-absorbing TPU)",
-                "MIL-STD-810H military-grade drop protection",
-                "Precision cutouts for all ports and buttons",
-                "MagSafe compatible",
-                "Slim profile (2.1mm thickness)"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPhone 16 Pro Max"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Polycarbonate + TPU",
-            "protection": [
-                "3m drop protection",
-                "Raised edges for screen/camera safety"
-            ],
-            "certifications": [
-                "Made for iPhone (MFi certified)",
-                "MagSafe compatible"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2713,30 +1086,7 @@
             "image_url": "/media/products/Apple_iPad234_KidsCase.jpeg",
             "image": "Apple_iPad234_KidsCase.jpeg",
             "brand": "Apple",
-            "features": [
-                "Child-proof durable design",
-                "Shock-absorbing TPU bumpers",
-                "Built-in handle for easy carrying",
-                "Adjustable stand for hands-free use",
-                "Precise cutouts for all functions",
-                "Non-toxic, BPA-free materials"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPad 2",
-                "iPad 3",
-                "iPad 4"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "TPU + Polycarbonate",
-            "protection": [
-                "Drop protection up to 1.5m",
-                "Screen cover option (verify if included)"
-            ],
-            "safety_certifications": [
-                "CE certified",
-                "EN71-3 compliant (child safety)"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2745,37 +1095,14 @@
         "fields": {
             "sku": "Samsung-TabA8-360Case",
             "name": "360 Rotating Leather Case for Samsung Galaxy Tab A 8.0 (T290/T295)",
-            "description": "Premium leather case with 360° rotating stand for Samsung Galaxy Tab A 8.0 (2019 models T290/T295). Features multi-angle viewing, automatic sleep/wake function, and full access to all ports and buttons.",
+            "description": "Premium leather case with 360\u00b0 rotating stand for Samsung Galaxy Tab A 8.0 (2019 models T290/T295). Features multi-angle viewing, automatic sleep/wake function, and full access to all ports and buttons.",
             "price": "1.67",
             "category": "Tap Leather Cases",
             "rating": 4.5,
             "image_url": "/media/products/Samsung_TabA8_360Case.jpeg",
             "image": "Samsung_TabA8_360Case.jpeg",
             "brand": "Samsung",
-            "features": [
-                "360° rotatable stand (portrait/landscape)",
-                "Genuine or synthetic leather exterior",
-                "Auto sleep/wake function",
-                "Precise cutouts for charging/speakers",
-                "Hand strap for secure grip (verify if included)",
-                "Compatible with T290/T295 models"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "Samsung Galaxy Tab A 8.0 (2019) T290",
-                "Samsung Galaxy Tab A 8.0 (2019) T295"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Leather + PU interior",
-            "protection": [
-                "Shock-absorbing corners",
-                "Magnetic closure (verify)"
-            ],
-            "stand_angles": [
-                "30°",
-                "60°",
-                "90°"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2784,41 +1111,14 @@
         "fields": {
             "sku": "Samsung-TabS9-360Case",
             "name": "360 Rotating Leather Case for Samsung Galaxy Tab S9",
-            "description": "Premium leather rotating case for Samsung Galaxy Tab S9, featuring 360° multi-angle stand functionality, S Pen holder, and auto sleep/wake support. Designed for both protection and productivity.",
+            "description": "Premium leather rotating case for Samsung Galaxy Tab S9, featuring 360\u00b0 multi-angle stand functionality, S Pen holder, and auto sleep/wake support. Designed for both protection and productivity.",
             "price": "2.08",
             "category": "Tap Leather Cases",
             "rating": 4.9,
             "image_url": "/media/products/Samsung_TabS9_360Case.jpeg",
             "image": "Samsung_TabS9_360Case.jpeg",
             "brand": "Samsung",
-            "features": [
-                "360° rotatable stand (portrait/landscape modes)",
-                "Dedicated S Pen holder and charging slot",
-                "Auto sleep/wake magnetic function",
-                "Precision cutouts for speakers/camera",
-                "Shock-absorbing TPU corners",
-                "Compatible with wireless charging"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "Samsung Galaxy Tab S9"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Synthetic Leather + Polycarbonate",
-            "protection": [
-                "Military-grade drop protection",
-                "Raised bezels for screen/camera"
-            ],
-            "stand_angles": [
-                "15°",
-                "45°",
-                "90°",
-                "180°"
-            ],
-            "special_features": [
-                "S Pen compatibility",
-                "Foldable kickstand"
-            ]
+            "estimated_delivery": "1 day"
         }
     },
     {
@@ -2827,40 +1127,14 @@
         "fields": {
             "sku": "iPad-MultiGen-360Case",
             "name": "360 Rotating Leather Case for iPad Air / Air 2 / 5th Gen 2017 / 6th Gen 2018",
-            "description": "Versatile leather rotating case compatible with multiple iPad generations (Air, Air 2, 5th Gen 2017, 6th Gen 2018). Features 360° adjustable stand, auto sleep/wake, and full access to all ports and buttons.",
+            "description": "Versatile leather rotating case compatible with multiple iPad generations (Air, Air 2, 5th Gen 2017, 6th Gen 2018). Features 360\u00b0 adjustable stand, auto sleep/wake, and full access to all ports and buttons.",
             "price": "1.67",
             "category": "Other Cases",
             "rating": 5,
             "image_url": "/media/products/iPad_MultiGen_360Case.jpeg",
             "image": "iPad_MultiGen_360Case.jpeg",
             "brand": "Apple ",
-            "features": [
-                "Multi-generation compatibility (4 iPad models)",
-                "360° rotatable stand (portrait/landscape)",
-                "Auto sleep/wake function",
-                "Precise cutouts for charging/buttons",
-                "Slim profile with reinforced corners",
-                "Hand strap slot (verify if included)"
-            ],
-            "color_options": [],
-            "compatibility": [
-                "iPad Air",
-                "iPad Air 2",
-                "iPad 5th Gen (2017)",
-                "iPad 6th Gen (2018)"
-            ],
-            "estimated_delivery": "1 day",
-            "material": "Synthetic Leather + TPU",
-            "protection": [
-                "1.5m drop protection",
-                "Raised bezel for screen"
-            ],
-            "stand_angles": [
-                "30°",
-                "60°",
-                "90°",
-                "180°"
-            ]
+            "estimated_delivery": "1 day"
         }
     }
 ]
