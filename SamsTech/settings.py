@@ -36,6 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-suadtech-samstech-yru6ybznueh.ws-eu120.gitpod.io',
+    'suadtech-samstech-yru6ybznueh.ws-eu120.gitpod.io',
     'samstech-84d03d38bd6b.herokuapp.com',
     'localhost',
     '127.0.0.1',
@@ -48,6 +49,7 @@ ALLOWED_HOSTS = [
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-suadtech-samstech-f91q9w7q7dr.ws-eu120.gitpod.io',
+    'https://suadtech-samstech-yru6ybznueh.ws-eu120.gitpod.io',
     'https://*.gitpod.io', 
 ]
 
@@ -84,7 +86,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',  
+    #'django.middleware.csrf.CsrfViewMiddleware',  
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'allauth.account.middleware.AccountMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -127,7 +129,7 @@ SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
@@ -270,15 +272,23 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 # Email Configuration - Conditional based on environment
 if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
     DEFAULT_FROM_EMAIL = 'samtech10101010@gmail.com'
-    ACCOUNT_EMAIL_VERIFICATION = 'optional'
+    ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-    ACCOUNT_EMAIL_VERIFICATION = 'optional'
+    ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+
+# Temporary CSRF exemption for development
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+
+CSRF_TRUSTED_ORIGINS.append('https://8000-suadtech-samstech-yru6ybznueh.ws-eu120.gitpod.io' )
+CSRF_TRUSTED_ORIGINS.append('https://8000-suadtech-samstech-yru6ybznueh.ws-eu120.gitpod.io' )
+
