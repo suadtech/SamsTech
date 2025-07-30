@@ -5,17 +5,42 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
+<style>
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #77a5b2;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.auth-container h1 { text-align: center; margin-bottom: 20px; }
+.auth-container p { text-align: center; }
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a2d2c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+</style>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<div class="auth-container">
+    <h1>{% trans "Sign Out" %}</h1>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+    <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
+    <form method="post" action="{% url 'account_logout' %}">
+      {% csrf_token %}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+      {% endif %}
+      <button type="submit">{% trans 'Sign Out' %}</button>
+    </form>
+</div>
 
 {% endblock %}
+
